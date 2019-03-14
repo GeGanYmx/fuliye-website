@@ -1,0 +1,283 @@
+
+.support_pic{
+    width: 100%;
+  
+}
+
+
+.search{
+    width: 1000px;
+    margin-top: -1900px;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+
+
+
+
+
+    
+
+.search-pic{
+    height: 30px;
+    width: 30px;
+    
+     
+    margin-left: 17px ; 
+    
+}
+.search-text input[type=text] {
+	margin-left:20px;
+  font-family: PingFangSC-Regular;
+font-size: 16px;
+color: #878787;
+letter-spacing: 0;
+}
+.search-tag{
+	margin-top:20px;
+	
+}
+.search-tag span{
+	font-family: PingFangSC-Medium;
+font-size: 16px;
+color: #FFFFFF;
+letter-spacing: 0;
+	}
+.support{
+    float: left;
+    height: 100px;
+     width: 100%;
+     margin-left: auto;
+     margin-right: auto;
+     
+     margin-top: -940px;
+     background: #303136;
+ 
+ }
+ .support span{
+    width: 266px;
+    height: 100%;
+    margin-left: 460px;
+    margin-top :22px ;
+    text-align: left;
+    font-family: PingFangSC-Regular;
+font-size: 40px;
+color: #FFFFFF;
+letter-spacing: 0.14px;
+text-align: left;
+ }
+
+
+
+
+
+
+
+
+.questions{
+    width: 100%;
+    margin: 300px 140px 0px 140px;
+    text-align: left;
+}
+.questions span{
+    text-align: left;
+}
+.questions-word{
+    width: 315px;
+    height: 112px;
+    margin-top: 80px;
+}
+.questions-word span{
+    font-family: PingFangSC-Regular;
+    font-size: 40px;
+    color: #0A1017;
+    letter-spacing: 0.14px;
+    text-align: left;
+}
+
+
+
+
+.btn{
+    height: 12px;
+    width: 12px;
+    display: block;
+    float: right;
+    margin-top: 10px;
+    margin-right: 50px;
+    background-image: url(assets/content_icon2_elected.png)
+   
+}
+
+.questions1{   
+    width:780px;
+    margin-top: 82px;
+    background: #FFFFFF; 
+    box-shadow: 0 4px 29px 0 rgba(0,0,0,0.10);
+    border-radius: 6px;
+    text-align: left;
+    
+}
+.questions span1{
+    
+    width: 680px;
+    margin:  38px 280px 109px 40px;
+}
+.questions span2{
+    height: 54px;
+    width: 840px;
+    margin-top:18px;
+}
+ 
+.questions span3{
+	display: block;
+	margin: 28px 232px 27px 40px;
+    
+}
+
+.questions2{
+    /*height: 85px;
+    */width:1000px;
+    margin-top: 30px;
+    text-align: left;
+    background: rgba(255,255,255,0.20);
+border: 1px solid #EAEAEA;
+border-radius: 6px;
+
+
+    
+}
+.questions3{
+    /*height: 85px;
+*/    width:1000px;
+    margin-top: 30px;
+    text-align: left;
+    background: rgba(255,255,255,0.20);
+border: 1px solid #EAEAEA;
+border-radius: 6px;
+    
+}
+.questions4{
+    /*height: 85px;
+    width:1000px;*/
+       width:1000px;
+    margin-top: 30px;
+    text-align: left;
+    background: rgba(255,255,255,0.20);
+border: 1px solid #EAEAEA;
+border-radius: 6px;
+    
+}
+.questions5{
+    /*height: 85px;
+    width:1000px;*/
+       width:1000px;
+    margin-top: 30px;
+    text-align: left;
+    background: rgba(255,255,255,0.20);
+border: 1px solid #EAEAEA;
+border-radius: 6px;
+    
+}
+.white{
+   height: 100px;
+    width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+  
+}
+
+
+.answer{
+    margin: 0px 140px;
+}
+
+.answer-pic{
+	
+    width: 1000px;
+    height: 300px;
+	
+}  
+.answer-pic1{
+	float: left;
+    margin-top: 110px;
+    margin-left: 57px
+	
+}
+.answer-pic2{
+	float: left;
+	margin-left: 350px;
+    margin-top: 110px;
+    margin-right: 360px;
+}
+/*
+在谷歌浏览器中answer-pic3的margin-top设置为    -125px;
+*/
+.answer-pic3{
+	float: right;
+	margin-top: 125px;
+	margin-right: 57px;
+}
+.answer  .p{
+	height: 30px;
+	margin-top: 16px;
+}
+
+.answer-question{
+    margin-top: 20px;
+}
+
+
+
+.questions6{
+    /*height: 85px;
+    */width:1000px;
+    margin-top: 30px;
+    text-align: left;
+    background: rgba(255,255,255,0.20);
+border: 1px solid #EAEAEA;
+border-radius: 6px;
+    
+}
+
+.questions7{
+    /*height: 85px;
+    */width:1000px;
+    margin-top: 30px;
+    text-align: left;
+    background: rgba(255,255,255,0.20);
+border: 1px solid #EAEAEA;
+border-radius: 6px;
+    
+}
+.questions8{
+    /*height: 85px;
+    */width:1000px;
+    margin-top: 30px;
+    text-align: left;
+    background: rgba(255,255,255,0.20);
+border: 1px solid #EAEAEA;
+border-radius: 6px;
+    
+}
+.another{
+    /*height: 85px;
+    */width:1000px;
+    margin-top: 30px;
+    text-align: left;
+    background: rgba(255,255,255,0.20);
+border: 1px solid #EAEAEA;
+border-radius: 6px;
+}
+.an-span2{
+    font-family: PingFangSC-Regular;
+font-size: 20px;
+color: #0086D1;
+letter-spacing: 0.07px;
+text-align: left;
+line-height: 28px;
+}
+.footer{
+    margin-top: 145px;
+}
