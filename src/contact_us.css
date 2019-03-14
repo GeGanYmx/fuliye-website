@@ -224,5 +224,8 @@ border-radius: 6px;
 }
 /*覆盖样式*/
 footer{
-   background-color: #303136
+   background-color: #303136;
+}
+.article_container{
+    background-color: #FFF;
 }
