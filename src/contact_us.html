@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>联系我们</title>
+  <!--全局样式文件-->
+  <link type="text/css" rel="styleSheet" href="global.css" />
+  <!--私有文件-->
+  <link type="text/css" rel="styleSheet" href="contact_us.css" />
+  <script src="contact_us.js"></script>
+</head>
+
+<body>
+  <!--头部导航栏-->
+  <header>
+    <div style="background-color:#303136;width:100%">
+      <div class="navi_bar">
+        <div class="home_logo"></div>
+        <nav>
+          <a class="navi_nav_link" href="home.html">Solutions</a>
+          <a class="navi_nav_link" href="support.html" style="width:195px">Resource Center</a>
+          <a class="navi_nav_link" href="contact_us.html">Contact Us</a>
+        </nav>
+        <div class="nav_btn_group">
+          <button class="navi_btn" onclick="homejs.loginIn()"><span>LoginIn</span></button>
+          <button class="navi_btn" onclick="homejs.signUp()"><span>SignUp</span></button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!--主体-->
+  <article>
+    <!--目前需手动设置height-->
+    <div class="article_display">
+      <!--插入图片区域-->
+      <div class="article_pic"></div>
+      
+      <div class="all">
+        <div class="contact-bg">
+          <div class="title">
+            <p>Contact Fourier Intelligence</p>
+          </div>
+          <div class="text">
+            <div>
+              <img src="assets/content_gq1.png" />
+              <span class="span1">Cooperate headquarters</span>
+            </div>
+            <p> Shanghai Fourier Intelligence Co.,Ltd. Floor 1, Building No.11, 68 Huatuo Road Pudong New Area,
+              Shanghai, China, 201203</p>
+            <div>
+              <img src="assets/content_icon6.png" />
+              <span class="span2">+86（0）21 5030 8716</span>
+            </div>
+            <br>
+            <div>
+              <img src="assets/content_icon6.png" />
+              <span class="span3">www.fftai.com</span>
+            </div>
+            <div class="content-border"></div>
+            <div>
+              <img src="assets/content_gq2.png" />
+              <span class="span1">International Hub Office</span>
+            </div>
+            <p> Fourier Intelligence International Ptd. Ltd. Marina One West Tower, 9 Straits View #05-07 Singapore,
+              018973</p>
+            <div>
+              <img src="assets/content_icon6.png" />
+              <span class="span2">+65 9338 2328</span>
+            </div>
+            <div class="content-border"></div>
+            <div>
+              <img src="assets/content_gq3.png" />
+              <span class="span1">Fourier-Melboume Joint Lab</span>
+            </div>
+            <p> Fourier-University of Melbourne Joint Lab Department of Mechanical Engineering, University of
+              Melbourne, Parkville, VIC 2010</p>
+          </div>
+        </div>
+
+        <div class="table">
+          <div class="table-dis">
+            <img src="assets/content_icon7.png" />
+            <span>Fill out the form below. We will answer you within 48 business hours.</span>
+          </div>
+
+          <div class="demo">
+            <div class="demo2">
+              <div class="inner">
+                <input type="text" name="FIRST NAME" value="" class="input" placeholder="* FIRST NAME">
+                <input type="text" name="LAST NAME" value="" class="input"  placeholder="* LAST NAME">
+                <input type="text" name="INSTITUTION" value="" class="input" placeholder="* INSTITUTION">
+                <input type="text" name="PHONE" value="" class="input" placeholder="* PHONE">
+              </div>
+              <div class="inner2">
+                <input type="text" name="OCCUPATION" value="" class="input" placeholder="* OCCUPATION">
+                <input type="text" name="EMAIL" value="" class="input" placeholder="* EMAIL">
+                <input type="text" name="COUNTRY" value="" class="input" placeholder="* COUNTRY">
+                <input type="text" name="SUBJECT" value="" class="input" placeholder="* SUBJECT">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="demo3">
+          <input type="text" name="MESSAGE" value="" class="input3" placeholder="* MESSAGE (maximally 300 words)">
+        </div>
+        <div class="request">
+          <span>* Required Field</span>
+        </div>
+        <div class="article-buttom">
+          <!--<img src="assets/content_button4_elected.png">-->
+          <input type="checkbox" checked style="width:16px;height:16px;" />
+          <span>Yes, I would Like to receive newsletters from Fourier Intelligence</span>
+        </div>
+
+        <div>
+          <input type="button" style=" color: #FFFFFF; font-size: 24px;
+            letter-spacing: 0;
+            font-family: PingFangSC-Regular;"
+            class="btn-content" value="SUBMIT" />
+        </div>
+      </div>
+    </div>
+  </article>
+  <!--页脚-->
+  <footer>
+      <div class="footer_container">
+        <div class="footer_logo"></div>
+        <div id="footer_text1">
+          <span>Join Us and Sign up Your Developer Account</span>
+        </div>
+        <div id="footer_text2">
+            <span>Copyright 2019 Shanghai Fourier Intelligence Co. Ltd. All rights reserved.</span>
+          </div>
+        <div id="footer_text3">
+              <span>Privacy Policy| Terms of Use</span>
+        </div>
+        <button id="footer_btn" onclick="contactUs.register()">
+          Register Now
+        </button>
+      </div>
+  </footer>
+</body>
+
+</html>

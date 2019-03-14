@@ -1,0 +1,183 @@
+/*全局样式表*/
+/*body{text-align: center;}*/
+/*导航栏样式*/
+.navi_bar {
+    height: 80px;
+    /*width: 1920px;*/
+    width: 1280px;
+    background-color: #303136;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+/*logo样式*/
+.home_logo {
+    height: 75px;
+    width: 202px;
+    background: url(assets/home_logo4.png);
+    float: left;
+    margin-left: 8px;
+    margin-right: 97px;
+    background-repeat: no-repeat;
+    margin-top: 15px;
+}
+
+/*按钮外部div*/
+.nav_btn_group {
+    /* width:300px;*/
+    width: 200px;
+    height: 50px;
+    float: left;
+    margin-left: 280.1px;
+    margin-top: 17px;
+}
+
+/*导航栏按钮样式*/
+.navi_btn {
+    width: 74.6px;
+    height: 48px;
+    border: 1px solid #808285;
+    border-radius: 100px;
+    opacity: 0.2;
+    background-color: #303136;
+    color: #FFF;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+/*导航链接*/
+.navi_nav_link {
+    display: block;
+    height: 32px;
+    width: 140px;
+    float: left;
+    margin-top: 25px;
+    /*链接字体*/
+    font-family: SourceSansPro-Semibold;
+    font-size: 18px;
+    color: #B5B5B5;
+    letter-spacing: 0;
+    text-align: left;
+    line-height: 32px;
+    text-decoration: none;
+}
+
+/*页眉底部渲染层*/
+footer {
+    width: 100%;
+    height: 384px;
+    /*background: url(assets/home_img_buttom_bg.png);
+    /*position: absolute;*/
+    /*margin-top:0px;*/
+    /*background-repeat: no-repeat;*/
+    background-color: blue;
+    /*margin-left: auto;
+    margin-right: auto;*/
+}
+
+a:active {
+    color: #FFF;
+}
+
+.navi_btn span {
+    opacity: 1.0;
+    font-family: SourceSansPro-Regular;
+    font-size: 18px;
+    color: #FFF;
+    text-align: left;
+    line-height: 32px;
+}
+
+/*内容区渲染底层*/
+.article_display {
+    height: 1760px;
+    width: 100%;
+    background-color: red;
+    /*overflow-x: scroll;*/
+}
+
+/*内容区图片渲染底层*/
+/*.article_img {
+    width: 100%;
+    height: auto;
+    background-color: yellow;
+}*/
+
+/*内容区图片区域*/
+.article_pic {
+    /*width: 1920px;*/
+    width: 100%;
+    /*高度自定*/
+    height: auto;
+    /*background-image: url(assets/content_img_banner2.png);*/
+    background-image: none;
+}
+
+.footer_logo {
+    position: absolute;
+    width: 253px;
+    height: 94px;
+    background-image: url(assets/home_logo4.png);
+    background-repeat: no-repeat;
+    top: 46px;
+    left: 7px;
+}
+
+#footer_text1 {
+    position: absolute;
+    width: 593px;
+    height: 72px;
+    top: 163px;
+    left: 35px;
+    font-family: Lato-Bold;
+    font-size: 24px;
+    color: #FFFFFF;
+    letter-spacing: 0.11px;
+    text-align: left;
+
+}
+
+#footer_text2 {
+    position: absolute;
+    width: 487px;
+    height: 20px;
+    top: 209px;
+    left: 35px;
+    font-family: PingFangSC-Light;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+
+}
+
+#footer_text3 {
+    position: absolute;
+    width: 188px;
+    height: 20px;
+    top: 235px;
+    left: 35px;
+    font-family: PingFangSC-Light;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+
+}
+
+#footer_btn {
+    position: absolute;
+    width: 157px;
+    height: 48px;
+    top: 157px;
+    left: 1083px;
+    border-radius: 100px;
+    opacity: 0.2;
+    background-color: #303136;
+    border: 2px solid #0090D6;
+    /*字体颜色*/
+    font-family: SourceSansPro-Semibold;
+    font-size: 18px;
+    color: #0090D6;
+    text-align: center;
+    line-height: 32px;
+}

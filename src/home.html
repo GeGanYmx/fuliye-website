@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>主页</title>
+    <!--全局样式文件-->
+    <link type="text/css" rel="styleSheet" href="global.css" />
+    <link type="text/css" rel="styleSheet" href="home.css" />
+    <!--私有文件-->
+    <script src="home.js"></script>
+    <style>
+      </style>
+</head>
+<body>
+    <!--头部导航栏-->
+    <header>
+    <div style="background-color:#303136;width:100%">
+    <div class="navi_bar">
+        <div class="home_logo"></div>
+        <nav>
+          <a class="navi_nav_link" href="home.html">Solutions</a>
+          <a class="navi_nav_link" href="support.html" style="width:195px">Resource Center</a>
+          <a class="navi_nav_link" href="contact_us.html">Contact Us</a>
+       </nav>
+       <div class="nav_btn_group">
+        <button class="navi_btn" onclick="homejs.loginIn()"><span>LoginIn</span></button>
+        <button class="navi_btn" onclick="homejs.signUp()"><span>SignUp</span></button>
+       </div>
+    </div>
+  </div>
+   </header>
+    <!--主体-->
+    <article>
+     <div class="article_display">
+             <!--图片-->
+            <div class="home_img_banner"></div>
+            <!--<div id="content">
+                <div style="margin-top:50px;margin-left:300px; margin-top:131px;">
+                  <div style="background:url(assets/home_img1.png);width:528px;height:337px;float: left;"></div>
+                  <div style="float:left;margin-left:27px;"><span>测试</span></div>
+                </div>
+            </div>-->
+            <!-- <div style="background-color:blue;height:1000px;width: 1280px;margin:0 auto 0 auto">
+                   <div class="home_smllogo_group">
+                            <div class="home_smllogo" style="background:url(assets/home_logo3.png);"></div>
+                            <div class="home_smllogo" style="background:url(assets/home_logo2.png);background-repeat: no-repeat;"></div>
+                            <div class="home_smllogo" style="background:url(assets/home_logo1.png);margin-right: 0px;"></div>
+                     </div>
+                     <div style="background-color: yellow;width:100%;height:200px;"></div>
+            </div> -->
+            <div style="background-color:blue;width:1280px;height:1000px;margin:0 auto 0 auto;">
+                    <div class="home_smllogo_group">
+                            <div class="home_smllogo" style="background:url(assets/home_logo3.png);"></div>
+                            <div class="home_smllogo" style="background:url(assets/home_logo2.png);background-repeat: no-repeat;"></div>
+                            <div class="home_smllogo" style="background:url(assets/home_logo1.png);margin-right: 0px;"></div>
+                     </div>
+            </div>
+     </div>
+    </article>
+    <!--页脚-->
+   <footer>
+        <div class="footer"></div> 
+    </footer>
+</body>
+</html>
