@@ -1,7 +1,7 @@
 .highlight{
     color: #FFF;
 }
-.home_img_banner{
+#home_img_banner{
     height: 840px;
     width: 100%;
     background-image: url('assets/home_img_banner.png');
@@ -12,9 +12,9 @@
     height:105px;
     background-color:#FFF;
     margin:-50px 40px 0 40px;
-    position: absolute;
+    position: relative;
 }
-.home_smllogo3{
+#home_smllogo3{
     background-image: url('./assets/home_logo3.png');
     background-repeat: no-repeat;
     width:259px;
@@ -22,7 +22,7 @@
     position: absolute;
     margin: 23px 837px 19px 103px;
 }
-.home_smllogo2{
+#home_smllogo2{
     background-image: url('./assets/home_logo2.png');
     background-repeat: no-repeat;
     width:227px;
@@ -30,7 +30,7 @@
     position: absolute;
     margin: 20px 479.5px 125px 494.5px;
 }
-.home_smllogo1{
+#home_smllogo1{
     background-image: url('./assets/home_logo1.png');
     background-repeat: no-repeat;
     width:246px;
@@ -38,59 +38,54 @@
     position: absolute;
     margin: 20px 102px 27px 852px;
 }
-.home_img1{
+#home_img1{
     background-image: url('./assets/home_img1.png');
     background-repeat: no-repeat;
     width:528px;
     height:337px;
-    position: absolute;
-    margin: 167px 0 0 35px;
+    margin: 112px 0 0 40px;
 }
-.home_img1texthead{
-    width:400px;
-    height:56px;
+#home_img1texthead{
+    max-width: 640px;
+    height:auto;
     font-family: PingFangSC-Regular;
     color: #323643;
     font-size: 40px;
-    position: absolute;
-    margin: 242px auto auto 640px;
+    margin: 187px 40px 0 0;
 }
-.home_img1textp{
-    width: 595px;
-    height: 100px;
+#home_img1textp{
+    max-width: 640px;
+    height: auto;
     font-family: PingFangSC-Regular;
     color: #0A1017;
     font-size: 14px;
-    position: absolute;
-    margin: 330px auto auto 641px;
+    margin: 10px 40px 0 0;
 }       
-.home_img2{
+
+#home_img2texthead{
+    max-width: 640px;
+    height:auto;
+    font-family: PingFangSC-Regular;
+    color: #323643;
+    font-size: 40px;
+    margin: 242px 0 0 40px;
+}
+#home_img2textp{
+    max-width: 640px;
+    height: auto;
+    font-family: PingFangSC-Regular;
+    color: #0A1017;
+    font-size: 14px;
+    margin: 10px 0 0 40px;
+}  
+#home_img2{
     background-image: url('./assets/home_img2.png');
     background-repeat: no-repeat;
     width:478px;
     height:414px;
-    position: absolute;
-    margin: 604px 0 0 762px;
+    margin: 210px 40px 0 0 ;
 }
-.home_img2texthead{
-    width:374px;
-    height:56px;
-    font-family: PingFangSC-Regular;
-    color: #323643;
-    font-size: 40px;
-    position: absolute;
-    margin: 746px auto auto 35px;
-}
-.home_img2textp{
-    width: 675.3px;
-    height: 60px;
-    font-family: PingFangSC-Regular;
-    color: #0A1017;
-    font-size: 14px;
-    position: absolute;
-    margin: 834px auto auto 36.3px;
-}  
-.home_img3{
+/* #home_img3{
     background-image: url('./assets/home_img3.png');
     background-repeat: no-repeat;
     width:528px;
@@ -98,7 +93,7 @@
     position: absolute;
     margin: 1143px 0 0 35px;
 }
-.home_img3texthead{
+#home_img3texthead{
     width:374px;
     height:56px;
     font-family: PingFangSC-Regular;
@@ -107,7 +102,7 @@
     position: absolute;
     margin: 1238px 266px 0 640px;
 }
-.home_img3textp{
+#home_img3textp{
     width: 675.3px;
     height: 60px;
     font-family: PingFangSC-Regular;
@@ -116,13 +111,13 @@
     position: absolute;
     margin: 1326px 0 0 641px;
 }  
-.hardwarehead{
+#hardwarehead{
     background-image: url('./assets/home_img_bg1.png');
     background-repeat: no-repeat;
     width:100%;
     height:100%;
 }
-.hardpic{
+#hardpic{
     background-image: url('./assets/home_icon1.png');
     background-repeat: no-repeat;
     width:42px;
@@ -131,13 +126,13 @@
     margin: 50% 40% 60% 50%;
 
 }
-.apipic{
+#apipic{
     background-image: url('./assets/home_icon2.png');
     background-repeat: no-repeat;
     width:42px;
     height:41px;
 
-}
+} */
 
 
 
@@ -151,4 +146,10 @@
     /*和article_display一致*/
     height:auto;
     margin:0 auto 0 auto;
+}
+.article_container_part{
+    background-color:pink;
+    width:640px;
+    height:auto;
+    float: left;
 }
