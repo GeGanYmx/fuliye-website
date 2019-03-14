@@ -67,13 +67,7 @@
 footer {
     width: 100%;
     height: 384px;
-    /*background: url(assets/home_img_buttom_bg.png);
-    /*position: absolute;*/
-    /*margin-top:0px;*/
-    /*background-repeat: no-repeat;*/
-    background-color: blue;
-    /*margin-left: auto;
-    margin-right: auto;*/
+    background-color:#303136;
 }
 
 a:active {
@@ -91,18 +85,10 @@ a:active {
 
 /*内容区渲染底层*/
 .article_display {
-    height: 1760px;
     width: 100%;
-    background-color: red;
-    /*overflow-x: scroll;*/
+    /*background-color: red;*/
+    background-color: #FFF;
 }
-
-/*内容区图片渲染底层*/
-/*.article_img {
-    width: 100%;
-    height: auto;
-    background-color: yellow;
-}*/
 
 /*内容区图片区域*/
 .article_pic {
@@ -180,4 +166,24 @@ a:active {
     color: #0090D6;
     text-align: center;
     line-height: 32px;
+}
+.article_container{
+    background-color:blue;
+    width:1280px;
+    /*和article_display一致*/
+    height:1760px;
+    margin:0 auto 0 auto;
+}
+
+/*页面内容区域*/
+.footer_container{
+    background-color:#303136;
+    height:100%;
+    width:1280px;
+    margin:0 auto 0 auto;
+    position: relative;
+}
+.article_display,.article_container{
+    /*高度根据具体情况暂时修改*/
+    height: 1760px;
 }

@@ -226,12 +226,3 @@ border-radius: 6px;
 footer{
    background-color: #303136
 }
-/*页面内容区域*/
-.footer_container{
-    background-color:#303136;
-    height:100%;
-    width:1280px;
-    margin:0 auto 0 auto;
-    position: relative;
-}
-
