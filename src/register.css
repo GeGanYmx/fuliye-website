@@ -111,7 +111,7 @@
 /*表格*/
 .table {
     height: 560px;
-    width: 1280px;
+    width: 1260px;
 
 }
 
@@ -135,7 +135,7 @@
 .demo {
     display: flex;
     justify-content: center;
-    width: 1280px;
+    width: 1260px;
 }
 
 .demo2 {
@@ -227,10 +227,10 @@ footer {
     background-color: #FFF;
 }
 .article_display{
-    height: 1300px;
+    height: 640px;
     /*height:auto;*/
     background-color: #FFF;
 }
 .article_container{
-    height:670px;
+    height:640px;
 }

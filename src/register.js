@@ -1,5 +1,5 @@
-console.log("调用成功");
-var Register={
+`use strict`;
+var register={
     register:function(){
         //alert('点击注册');
      console.log("点击提交表单");

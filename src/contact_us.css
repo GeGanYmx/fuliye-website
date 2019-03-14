@@ -1,22 +1,12 @@
-
-
-/*第一个大图*/
+/*大图片*/
 .article_pic{
-    width: 1920px;
-    /*height: auto;*/
+    width:100%;
+    min-width: 980px;
     height: 630px;
-    /*margin: 0 auto 0 auto;*/
-    overflow-x: hidden;
+    background-position: center;
     background-image: url(assets/content_img_banner2.png);
 }
 
-/*第一部分*/
-.all{
-    width: 1280px;
-    height: 1760px;
-    text-align: center;
-    margin:0 auto 0 auto;
-}
 .contact-bg{
     background-image: url(assets/content_bg.png)
 }
@@ -217,15 +207,14 @@ border-radius: 6px;
     background-color:#FFF;
 }
 
-.article_pic{
-    width:100%;
-    height: 630px;
-    background-image: url(assets/content_img_banner2.png);
-}
 /*覆盖样式*/
 footer{
    background-color: #303136;
 }
 .article_container{
     background-color: #FFF;
+}
+
+.table,.demo{
+    width:1260px;
 }

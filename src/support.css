@@ -1,7 +1,10 @@
 
 .support_pic{
     width: 100%;
-  
+    min-width: 980px;
+    background-image: url(assets/content_img_banner2.png);
+    background-position: center;
+    height: 630px;
 }
 
 
@@ -25,9 +28,7 @@
     width: 27px;   
     float: left;
     border: 0px;
-    
-    
-    
+    margin-left: 17px ;  
 }
 
 .form-control{
