@@ -1,5 +1,6 @@
 /*全局样式表*/
 /*body{text-align: center;}*/
+/*将某些浏览器的body的边距消除*/
 body{
     margin:0px;
 }
@@ -32,7 +33,7 @@ body{
     width: 250px;
     height: 50px;
     float: left;
-    margin-left: 247.1px;
+    margin-left: 227.1px;
     margin-top: 17px;
 }
 
@@ -194,4 +195,9 @@ a:active {
 /*去除按钮点击时外边框*/
 button:focus{
     outline: none;
+}
+
+.navi_bar,.article_container,.footer_container{
+    width:1260px;
+    /*min-width: 980px;*/
 }

@@ -1,18 +1,12 @@
 /*大图片*/
 .article_pic{
     width:100%;
+    min-width: 980px;
     height: 630px;
     background-position: center;
     background-image: url(assets/content_img_banner2.png);
 }
 
-/*第一部分*/
-.all{
-    width: 1280px;
-    height: 1760px;
-    text-align: center;
-    margin:0 auto 0 auto;
-}
 .contact-bg{
     background-image: url(assets/content_bg.png)
 }
@@ -219,4 +213,8 @@ footer{
 }
 .article_container{
     background-color: #FFF;
+}
+
+.table,.demo{
+    width:1260px;
 }

@@ -4,6 +4,8 @@
 .home_img_banner{
     height: 840px;
     width: 100%;
+    /*宽度最小是980px*/
+    min-width: 980px;
     background-position: center;
     background-image: url('assets/home_img_banner.png');
     /*background-repeat: no-repeat;*/
@@ -121,6 +123,7 @@
     background-image: url('./assets/home_img_bg1.png');
     background-repeat: no-repeat;
     width:100%;
+    min-width: 980px;
     height:100%;
 }
 .hardpic{
@@ -148,7 +151,8 @@
 }
 .article_container{
     background-color:blue;
-    width:1280px;
+    /*width:1280px;*/
+    width: 1260px;
     /*和article_display一致*/
     height:auto;
     margin:0 auto 0 auto;
