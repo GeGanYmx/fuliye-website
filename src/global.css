@@ -73,10 +73,6 @@ footer {
     background-color:#303136;
 }
 
-a:active {
-    color: #FFF;
-}
-
 /*.navi_btn span {
     opacity: 1.0;
     font-family: SourceSansPro-Regular;
@@ -189,4 +185,13 @@ a:active {
 .article_display,.article_container{
     /*高度根据具体情况暂时修改*/
     height: 1760px;
+}
+
+/*设置连接激活态*/
+a:active {
+    color: #FFF;
+}
+/*去除按钮点击时外边框*/
+button:focus{
+    outline: none;
 }
