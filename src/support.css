@@ -8,7 +8,7 @@
 .search{
     width: 1000px;
     margin-top: -1900px;
-    margin-left: auto;
+    margin-left: 140px;
     margin-right: auto;
    
 }
@@ -20,22 +20,38 @@
     
 
 .search-pic{
-    height: 30px;
-    width: 30px;
+    background-image: url(assets/content_icon1.png);
+    height: 28px;
+    width: 27px;   
+    float: left;
+    border: 0px;
     
-     
-    margin-left: 17px ; 
+    
     
 }
-.search-text input[type=text] {
-	margin-left:20px;
+
+.form-control{
+    opacity: 0.9;
+
+border-radius: 2px;
+	display: inline-block;
+    margin-left: 50px;
   font-family: PingFangSC-Regular;
 font-size: 16px;
 color: #878787;
 letter-spacing: 0;
+	
 }
+.bs-example-form{
+	
+	padding: 10px;
+}
+
+
+
 .search-tag{
-	margin-top:20px;
+    margin-top:20px;
+    margin-left: 140px;
 	
 }
 .search-tag span{
@@ -43,7 +59,13 @@ letter-spacing: 0;
 font-size: 16px;
 color: #FFFFFF;
 letter-spacing: 0;
-	}
+    }
+    
+
+
+
+
+
 .support{
     float: left;
     height: 100px;
@@ -279,5 +301,5 @@ text-align: left;
 line-height: 28px;
 }
 .footer{
-    margin-top: 145px;
+    margin-top: 165px;
 }
