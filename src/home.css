@@ -4,8 +4,9 @@
 .home_img_banner{
     height: 840px;
     width: 100%;
+    background-position: center;
     background-image: url('assets/home_img_banner.png');
-    background-repeat: no-repeat;
+    /*background-repeat: no-repeat;*/
 }
 .home_smllogo_group{
     width:1200px;

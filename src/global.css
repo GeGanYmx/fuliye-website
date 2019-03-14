@@ -1,5 +1,8 @@
 /*全局样式表*/
 /*body{text-align: center;}*/
+body{
+    margin:0px;
+}
 /*导航栏样式*/
 .navi_bar {
     height: 80px;
