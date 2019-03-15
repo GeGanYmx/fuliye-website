@@ -6,6 +6,12 @@
 .highlight{
     color: #FFF;
 }
+
+/* 宽度100%图片在分辨率小于1280时未填满解决 */
+#home_img_banner,#hardwarehead,#apihead,#apipic2area,#benefitshead,#benback{
+    min-width:1280px;
+}
+
 #home_img_banner{
     height: 840px;
     width: 100%;
@@ -274,7 +280,7 @@
     color: #FFF;
     height:auto;
     position: relative;
-    margin: 18px 0px 0 1216px;
+    margin: 18px 0px 0 1135px;
 }
 #apipic3area{
     background-image: url('./assets/fuliye-supplement/api-03.png');
@@ -288,7 +294,7 @@
 }
 .appcombine{
     display: inline-block;
-    margin: 15px 65px 95px 65px;
+    margin: 15px 65px 95px 55px;
 }
 #apptext{
     text-align: left;
