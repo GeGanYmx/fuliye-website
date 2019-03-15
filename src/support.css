@@ -8,7 +8,7 @@
 
 /*主体区底层*/
 .article_display {
-    /*background-color: red;*/
+    background-color: red;
     background-color:#FFF;
     height: 2534px;
 }
@@ -20,7 +20,8 @@
 .article-container1{
     width:100%;
     height:942px;
-    background-color:#FFF;
+    /*background-color:yellow;*/
+    background-color: #FFF;
     overflow: hidden;
 }
 /*container：1260px;*/
@@ -28,7 +29,7 @@
     width:1000px;
     height:782px;
     margin:80px auto 80px auto;
-    /*background-color:red*/
+    /* background-color:red */
     background-color:#FFF;
 }
 .article-title{
@@ -92,3 +93,44 @@ a{
    color: red;
    letter-spacing: 0;
 }*/
+
+.article-question{
+    display:block;font-family: PingFangSC-Regular;
+    font-size: 22px;
+    /*color: #0086D1;*/
+    color:#606470;
+    letter-spacing: 0;
+    text-align: left;
+    height: 30px;
+}
+.article-answer{
+    display:none;
+    font-family: PingFangSC-Regular;
+    height: 55px;
+    background-color: #FFF;
+    font-size: 14px;
+    color: #606470;
+    letter-spacing: 0;
+    text-align: left;
+    line-height: 26px;
+    border-top-width: 2px;
+    border-top-style: solid;
+    border-top-color: gray;
+}
+.question-answer{
+    width:1000px;
+    /*height:30px;*/
+    height: auto;
+    background-color:#FFF;
+    margin-bottom: 30px;
+    background-color: rgba(255,255,255,0.20);
+    border: 1px solid #EAEAEA;
+    border-radius: 6px;
+
+}
+/*向下箭头*/
+.down-arrow{
+    margin-bottom: 4px;
+    margin-left: 190px;
+    cursor: pointer;
+}
