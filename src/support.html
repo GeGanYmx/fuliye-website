@@ -1,48 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>资源中心</title>
-    <!--全局样式文件-->
-    <link type="text/css" rel="styleSheet" href="global.css">
-    <!--私有文件-->
-    <style>
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>服务中心</title>
+  <!--全局样式文件-->
+  <link type="text/css" rel="styleSheet" href="global.css" />
+  <script src="jquery-3.0.0.min.js"></script>
+  <script src="global.js"></script>
+  <link type="text/css" rel="styleSheet" href="support.css" />
+  <!--私有文件-->
+  <script src="home.js"></script>
+  <script>
+    $(function(){
+      console.log("测试");
+      $("#demo1").click(function(){
+        //alert("点击激活");
+        $("#demo2").slideToggle("slow");
+      });
+    });
+  </script>
 </head>
+
 <body>
-    <!--头部导航栏-->
-    <header>
-    <div class="navi_bar">
+  <!--头部导航栏-->
+  <header>
+    <div style="background-color:#303136;width:100%">
+      <div class="navi_bar">
         <div class="home_logo"></div>
         <nav>
           <a class="navi_nav_link" href="home.html">Solutions</a>
           <a class="navi_nav_link" href="support.html" style="width:195px">Resource Center</a>
           <a class="navi_nav_link" href="contact_us.html">Contact Us</a>
-       </nav>
-       <div class="nav_btn_group">
-        <input type="button" value="LoginIn" class="navi_btn" onclick="homejs.loginIn()">
-        <input type="button" value="SignUp" class="navi_btn"  onclick="homejs.signUp()">
-       </div>
-    </div>
-   </header>
-    <!--主体-->
-    <article>
-     <div style="height:840px;width: 1920px;position:relative;">
-           资源中心
-     </div>
-     <div id="content" style="background-color:#FFF;width:1920px;height:1000px;position: absolute; top:845px;">
-        <div style="margin-top:50px;margin-left:300px; margin-top:131px;">
-          <div style="background:url(assets/home_img1.png);width:528px;height:337px;float: left;"></div>
-          <div style="float:left;margin-left:27px;"><span>资源中心</span></div>
+        </nav>
+        <div class="nav_btn_group">
+          <button class="navi_btn" onclick="Global.login()"><span>LoginIn</span></button>
+          <button class="navi_btn" onclick="Global.register()"><span>SignUp</span></button>
         </div>
+      </div>
     </div>
-    </article>
-    <!--页脚-->
-    <footer>
-        <!--top=840px+content.height-->
-        <div class="footer"></div>
-    </footer>
+  </header>
+
+  <!--主体-->
+  <article>
+    <div class="article_display">
+      <!--图片搜索框-->
+      <div class="support_pic">
+        <div style="height:100%;width:1260px;margin: 0 auto 0 auto;overflow: hidden;">
+          <div style="width:1000px;height:60px;background-color:#FFF;margin-top:223px;margin-left:130px">
+            <img src="assets/content_icon1.png" style="float:left;height: 60px;width: 60px;">
+            <input type="search" style="width:940px;height:60px;float: left;font-family: PingFangSC-Regular;
+        font-size: 16px;
+        color: #878787;
+        letter-spacing: 0;"
+              placeholder="How can we help you?" />
+          </div>
+          <span style="display:block;margin-left:130px;font-family: PingFangSC-Medium;
+        font-size: 16px;
+        color: #FFFFFF;
+        letter-spacing: 0;">
+            Tag:SDK, business, computer, nature love
+          </span>
+        </div>
+      </div>
+
+      <div class="article_container">
+        <div class="article-container1">
+          <!--内容区域-->
+          <div class="article-container2">
+            <div class="article-title">
+              Frequently<br />
+              Asked Questions
+            </div>
+
+            <!--试验动态效果-->
+            <div style="width:1000px;height:85px;background:#FFF;margin-bottom: 30px;">
+              <div style="display:block;font-family: PingFangSC-Regular;
+              font-size: 22px;
+              color: #0086D1;
+              letter-spacing: 0;
+              text-align: left;height: 30px;" id="demo1">
+                Q: What kind of parameters the EXOPS users can adjust via SDK?
+            </div>
+              <!--点击向下滑动显示的内容-->
+              <div style="display:none;font-family: PingFangSC-Regular;height: 55px;
+              font-size: 14px;
+              color: #606470;
+              letter-spacing: 0;
+              text-align: left;
+              line-height: 26px;" id="demo2">
+                A:Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor.
+                Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet.
+          </div>
+            </div>
+
+
+            <div style="width:1000px;height:85px;background:#FFF;margin-bottom: 30px;">
+              <span style="display:block;font-family: PingFangSC-Regular;
+                font-size: 22px;
+                color: #0086D1;
+                letter-spacing: 0;
+                text-align: left;">
+                <span style="display:block;font-family: PingFangSC-Regular;
+              font-size: 22px;
+              color: #0086D1;
+              letter-spacing: 0;
+              text-align: left;">Q:
+                  Can users directly control the Actuators of Fourier X2 </span>
+                <!--<span style="visibility:hidden;display: block;"></span>-->
+            </div>
+            <div style="width:1000px;height:85px;background:#FFF;margin-bottom: 30px;">
+              <span style="display:block;font-family: PingFangSC-Regular;
+                font-size: 22px;
+                color: #0086D1;
+                letter-spacing: 0;
+                text-align: left;">
+                <span style="display:block;font-family: PingFangSC-Regular;
+              font-size: 22px;
+              color: #0086D1;
+              letter-spacing: 0;
+              text-align: left;">Q:
+                  Can users directly control the Actuators of Fourier X2 </span>
+                <!--<span style="visibility:hidden;display: block;"></span>-->
+            </div>
+            <div style="width:1000px;height:85px;background:#FFF;margin-bottom: 30px;">
+              <span style="display:block;font-family: PingFangSC-Regular;
+                font-size: 22px;
+                color: #0086D1;
+                letter-spacing: 0;
+                text-align: left;">
+                <span style="display:block;font-family: PingFangSC-Regular;
+              font-size: 22px;
+              color: #0086D1;
+              letter-spacing: 0;
+              text-align: left;">Q:
+                  Can users directly control the Actuators of Fourier X2 </span>
+                <!--<span style="visibility:hidden;display: block;"></span>-->
+            </div>
+            <div style="width:1000px;height:85px;background:#FFF;margin-bottom: 30px;">
+              <span style="display:block;font-family: PingFangSC-Regular;
+                font-size: 22px;
+                color: #0086D1;
+                letter-spacing: 0;
+                text-align: left;">
+                <span style="display:block;font-family: PingFangSC-Regular;
+              font-size: 22px;
+              color: #0086D1;
+              letter-spacing: 0;
+              text-align: left;">Q:
+                  Can users directly control the Actuators of Fourier X2 </span>
+                <!--<span style="visibility:hidden;display: block;"></span>-->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--黑色横幅-->
+      <div style="width:100%;height:100px;background-image: url(assets/home_img_bg1.png);background-position: center;">
+        <div style="float:left;width:774px;height:100%;color:#FFF;text-align:right;font-family: PingFangSC-Regular;
+        font-size: 40px;
+        color: #FFFFFF;
+        letter-spacing: 0.14px;">
+        Support Topic
+      </div>
+      </div>
+
+      <div class="article_container">
+        <div class="article-container1">
+          <!--内容区域-->
+          <div class="article-container2">
+            <div class="article-img-group">
+              <div style="float:left">
+              <img src="assets/content_icon3.png" id="img1"/>
+              <span class="icon-span">SDK</span>
+             </div>
+             <div style="float:left">
+              <img src="assets/content_icon4.png" id="img2" />
+              <span class="icon-span" style="margin-left: 4px">Computer</span>
+             </div>
+             <div style="float:left">
+              <img src="assets/content_icon5.png" id="img3"/>
+              <span class="icon-span" style="margin-left: 22px">Power</span>
+             </div>
+            </div>
+            <div style="width:1000px;height:117px;background:#FFF;margin-bottom: 110.33px;">
+              <span style="display:block;font-family: PingFangSC-Regular;
+                    font-size: 22px;
+                    color: #0086D1;
+                    letter-spacing: 0;
+                    text-align: left;">
+                Q: What kind of parameters the EXOPS users can adjust via SDK?
+              </span>
+              <span style="display:block;font-family: PingFangSC-Regular;
+                    font-size: 14px;
+                    color: #606470;
+                    letter-spacing: 0;
+                    text-align: left;
+                    line-height: 26px;">
+                A:Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor.
+                Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet.
+              </span>
+            </div>
+            <div style="width:1000px;height:117px;background:#FFF;margin-bottom: 110.33px;">
+              <span style="display:block;font-family: PingFangSC-Regular;
+                      font-size: 22px;
+                      color: #0086D1;
+                      letter-spacing: 0;
+                      text-align: left;">
+                Q: What kind of parameters the EXOPS users can adjust via SDK?
+              </span>
+              <span style="display:block;font-family: PingFangSC-Regular;
+                      font-size: 14px;
+                      color: #606470;
+                      letter-spacing: 0;
+                      text-align: left;
+                      line-height: 26px;">
+                A:Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor.
+                Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet.
+              </span>
+            </div>
+            <div style="width:1000px;height:117px;background:#FFF;margin-bottom: 58.3px;">
+              <span style="display:block;font-family: PingFangSC-Regular;
+                        font-size: 22px;
+                        color: #0086D1;
+                        letter-spacing: 0;
+                        text-align: left;">
+                Q: What kind of parameters the EXOPS users can adjust via SDK?
+              </span>
+              <span style="display:block;font-family: PingFangSC-Regular;
+                        font-size: 14px;
+                        color: #606470;
+                        letter-spacing: 0;
+                        text-align: left;
+                        line-height: 26px;">
+                A:Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor.
+                Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet.
+              </span>
+            </div>
+            <div style="height:38px;width:100%;font-family: PingFangSC-Regular;
+              font-size: 20px;
+              color: #0A1017;
+              letter-spacing: 0.07px;
+              text-align: left;
+              line-height: 28px;background-color: #FFF;">
+              If you can't find your answers here, please <a>contact us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </article>
+  <!--页脚-->
+  <footer>
+    <div class="footer_container">
+      <div class="footer_logo"></div>
+      <div id="footer_text1">
+        <span>Join Us and Sign up Your Developer Account</span>
+      </div>
+      <div id="footer_text2">
+        <span>Copyright 2019 Shanghai Fourier Intelligence Co. Ltd. All rights reserved.</span>
+      </div>
+      <div id="footer_text3">
+        <span>Privacy Policy| Terms of Use</span>
+      </div>
+      <button id="footer_btn" onclick="Global.register()">
+        Register Now
+      </button>
+    </div>
+  </footer>
 </body>
+
 </html>

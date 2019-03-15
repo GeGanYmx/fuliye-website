@@ -11,7 +11,7 @@
   <script src="md5.js"></script>
   <!--私有文件-->
   <link type="text/css" rel="styleSheet" href="register.css" />
-  <script src="register.js"></script>
+  <script src="global.js"></script>
 </head>
 
 <body>
@@ -26,8 +26,8 @@
           <a class="navi_nav_link" href="contact_us.html">Contact Us</a>
         </nav>
         <div class="nav_btn_group">
-          <button class="navi_btn" onclick="homejs.loginIn()"><span>LoginIn</span></button>
-          <button class="navi_btn" onclick="homejs.signUp()"><span>SignUp</span></button>
+          <button class="navi_btn" onclick="Global.login()"><span>LoginIn</span></button>
+          <button class="navi_btn" onclick="alert('已经在注册页面！')"><span>SignUp</span></button>
         </div>
       </div>
     </div>
@@ -37,7 +37,7 @@
     <!--目前需手动设置height-->
     <div class="article_display">
       <!--插入图片区域-->
-      <div class="article_pic"></div>
+      <!-- <div class="article_pic"></div> -->
       
       <div class="article_container">
         <form action="" method="get" onsubmit="return Register.register()">
@@ -74,7 +74,7 @@
         <div id="footer_text3">
               <span>Privacy Policy| Terms of Use</span>
         </div>
-        <button id="footer_btn" onclick="contactUs.register()">
+        <button id="footer_btn" onclick="alert('已经在注册页面！')">
           Register Now
         </button>
       </div>
