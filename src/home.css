@@ -1,3 +1,8 @@
+*{
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+}
 .highlight{
     color: #FFF;
 }
@@ -5,7 +10,6 @@
     height: 840px;
     width: 100%;
     background-image: url('assets/home_img_banner.png');
-    background-repeat: no-repeat;
 }
 .home_smllogo_group{
     width:1200px;
@@ -16,7 +20,6 @@
 }
 #home_smllogo3{
     background-image: url('./assets/home_logo3.png');
-    background-repeat: no-repeat;
     width:259px;
     height:63px;
     position: absolute;
@@ -24,7 +27,6 @@
 }
 #home_smllogo2{
     background-image: url('./assets/home_logo2.png');
-    background-repeat: no-repeat;
     width:227px;
     height:59px;
     position: absolute;
@@ -32,7 +34,6 @@
 }
 #home_smllogo1{
     background-image: url('./assets/home_logo1.png');
-    background-repeat: no-repeat;
     width:246px;
     height:58px;
     position: absolute;
@@ -40,7 +41,6 @@
 }
 #home_img1{
     background-image: url('./assets/home_img1.png');
-    background-repeat: no-repeat;
     width:528px;
     height:337px;
     margin: 112px 0 0 40px;
@@ -61,7 +61,6 @@
     font-size: 14px;
     margin: 10px 40px 0 0;
 }       
-
 #home_img2texthead{
     max-width: 640px;
     height:auto;
@@ -80,76 +79,320 @@
 }  
 #home_img2{
     background-image: url('./assets/home_img2.png');
-    background-repeat: no-repeat;
     width:478px;
     height:414px;
-    margin: 210px 40px 0 0 ;
+    margin:100px 40px 0 0; 
 }
-/* #home_img3{
+#home_img3{
     background-image: url('./assets/home_img3.png');
-    background-repeat: no-repeat;
     width:528px;
     height:337px;
-    position: absolute;
-    margin: 1143px 0 0 35px;
+    margin: 89px 0 40px 40px;
 }
 #home_img3texthead{
-    width:374px;
-    height:56px;
+    max-width: 640px;
+    height: auto;
     font-family: PingFangSC-Regular;
     color: #323643;
     font-size: 40px;
-    position: absolute;
-    margin: 1238px 266px 0 640px;
+    margin: 184px 40px 0 0;
 }
 #home_img3textp{
-    width: 675.3px;
-    height: 60px;
+    max-width: 640px;
+    height: auto;
     font-family: PingFangSC-Regular;
     color: #0A1017;
     font-size: 14px;
-    position: absolute;
-    margin: 1326px 0 0 641px;
+    margin: 10px 40px 0 0;
 }  
-#hardwarehead{
+#hardwarehead,#apihead,#benefitshead{
     background-image: url('./assets/home_img_bg1.png');
-    background-repeat: no-repeat;
     width:100%;
-    height:100%;
+    height:100px;
+    text-align: center;
+}
+#hardinfo,#apiinfo,#beninfo{
+    margin:0 auto 0 auto;
+    padding-top: 20px;
+    font-size: 40px;
+    font-family: PingFangSC-Regular;
 }
 #hardpic{
     background-image: url('./assets/home_icon1.png');
-    background-repeat: no-repeat;
     width:42px;
     height:37px; 
-    position: absolute;
-    margin: 50% 40% 60% 50%;
-
+    display: inline-block;
+    vertical-align: middle;
+}
+#hardtext{
+    color: #FFF;
+    display: inline-block;
+    vertical-align: middle;
+}
+#hardpic1{
+    background-image: url('./assets/fuliye-supplement/hardwork-01.png');
+    width:590px;
+    height:376px;
+    margin:100px 40px 0 0; 
+}
+#hardtext1head{
+    max-width: 640px;
+    height:auto;
+    font-family: PingFangSC-Regular;
+    color: #323643;
+    font-size: 40px;
+    margin: 242px 0 0 40px;    
+}
+#hardtext1p{
+    max-width: 640px;
+    height: auto;
+    font-family: PingFangSC-Regular;
+    color: #0A1017;
+    font-size: 14px;
+    margin: 10px 0 0 40px;
+}
+#hardpic2{
+    background-image: url('./assets/fuliye-supplement/hardwork-02.png');
+    width:528px;
+    height:337px;
+    margin: 89px 0 40px 40px;
+}
+#hardtext2head{
+    max-width: 640px;
+    height:auto;
+    font-family: PingFangSC-Regular;
+    color: #323643;
+    font-size: 40px;
+    margin: 242px 0 0 40px;    
+}
+#hardtext2p{
+    max-width: 640px;
+    height: auto;
+    font-family: PingFangSC-Regular;
+    color: #0A1017;
+    font-size: 14px;
+    margin: 10px 0 0 40px;
+}
+#hardpic3{
+    background-image: url('./assets/fuliye-supplement/hardwork-03.png');
+    width:478px;
+    height:414px;
+    margin:100px 40px 0 0; 
+}
+#hardtext3head{
+    max-width: 640px;
+    height: auto;
+    font-family: PingFangSC-Regular;
+    color: #323643;
+    font-size: 40px;
+    margin: 184px 40px 0 0;  
+}
+#hardtext3p{
+    max-width: 640px;
+    height: auto;
+    font-family: PingFangSC-Regular;
+    color: #0A1017;
+    font-size: 14px;
+    margin: 10px 40px 0 0;
+}
+#hardpic4{
+    background-image: url('./assets/fuliye-supplement/hardwork-04.png');
+    width:528px;
+    height:337px;
+    margin: 89px 0 40px 40px;
+}
+#hardtext4head{
+    max-width: 640px;
+    height:auto;
+    font-family: PingFangSC-Regular;
+    color: #323643;
+    font-size: 40px;
+    margin: 242px 0 0 40px;    
+}
+#hardtext4p{
+    max-width: 640px;
+    height: auto;
+    font-family: PingFangSC-Regular;
+    color: #0A1017;
+    font-size: 14px;
+    margin: 10px 0 0 40px;
 }
 #apipic{
     background-image: url('./assets/home_icon2.png');
-    background-repeat: no-repeat;
     width:42px;
-    height:41px;
+    height:37px; 
+    display: inline-block;
+    vertical-align:middle;
+}
+#apitext{
+    display: inline-block;
+    color: #FFF;
+    vertical-align: middle;
+}
+#apipic1{
+    background-image: url('./assets/home_img5.png');
+    width: 615px;
+    height: 410.8px;
+    margin: 60px 0 0 40px;
+}
+.textarea{
+    display: flex;
+    flex-direction: column;
+}
+#a11head,#a12head,#a13head,#a14head{
+    max-width: 640px;
+    height:auto;
+    font-family: PingFangSC-Regular;
+    color: #323643;
+    font-size: 40px;
+    margin: 50px 0 50px 40px;
+}
+#a11text,#a12text,#a13text,#a14text{
+    max-width: 640px;
+    height: auto;
+    font-family: PingFangSC-Regular;
+    color: #0A1017;
+    font-size: 14px;
+    margin: 10px 40px 0 0;
+}
+#apipic2area{
+    background-image: url('./assets/home_img6.png');
+    width:100%;
+    height:538px;
+}
+#apitext2{
+    color: #FFF;
+    max-width: 375px;
+    height:auto;
+    font-family: PingFangSC-Regular;
+    font-size: 40px;
+    padding: 130px 0 0 1px;
+    margin: 0 0px 0 90px;
+}
+#apitext02{
+    max-width:56px;
+    color: #FFF;
+    height:auto;
+    position: relative;
+    margin: 18px 0px 0 1216px;
+}
+#apipic3area{
+    background-image: url('./assets/fuliye-supplement/api-03.png');
+    width: 1156px;
+    height: 644px;
+    margin: 100px auto 100px auto;
+}
+#apparea{
+    background-color:#FFF ;   
+    text-align: center; 
+}
+.appcombine{
+    display: inline-block;
+    margin: 15px 65px 95px 65px;
+}
+#apptext{
+    text-align: left;
+    color: #0A1017;
+    max-width: 1000px;
+    height:auto;
+    font-family: PingFangSC-Regular;
+    font-size: 40px;
+    padding: 60px 0 60px 0;
+    margin-left: 100px;
+}
+#apiicon1{
+    background-image: url('./assets/home_icon5.png');
+}
+#apiicon2{
+    background-image: url('./assets/home_icon6.png');
+}
+#apiicon3{
+    background-image: url('./assets/home_icon7.png');
+}
+#apiicon4{
+    background-image: url('./assets/home_icon8.png');
+}
+#apiicon5{
+    background-image: url('./assets/home_icon9.png');
+}
+#apiicon6{
+    background-image: url('./assets/home_icon10.png');
+}
+#apiicon6,#apiicon5,#apiicon4,#apiicon3,#apiicon2,#apiicon1{
+    width:89px;
+    height:100px;
+}
+.blue{
+    color:#0290D5;
+    background-color: #F7F8F9;
+}
+#benback{
+    background-image: url('./assets/home_img_bg2.png');
+    width: 100%;
+    height: 375px;
+}
+#benpic{
+    background-image: url('./assets/home_icon3.png');
+    width:46px;
+    height:46px;
+    display: inline-block;
+    vertical-align: middle;
+}
+#bentext{
+    color:#FFF;
+    display: inline-block;
+    vertical-align: middle;
+}
+#beneicon1,#beneicon2,#beneicon3{
+    display: inline-block;
+    vertical-align: top;
+    margin: 75px 90px 0 90px;
+}
+#bi1icon,#bi2icon,#bi3icon{
+    margin: 0;
+}
+#bi1icon{
+    background-image: url('./assets/home_icon11.png'); 
+    width:45px;
+    height:50px;
+}
+#bi2icon{
+    background-image: url('./assets/home_icon12.png'); 
+    width:54px;
+    height:53px;
+}
+#bi3icon{
+    background-image: url('./assets/home_icon13.png');
+    width:54px;
+    height:53px;
+}
+#bi1text,#bi2text,#bi3text{
+    color: #0A1017;
+    max-width: 300px;
+    height:auto;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    margin: 40px 0 0 0;
+}
 
-} */
 
 
-
+/* 覆盖全局样式 */
 .article_display{
     /*高度根据具体情况暂时修改*/
-    height: 6000px;
+    height: 7795px;
 }
 .article_container{
-    background-color:blue;
+    background-color:#FFF;
     width:1280px;
     /*和article_display一致*/
     height:auto;
     margin:0 auto 0 auto;
+    display: flex;
 }
 .article_container_part{
-    background-color:pink;
+    /* background-color:pink; */
     width:640px;
-    height:auto;
-    float: left;
+    /* height:100%; */
+    margin:0 auto 0 auto;
 }
