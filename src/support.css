@@ -54,6 +54,7 @@
     margin-right:355px;
 }
 #img2{
+    margin-left: 27px;
     margin-right:355px;
 }
 .article-span{
@@ -63,4 +64,19 @@
     color: #0086D1;
     letter-spacing: 0;
     text-align: left;
+}
+#img3{
+    margin-left: 34px;
+}
+
+.icon-span{
+    display: block;
+    align-content: center;
+    margin-left: 35px;
+    font-family: PingFangSC-Regular;
+    font-size: 22px;
+    color: #999999;
+    letter-spacing: 0;
+    text-align: left;
+    margin-top: 10px;
 }
