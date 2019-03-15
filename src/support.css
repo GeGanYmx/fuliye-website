@@ -1,306 +1,66 @@
-
-.support_pic{
+.support_pic {
     width: 100%;
     min-width: 980px;
     background-image: url(assets/content_img_banner2.png);
     background-position: center;
-    height: 630px;
+    height: 550px;
 }
 
-
-.search{
-    width: 1000px;
-    margin-top: -1900px;
-    margin-left: 140px;
-    margin-right: auto;
-   
+/*主体区底层*/
+.article_display {
+    /*background-color: red;*/
+    background-color:#FFF;
+    height: 2534px;
 }
 
-
-
-
-
-    
-
-.search-pic{
-    background-image: url(assets/content_icon1.png);
-    height: 28px;
-    width: 27px;   
-    float: left;
-    border: 0px;
-    margin-left: 17px ;  
+.article_container {
+    background-color: pink;
+    height: 942px;
 }
-
-.form-control{
-    opacity: 0.9;
-
-border-radius: 2px;
-	display: inline-block;
-    margin-left: 50px;
-  font-family: PingFangSC-Regular;
-font-size: 16px;
-color: #878787;
-letter-spacing: 0;
-	
+.article-container1{
+    width:100%;
+    height:942px;
+    background-color:#FFF;
+    overflow: hidden;
 }
-.bs-example-form{
-	
-	padding: 10px;
+/*container：1260px;*/
+.article-container2{
+    width:1000px;
+    height:782px;
+    margin:80px auto 80px auto;
+    /*background-color:red*/
+    background-color:#FFF;
 }
-
-
-
-.search-tag{
-    margin-top:20px;
-    margin-left: 140px;
-	
-}
-.search-tag span{
-	font-family: PingFangSC-Medium;
-font-size: 16px;
-color: #FFFFFF;
-letter-spacing: 0;
-    }
-    
-
-
-
-
-
-.support{
-    float: left;
-    height: 100px;
-     width: 100%;
-     margin-left: auto;
-     margin-right: auto;
-     
-     margin-top: -940px;
-     background: #303136;
- 
- }
- .support span{
-    width: 266px;
-    height: 100%;
-    margin-left: 460px;
-    margin-top :22px ;
-    text-align: left;
-    font-family: PingFangSC-Regular;
-font-size: 40px;
-color: #FFFFFF;
-letter-spacing: 0.14px;
-text-align: left;
- }
-
-
-
-
-
-
-
-
-.questions{
-    width: 100%;
-    margin: 300px 140px 0px 140px;
-    text-align: left;
-}
-.questions span{
-    text-align: left;
-}
-.questions-word{
-    width: 315px;
+.article-title{
+    width:100%;
     height: 112px;
-    margin-top: 80px;
-}
-.questions-word span{
+    background-color: #FFF;
     font-family: PingFangSC-Regular;
     font-size: 40px;
     color: #0A1017;
     letter-spacing: 0.14px;
-    text-align: left;
+    text-align: left;  
+    margin-bottom: 42px;
 }
-
-
-
-
-.btn{
-    height: 12px;
-    width: 12px;
-    display: block;
-    float: right;
-    margin-top: 10px;
-    margin-right: 50px;
-    background-image: url(assets/content_icon2_elected.png)
-   
+/*三个图标*/
+.article-img-group{
+    width:100%;
+    height: 62px;
+    /*background-color:green;*/
+    margin-bottom: 100px;
 }
-
-.questions1{   
-    width:780px;
-    margin-top: 82px;
-    background: #FFFFFF; 
-    box-shadow: 0 4px 29px 0 rgba(0,0,0,0.10);
-    border-radius: 6px;
-    text-align: left;
-    
+#img1{
+    margin-left:27px;
+    margin-right:355px;
 }
-.questions span1{
-    
-    width: 680px;
-    margin:  38px 280px 109px 40px;
+#img2{
+    margin-right:355px;
 }
-.questions span2{
-    height: 54px;
-    width: 840px;
-    margin-top:18px;
-}
- 
-.questions span3{
-	display: block;
-	margin: 28px 232px 27px 40px;
-    
-}
-
-.questions2{
-    /*height: 85px;
-    */width:1000px;
-    margin-top: 30px;
-    text-align: left;
-    background: rgba(255,255,255,0.20);
-border: 1px solid #EAEAEA;
-border-radius: 6px;
-
-
-    
-}
-.questions3{
-    /*height: 85px;
-*/    width:1000px;
-    margin-top: 30px;
-    text-align: left;
-    background: rgba(255,255,255,0.20);
-border: 1px solid #EAEAEA;
-border-radius: 6px;
-    
-}
-.questions4{
-    /*height: 85px;
-    width:1000px;*/
-       width:1000px;
-    margin-top: 30px;
-    text-align: left;
-    background: rgba(255,255,255,0.20);
-border: 1px solid #EAEAEA;
-border-radius: 6px;
-    
-}
-.questions5{
-    /*height: 85px;
-    width:1000px;*/
-       width:1000px;
-    margin-top: 30px;
-    text-align: left;
-    background: rgba(255,255,255,0.20);
-border: 1px solid #EAEAEA;
-border-radius: 6px;
-    
-}
-.white{
-   height: 100px;
-    width: 1920px;
-    margin-left: auto;
-    margin-right: auto;
-  
-}
-
-
-.answer{
-    margin: 0px 140px;
-}
-
-.answer-pic{
-	
-    width: 1000px;
-    height: 300px;
-	
-}  
-.answer-pic1{
-	float: left;
-    margin-top: 110px;
-    margin-left: 57px
-	
-}
-.answer-pic2{
-	float: left;
-	margin-left: 350px;
-    margin-top: 110px;
-    margin-right: 360px;
-}
-/*
-在谷歌浏览器中answer-pic3的margin-top设置为    -125px;
-*/
-.answer-pic3{
-	float: right;
-	margin-top: 125px;
-	margin-right: 57px;
-}
-.answer  .p{
-	height: 30px;
-	margin-top: 16px;
-}
-
-.answer-question{
-    margin-top: 20px;
-}
-
-
-
-.questions6{
-    /*height: 85px;
-    */width:1000px;
-    margin-top: 30px;
-    text-align: left;
-    background: rgba(255,255,255,0.20);
-border: 1px solid #EAEAEA;
-border-radius: 6px;
-    
-}
-
-.questions7{
-    /*height: 85px;
-    */width:1000px;
-    margin-top: 30px;
-    text-align: left;
-    background: rgba(255,255,255,0.20);
-border: 1px solid #EAEAEA;
-border-radius: 6px;
-    
-}
-.questions8{
-    /*height: 85px;
-    */width:1000px;
-    margin-top: 30px;
-    text-align: left;
-    background: rgba(255,255,255,0.20);
-border: 1px solid #EAEAEA;
-border-radius: 6px;
-    
-}
-.another{
-    /*height: 85px;
-    */width:1000px;
-    margin-top: 30px;
-    text-align: left;
-    background: rgba(255,255,255,0.20);
-border: 1px solid #EAEAEA;
-border-radius: 6px;
-}
-.an-span2{
+.article-span{
+    display:block;
     font-family: PingFangSC-Regular;
-font-size: 20px;
-color: #0086D1;
-letter-spacing: 0.07px;
-text-align: left;
-line-height: 28px;
-}
-.footer{
-    margin-top: 165px;
+    font-size: 22px;
+    color: #0086D1;
+    letter-spacing: 0;
+    text-align: left;
 }
