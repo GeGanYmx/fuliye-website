@@ -22,12 +22,7 @@
 #home_img_banner{
     height: 840px;
     width: 100%;
-<<<<<<< HEAD:src/home.css
     /*宽度最小是1280px*/
-=======
-    /*宽度最小是980px*/
-    min-width: 1260px;
->>>>>>> 8c4b77d7a013ff5bc0bd257ba2b1bf10c21dc2d7:src/css/home.css
     background-position: center;
     /*background-image: url('../assets/home_img_banner.png');*/
 }
@@ -67,8 +62,7 @@
     margin: 112px 0 0 40px;
 }
 #why{
-<<<<<<< HEAD:src/home.css
-    background-image: url('./assets/home_img_why.png');
+    background-image: url('../assets/home_img_why.png');
     background-position: 0px 170px;
     font-family: Lato-Bold;
     font-size: 300px;
@@ -77,7 +71,7 @@
     text-align: left;
 }
 #who{
-    background-image: url('./assets/home_img_who.png');
+    background-image: url('../assets/home_img_who.png');
     background-position:-4px 199px;
     font-family: Lato-Bold;
     font-size: 300px;
@@ -86,20 +80,8 @@
     text-align: left;
 }
 #what{
-    background-image: url('./assets/home_img_what.png');
-    background-position: 0 30px;
-=======
-    background-image: url('../assets/home_img_why.png');
-    background-position: center left;
-}
-#who{
-    background-image: url('../assets/home_img_who.png');
-    background-position: center left;
-}
-#what{
     background-image: url('../assets/home_img_what.png');
-    background-position: center left;
->>>>>>> 8c4b77d7a013ff5bc0bd257ba2b1bf10c21dc2d7:src/css/home.css
+    background-position: 0 30px;
     background-size: 640px 226px;
     background-color:transparent; 
     font-family: Lato-Bold;
@@ -110,13 +92,10 @@
 
 }
 .girlpic{
-<<<<<<< HEAD:src/home.css
-    background-image: url('./assets/home_img_bg.png');
+    background-image: url('../assets/home_img_bg.png');
     height:  1111px;
     background-position: bottom center;
-=======
-    background-image: url('../assets/home_img_bg.png');
->>>>>>> 8c4b77d7a013ff5bc0bd257ba2b1bf10c21dc2d7:src/css/home.css
+    min-width: 1280px;
 }
 #home_img1texthead{
     max-width: 640px;
@@ -262,20 +241,13 @@
     letter-spacing: 0;
 }
 #hardpic2{
-<<<<<<< HEAD:src/home.css
-    background-image: url('./assets/home_img5\ 2.png');
+    background-image: url('../assets/home_img5\ 2.png');
     width: 593px;
     height: 346px;
     margin: 0 0 0 47px;
 }
 #hardtext2{
     width: 590px;
-=======
-    background-image: url('../assets/home_img5\ 2.png');
-    width:528px;
-    height:337px;
-    margin: 89px 0 40px 40px;
->>>>>>> 8c4b77d7a013ff5bc0bd257ba2b1bf10c21dc2d7:src/css/home.css
 }
 #hardtext2head{
     max-width: 470px;
@@ -385,7 +357,7 @@ ul li{
     height:28px;  
     line-height:28px;  
     text-indent:15px;  
-    background-image:url('./assets/home_icon4.png');
+    background-image:url('../assets/home_icon4.png');
     background-position:left 45%;  
     background-repeat:no-repeat;  
 }
@@ -431,11 +403,7 @@ ul li{
     margin: 18px 0px 0 1135px;
 }
 #apipic3area{
-<<<<<<< HEAD:src/home.css
-    background-image: url('./assets/apipic3_need.png');
-=======
-    background-image: url('../assets/fuliye-supplement/api-03.png');
->>>>>>> 8c4b77d7a013ff5bc0bd257ba2b1bf10c21dc2d7:src/css/home.css
+    background-image: url('../assets/apipic3_need.png');
     width: 1156px;
     height: 644px;
     margin: 100px auto 100px auto;
@@ -443,6 +411,7 @@ ul li{
 #apparea{
     background: #F7F8F9;  
     text-align: center; 
+    min-width: 1280px;
 }
 .appcombine{
     display: inline-block;
