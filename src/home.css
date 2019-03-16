@@ -2,11 +2,18 @@
     background-repeat: no-repeat;
     background-position: center;
     margin: 0 auto;
+    background-color:transparent; 
 }
 .highlight{
     color: #FFF;
 }
-
+#login{
+    font-family: SourceSansPro-Regular;
+    font-size: 18px;
+    color: #FFFFFF;
+    text-align: left;
+    line-height: 32px;
+}
 /* 宽度100%图片在分辨率小于1280时未填满解决 */
 #home_img_banner,#hardwarehead,#apihead,#apipic2area,#benefitshead,#benback{
     min-width:1280px;
@@ -15,8 +22,7 @@
 #home_img_banner{
     height: 840px;
     width: 100%;
-    /*宽度最小是980px*/
-    min-width: 980px;
+    /*宽度最小是1280px*/
     background-position: center;
     background-image: url('assets/home_img_banner.png');
 }
@@ -26,6 +32,7 @@
     background-color:#FFF;
     margin:-50px 40px 0 40px;
     position: relative;
+    box-shadow: 0 2px 32px 0 rgba(0,0,0,0.15);
 }
 #home_smllogo3{
     background-image: url('./assets/home_logo3.png');
@@ -56,16 +63,33 @@
 }
 #why{
     background-image: url('./assets/home_img_why.png');
-    background-position: center left;
+    background-position: 0px 170px;
+    font-family: Lato-Bold;
+    font-size: 300px;
+    color: #0065A3;
+    letter-spacing: 1.07px;
+    text-align: left;
 }
 #who{
     background-image: url('./assets/home_img_who.png');
-    background-position: center left;
+    background-position:-4px 199px;
+    font-family: Lato-Bold;
+    font-size: 300px;
+    color: #0065A3;
+    letter-spacing: 1.07px;
+    text-align: left;
 }
 #what{
     background-image: url('./assets/home_img_what.png');
-    background-position: center left;
+    background-position: 0 30px;
     background-size: 640px 226px;
+    background-color:transparent; 
+    font-family: Lato-Bold;
+    font-size: 300px;
+    color: #0065A3;
+    letter-spacing: 1.07px;
+    text-align: left;
+
 }
 .girlpic{
     background-image: url('./assets/home_img_bg.png');
@@ -77,15 +101,25 @@
     color: #323643;
     font-size: 40px;
     margin: 187px 40px 0 0;
+    letter-spacing: 0; 
 }
 #home_img1textp{
     max-width: 640px;
     height: auto;
-    font-family: PingFangSC-Regular;
     color: #0A1017;
     font-size: 14px;
     margin: 10px 40px 0 0;
-}       
+    font-family: PingFangSC-Light;
+    letter-spacing: 0;
+    line-height: 20px;
+}    
+#boldexops{
+    font-family: PingFangSC-Medium;
+    font-size: 14px;
+    color: #0A1017;
+    letter-spacing: 0;
+    line-height: 20px;
+}   
 #home_img2texthead{
     max-width: 640px;
     height:auto;
@@ -93,26 +127,41 @@
     color: #323643;
     font-size: 40px;
     margin: 242px 0 0 40px;
+    letter-spacing: 0;
 }
 #home_img2textp{
     max-width: 640px;
     height: auto;
-    font-family: PingFangSC-Regular;
     color: #0A1017;
     font-size: 14px;
     margin: 10px 0 0 40px;
+    font-family: PingFangSC-Light;
+    letter-spacing: 0;
 }  
 #home_img2{
     background-image: url('./assets/home_img2.png');
     width:478px;
     height:414px;
-    margin:100px 40px 0 0; 
+    margin: 100px 40px 0 117px;
+}
+
+.widegraybg{
+    background: #F7F8F9;
+    width: 100%;
+    min-width: 1280px;
+    height: 405px;
+}
+#whatbg{
+    margin-top: 113px;
+}
+#home_img3area{
+    background-color: transparent;
 }
 #home_img3{
     background-image: url('./assets/home_img3.png');
     width:528px;
     height:337px;
-    margin: 89px 0 40px 40px;
+    margin: -44px 0 40px 40px;
 }
 #home_img3texthead{
     max-width: 640px;
@@ -120,12 +169,13 @@
     font-family: PingFangSC-Regular;
     color: #323643;
     font-size: 40px;
-    margin: 184px 40px 0 0;
-}
+    margin: 54px 40px 0 0;
+    letter-spacing: 0;
+    }
 #home_img3textp{
     max-width: 640px;
     height: auto;
-    font-family: PingFangSC-Regular;
+    font-family: PingFangSC-Light;
     color: #0A1017;
     font-size: 14px;
     margin: 10px 40px 0 0;
@@ -140,7 +190,9 @@
     margin:0 auto 0 auto;
     padding-top: 20px;
     font-size: 40px;
-    font-family: PingFangSC-Regular;
+    font-family: Helvetica;
+    font-size: 40px;
+    color: #FFFFFF;
 }
 #hardpic{
     background-image: url('./assets/home_icon1.png');
@@ -154,11 +206,18 @@
     display: inline-block;
     vertical-align: middle;
 }
+#hard1bg{
+    margin-top: 0;
+    height: 444px
+}
+.hard1container{
+    height: 444px;
+}
 #hardpic1{
     background-image: url('./assets/home_img4.png');
     width:590px;
     height:376px;
-    margin:100px 40px 0 0; 
+    margin: 67px 40px 0 0;
 }
 #hardtext1head{
     max-width: 640px;
@@ -166,43 +225,50 @@
     font-family: PingFangSC-Regular;
     color: #323643;
     font-size: 40px;
-    margin: 242px 0 0 40px;    
+    margin: 172px 0 0 40px;   
+    letter-spacing: 0;
 }
 #hardtext1p{
     max-width: 640px;
     height: auto;
-    font-family: PingFangSC-Regular;
+    font-family: PingFangSC-Light;
     color: #0A1017;
     font-size: 14px;
     margin: 10px 0 0 40px;
+    letter-spacing: 0;
 }
 #hardpic2{
     background-image: url('./assets/home_img5\ 2.png');
-    width:528px;
-    height:337px;
-    margin: 89px 0 40px 40px;
+    width: 593px;
+    height: 346px;
+    margin: 0 0 0 47px;
+}
+#hardtext2{
+    width: 590px;
 }
 #hardtext2head{
-    max-width: 640px;
+    max-width: 470px;
     height:auto;
     font-family: PingFangSC-Regular;
     color: #323643;
     font-size: 40px;
-    margin: 242px 0 0 40px;    
+    margin: 65px 0 0 40px;  
+    letter-spacing: 0;
 }
 #hardtext2p{
-    max-width: 640px;
+    max-width: 520px;
     height: auto;
-    font-family: PingFangSC-Regular;
+    font-family: PingFangSC-Light;
     color: #0A1017;
     font-size: 14px;
     margin: 10px 0 0 40px;
+    letter-spacing: 0;
 }
 #hardpic3{
     background-image: url('./assets/home_img6\ 2.png');
     width:478px;
     height:414px;
-    margin: 0 40px 0 0;
+    margin: 0px 0px 0px 60px;
 }
 #hardtext3head{
     max-width: 640px;
@@ -210,15 +276,17 @@
     font-family: PingFangSC-Regular;
     color: #323643;
     font-size: 40px;
-    margin: 150px 0 0 40px;
+    margin: 150px 0 0 56px;
+    letter-spacing: 0;
 }
 #hardtext3p{
     max-width: 640px;
     height: auto;
-    font-family: PingFangSC-Regular;
     color: #0A1017;
     font-size: 14px;
-    margin: 10px 0 0 40px;
+    margin: 10px 0 0 56px;
+    font-family: PingFangSC-Light;
+    letter-spacing: 0;
 }
 #hardpic4{
     background-image: url('./assets/home_img7.png');
@@ -232,15 +300,17 @@
     font-family: PingFangSC-Regular;
     color: #323643;
     font-size: 40px;
-    margin: 80px 0 0 40px;    
+    margin: 80px 0 0 40px; 
+    letter-spacing: 0;   
 }
 #hardtext4p{
-    max-width: 640px;
+    max-width: 544px;
     height: auto;
-    font-family: PingFangSC-Regular;
+    font-family: PingFangSC-Light;
     color: #0A1017;
     font-size: 14px;
     margin: 10px 0 0 40px;
+    letter-spacing: 0;
 }
 #apipic{
     background-image: url('./assets/home_icon2.png');
@@ -271,6 +341,7 @@
     color: #323643;
     font-size: 40px;
     margin: 50px 0 50px 40px;
+    letter-spacing: 0;
 }
 #a11text,#a12text,#a13text,#a14text{
     max-width: 640px;
@@ -279,6 +350,7 @@
     color: #0A1017;
     font-size: 14px;
     margin: 10px 40px 0 0;
+    letter-spacing: 0;
 }
 #apipic2area{
     background-image: url('./assets/home_img6.png');
@@ -405,12 +477,11 @@
 /* 覆盖全局样式 */
 .article_display{
     /*高度根据具体情况暂时修改*/
-    height: 7605px;
+    height: auto;
 }
 .article_container{
-    background-color:#FFF;
+    background-color:transparent; 
     width:1280px;
-    /*和article_display一致*/
     height:auto;
     margin:0 auto 0 auto;
     display: flex;
@@ -420,4 +491,11 @@
     width:640px;
     /* height:100%; */
     margin:0 auto 0 auto;
+}
+.navi_bar,.article_container,.footer_container{
+width: 1280px;
+min-width: 1280px;
+}
+.navi_btn{
+border-color: rgb(63,64,69)
 }
