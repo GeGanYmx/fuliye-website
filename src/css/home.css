@@ -22,9 +22,14 @@
 #home_img_banner{
     height: 840px;
     width: 100%;
+<<<<<<< HEAD:src/home.css
     /*宽度最小是1280px*/
+=======
+    /*宽度最小是980px*/
+    min-width: 1260px;
+>>>>>>> 8c4b77d7a013ff5bc0bd257ba2b1bf10c21dc2d7:src/css/home.css
     background-position: center;
-    background-image: url('assets/home_img_banner.png');
+    /*background-image: url('../assets/home_img_banner.png');*/
 }
 .home_smllogo_group{
     width:1200px;
@@ -35,33 +40,34 @@
     box-shadow: 0 2px 32px 0 rgba(0,0,0,0.15);
 }
 #home_smllogo3{
-    background-image: url('./assets/home_logo3.png');
+    background-image: url('../assets/home_logo3.png');
     width:259px;
     height:63px;
     position: absolute;
     margin: 23px 837px 19px 103px;
 }
 #home_smllogo2{
-    background-image: url('./assets/home_logo2.png');
+    background-image: url('../assets/home_logo2.png');
     width:227px;
     height:59px;
     position: absolute;
     margin: 20px 479.5px 125px 494.5px;
 }
 #home_smllogo1{
-    background-image: url('./assets/home_logo1.png');
+    background-image: url('../assets/home_logo1.png');
     width:246px;
     height:58px;
     position: absolute;
     margin: 20px 102px 27px 852px;
 }
 #home_img1{
-    background-image: url('./assets/home_img1.png');
+    background-image: url('../assets/home_img1.png');
     width:528px;
     height:337px;
     margin: 112px 0 0 40px;
 }
 #why{
+<<<<<<< HEAD:src/home.css
     background-image: url('./assets/home_img_why.png');
     background-position: 0px 170px;
     font-family: Lato-Bold;
@@ -82,6 +88,18 @@
 #what{
     background-image: url('./assets/home_img_what.png');
     background-position: 0 30px;
+=======
+    background-image: url('../assets/home_img_why.png');
+    background-position: center left;
+}
+#who{
+    background-image: url('../assets/home_img_who.png');
+    background-position: center left;
+}
+#what{
+    background-image: url('../assets/home_img_what.png');
+    background-position: center left;
+>>>>>>> 8c4b77d7a013ff5bc0bd257ba2b1bf10c21dc2d7:src/css/home.css
     background-size: 640px 226px;
     background-color:transparent; 
     font-family: Lato-Bold;
@@ -92,9 +110,13 @@
 
 }
 .girlpic{
+<<<<<<< HEAD:src/home.css
     background-image: url('./assets/home_img_bg.png');
     height:  1111px;
     background-position: bottom center;
+=======
+    background-image: url('../assets/home_img_bg.png');
+>>>>>>> 8c4b77d7a013ff5bc0bd257ba2b1bf10c21dc2d7:src/css/home.css
 }
 #home_img1texthead{
     max-width: 640px;
@@ -141,7 +163,7 @@
     letter-spacing: 0;
 }  
 #home_img2{
-    background-image: url('./assets/home_img2.png');
+    background-image: url('../assets/home_img2.png');
     width:478px;
     height:414px;
     margin: 100px 40px 0 117px;
@@ -160,7 +182,7 @@
     background-color: transparent;
 }
 #home_img3{
-    background-image: url('./assets/home_img3.png');
+    background-image: url('../assets/home_img3.png');
     width:528px;
     height:337px;
     margin: -44px 0 40px 40px;
@@ -183,7 +205,7 @@
     margin: 10px 40px 0 0;
 }  
 #hardwarehead,#apihead,#benefitshead{
-    background-image: url('./assets/home_img_bg1.png');
+    background-image: url('../assets/home_img_bg1.png');
     width:100%;
     height:100px;
     text-align: center;
@@ -197,7 +219,7 @@
     color: #FFFFFF;
 }
 #hardpic{
-    background-image: url('./assets/home_icon1.png');
+    background-image: url('../assets/home_icon1.png');
     width:42px;
     height:37px; 
     display: inline-block;
@@ -216,7 +238,7 @@
     height: 444px;
 }
 #hardpic1{
-    background-image: url('./assets/home_img4.png');
+    background-image: url('../assets/home_img4.png');
     width:590px;
     height:376px;
     margin: 67px 40px 0 0;
@@ -240,6 +262,7 @@
     letter-spacing: 0;
 }
 #hardpic2{
+<<<<<<< HEAD:src/home.css
     background-image: url('./assets/home_img5\ 2.png');
     width: 593px;
     height: 346px;
@@ -247,6 +270,12 @@
 }
 #hardtext2{
     width: 590px;
+=======
+    background-image: url('../assets/home_img5\ 2.png');
+    width:528px;
+    height:337px;
+    margin: 89px 0 40px 40px;
+>>>>>>> 8c4b77d7a013ff5bc0bd257ba2b1bf10c21dc2d7:src/css/home.css
 }
 #hardtext2head{
     max-width: 470px;
@@ -267,7 +296,7 @@
     letter-spacing: 0;
 }
 #hardpic3{
-    background-image: url('./assets/home_img6\ 2.png');
+    background-image: url('../assets/home_img6\ 2.png');
     width:478px;
     height:414px;
     margin: 0px 0px 0px 60px;
@@ -294,7 +323,7 @@
 margin-bottom: 30px;
 }
 #hardpic4{
-    background-image: url('./assets/home_img7.png');
+    background-image: url('../assets/home_img7.png');
     width:528px;
     height:337px;
     margin: 0px 0 40px 40px;
@@ -318,7 +347,7 @@ margin-bottom: 30px;
     letter-spacing: 0;
 }
 #apipic{
-    background-image: url('./assets/home_icon2.png');
+    background-image: url('../assets/home_icon2.png');
     width:42px;
     height:37px; 
     display: inline-block;
@@ -336,7 +365,7 @@ ul li{
 
 } */
 #apipic1{
-    background-image: url('./assets/home_img5.png');
+    background-image: url('../assets/home_img5.png');
     width: 615px;
     height: 410.8px;
     margin: 60px 0 0 40px;
@@ -379,7 +408,7 @@ ul li{
     letter-spacing: 0;
 }
 #apipic2area{
-    background-image: url('./assets/home_img6.png');
+    background-image: url('../assets/home_img6.png');
     width:100%;
     height:538px;
 }
@@ -402,7 +431,11 @@ ul li{
     margin: 18px 0px 0 1135px;
 }
 #apipic3area{
+<<<<<<< HEAD:src/home.css
     background-image: url('./assets/apipic3_need.png');
+=======
+    background-image: url('../assets/fuliye-supplement/api-03.png');
+>>>>>>> 8c4b77d7a013ff5bc0bd257ba2b1bf10c21dc2d7:src/css/home.css
     width: 1156px;
     height: 644px;
     margin: 100px auto 100px auto;
@@ -435,22 +468,22 @@ ul li{
     letter-spacing: 0.14px;
 }
 #apiicon1{
-    background-image: url('./assets/home_icon5.png');
+    background-image: url('../assets/home_icon5.png');
 }
 #apiicon2{
-    background-image: url('./assets/home_icon6.png');
+    background-image: url('../assets/home_icon6.png');
 }
 #apiicon3{
-    background-image: url('./assets/home_icon7.png');
+    background-image: url('../assets/home_icon7.png');
 }
 #apiicon4{
-    background-image: url('./assets/home_icon8.png');
+    background-image: url('../assets/home_icon8.png');
 }
 #apiicon5{
-    background-image: url('./assets/home_icon9.png');
+    background-image: url('../assets/home_icon9.png');
 }
 #apiicon6{
-    background-image: url('./assets/home_icon10.png');
+    background-image: url('../assets/home_icon10.png');
 }
 #apiicon6,#apiicon5,#apiicon4,#apiicon3,#apiicon2,#apiicon1{
     width:89px;
@@ -461,12 +494,12 @@ ul li{
     background-color: #F7F8F9;
 }
 #benback{
-    background-image: url('./assets/home_img_bg2.png');
+    background-image: url('../assets/home_img_bg2.png');
     width: 100%;
     height: 375px;
 }
 #benpic{
-    background-image: url('./assets/home_icon3.png');
+    background-image: url('../assets/home_icon3.png');
     width:46px;
     height:46px;
     display: inline-block;
@@ -486,17 +519,17 @@ ul li{
     margin: 0;
 }
 #bi1icon{
-    background-image: url('./assets/home_icon11.png'); 
+    background-image: url('../assets/home_icon11.png'); 
     width:45px;
     height:50px;
 }
 #bi2icon{
-    background-image: url('./assets/home_icon12.png'); 
+    background-image: url('../assets/home_icon12.png'); 
     width:54px;
     height:53px;
 }
 #bi3icon{
-    background-image: url('./assets/home_icon13.png');
+    background-image: url('../assets/home_icon13.png');
     width:54px;
     height:53px;
 }
