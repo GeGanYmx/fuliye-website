@@ -1,7 +1,7 @@
 .support_pic {
     width: 100%;
     min-width: 1260px;
-    background-image: url(assets/content_img_banner2.png);
+    background-image: url(../assets/content_img_banner2.png);
     background-position: center;
     height: 550px;
 }
@@ -86,14 +86,6 @@ a{
     text-decoration: none;
     color: #0086D1;
 }
-
-/*修改输入框默认属性：适应所有浏览器*/
-/*input::-webkit-input-placeholder,input::-moz-placeholder,input:-moz-placeholder,input:-ms-input-placeholder{
-   font-family: PingFangSC-Regular;
-   font-size: 16px;
-   color: red;
-   letter-spacing: 0;
-}*/
 
 .article-question{
     display:block;font-family: PingFangSC-Regular;
