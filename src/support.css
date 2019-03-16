@@ -1,6 +1,6 @@
 .support_pic {
     width: 100%;
-    min-width: 980px;
+    min-width: 1260px;
     background-image: url(assets/content_img_banner2.png);
     background-position: center;
     height: 550px;
@@ -28,7 +28,8 @@
 .article-container2{
     width:1000px;
     height:782px;
-    margin:80px auto 80px auto;
+    /*暂未确定*/
+    margin:80px auto 30px auto;
     /* background-color:red */
     background-color:#FFF;
 }
@@ -133,4 +134,8 @@ a{
     margin-bottom: 4px;
     margin-left: 190px;
     cursor: pointer;
+}
+
+.article_display,.article_container,.article-container1,.article-container2{
+    height: auto;
 }

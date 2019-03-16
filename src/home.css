@@ -16,7 +16,7 @@
     height: 840px;
     width: 100%;
     /*宽度最小是980px*/
-    min-width: 980px;
+    min-width: 1260px;
     background-position: center;
     background-image: url('assets/home_img_banner.png');
 }

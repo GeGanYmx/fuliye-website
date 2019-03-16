@@ -21,11 +21,10 @@ input{
 /*大图片*/
 .article_pic{
     width:100%;
-    /*min-width: 980px;*/
     height: 630px;
     background-position: center;
     background-image: url(assets/content_img_banner2.png);
-    min-width: 1280px;
+    min-width: 1260px;
 }
 .contact-bg{
     background-image: url(assets/content_bg.png);
