@@ -4,6 +4,9 @@
     margin: 0 auto;
     background-color:transparent; 
 }
+.carousel-indicators {
+    bottom: 120px;
+}
 .highlight{
     color: #FFF;
 }
@@ -20,7 +23,7 @@
 }
 
 #home_img_banner{
-    height: 840px;
+    height: 760px;
     width: 100%;
     /*宽度最小是1280px*/
     background-position: center;
