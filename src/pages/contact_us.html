@@ -7,11 +7,11 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>联系我们</title>
   <!--全局样式文件-->
-  <link type="text/css" rel="styleSheet" href="global.css" />
-  <script src="global.js"></script>
+  <link type="text/css" rel="styleSheet" href="../css/global.css" />
+    <script src="../js/global.js"></script>
   <!--私有文件-->
-  <link type="text/css" rel="styleSheet" href="contact_us.css" />
-  <script src="contact_us.js"></script>
+  <link type="text/css" rel="styleSheet" href="../css/contact_us.css" />
+    <script src="../js/contact_us.js"></script>
 </head>
 
 <body>
@@ -21,13 +21,14 @@
       <div class="navi_bar">
         <div class="home_logo"></div>
         <nav>
-          <a class="navi_nav_link" href="home.html">Solutions</a>
-          <a class="navi_nav_link" href="support.html" style="width:195px">Resource Center</a>
-          <a class="navi_nav_link" href="contact_us.html"><span class="highlight">Contact Us</span></a>
+          <a class="navi_nav_link" href="../pages/home.html">Solutions</a>
+          <a class="navi_nav_link" href="../pages/support.html" style="width:195px">Resource Center</a>
+          <a class="navi_nav_link" href="../pages/contact_us.html"><span class="highlight">Contact Us</span></a>
         </nav>
         <div class="nav_btn_group">
-          <button class="navi_btn" onclick="Global.login()"><span>LoginIn</span></button>
-          <button class="navi_btn" onclick="Global.register()"><span>SignUp</span></button>
+            <button class="navi_btn" onclick="Global.login()"><span>Log In</span></button>
+            <button class="navi_btn" onclick="Global.register()"><span>Sign Up</span></button>
+            
         </div>
       </div>
     </div>
@@ -45,36 +46,32 @@
           <div class="title"><p>Contact Fourier Intelligence</p></div>
         <div class="contact-info">
           <div class="text">
-            <div>
-              <img src="assets/content_gq1.png"  style="margin-top:20px;margin-left: 50px"/>
-              <span class="span1" style="margin-left:15px">Cooperate headquarters</span>
+            <div >
+                 <span class="spitem"><span class="icon1" ></span>
+                Cooperate headquarters</span>
             </div>
             <p> Shanghai Fourier Intelligence Co.,Ltd. Floor 1, Building No.11, 68 Huatuo Road Pudong New Area,
               Shanghai, China, 201203</p>
             <div>
-              <img src="assets/content_icon6.png" style="margin-top:20px;margin-left: 50px"  />
-              <span class="span2" style="margin-left:33px">+86（0）21 5030 8716</span>
+                <span class="spitem"><span class="icon2" ></span>
+                +86（0）21 5030 8716</span>
             </div>
             <br>
             <div>
-              <img src="assets/content_icon6.png"  style="margin-top:20px;margin-left: 50px" />
-              <span class="span3" style="margin-left:33px">www.fftai.com</span>
+                <span class="spitem"><span class="icon3" ></span>www.fftai.com</span>
             </div>
             <div class="content-border"></div>
             <div>
-              <img src="assets/content_gq2.png"  style="margin-top:20px;margin-left: 50px" />
-              <span class="span1" style="margin-left:15px">International Hub Office</span>
+                <span class="spitem"><span class="icon4" ></span>International Hub Office</span>
             </div>
             <p> Fourier Intelligence International Ptd. Ltd. Marina One West Tower, 9 Straits View #05-07 Singapore,
               018973</p>
             <div>
-              <img src="assets/content_icon6.png"  style="margin-top:20px;margin-left: 50px" />
-              <span class="span2" style="margin-left:33px">+65 9338 2328</span>
+                <span class="spitem"><span class="icon2" ></span>+65 9338 2328</span>
             </div>
             <div class="content-border"></div>
             <div>
-              <img src="assets/content_gq3.png"  style="margin-top:20px;margin-left: 50px" />
-              <span class="span1" style="margin-left:15px">Fourier-Melboume Joint Lab</span>
+                <span class="spitem"><span class="icon5" ></span>Fourier-Melboume Joint Lab</span>
             </div>
             <p> Fourier-University of Melbourne Joint Lab Department of Mechanical Engineering, University of
               Melbourne, Parkville, VIC 2010</p>
@@ -86,26 +83,26 @@
       <div class="article_container">
         <div class="table">
           <div class="table-dis">
-            <img src="assets/content_icon7.png" />
+            <img src="../assets/content_icon7.png" />
             <span>Fill out the form below. We will answer you within 48 business hours.</span>
           </div>
 
           <div class="demo">
             <div class="demo2">
                 <div class="inner">
-                    <input type="text" name="FIRST NAME" value="" class="input" placeholder="* FIRST NAME">
-                    <input type="text" name="LAST NAME" value="" class="input"  placeholder="* LAST NAME">
-                    <input type="text" name="INSTITUTION" value="" class="input" placeholder="* INSTITUTION">
-                    <input type="text" name="PHONE" value="" class="input" placeholder="* PHONE">
+                    <input type="text" name="FIRST NAME" value="" class="input" placeholder="    * FIRST NAME" style="border:none;"> 
+                    <input type="text" name="LAST NAME" value="" class="input"  placeholder="    * LAST NAME" style="border:none;">
+                    <input type="text" name="INSTITUTION" value="" class="input" placeholder="    * INSTITUTION" style="border:none;">
+                    <input type="text" name="PHONE" value="" class="input" placeholder="    * PHONE" style="border:none;">
                   </div>
                   <div class="inner2">
-                    <input type="text" name="OCCUPATION" value="" class="input" placeholder="* OCCUPATION">
-                    <input type="text" name="EMAIL" value="" class="input" placeholder="* EMAIL">
-                    <input type="text" name="COUNTRY" value="" class="input" placeholder="* COUNTRY">
-                    <input type="text" name="SUBJECT" value="" class="input" placeholder="* SUBJECT">
+                    <input type="text" name="OCCUPATION" value="" class="input" placeholder="    * OCCUPATION" style="border:none;">
+                    <input type="text" name="EMAIL" value="" class="input" placeholder="    * EMAIL" style="border:none;">
+                    <input type="text" name="COUNTRY" value="" class="input" placeholder="    * COUNTRY" style="border:none;">
+                    <input type="text" name="SUBJECT" value="" class="input" placeholder="    * SUBJECT" style="border:none;">
                   </div>
             </div>  
-            <div class="demo3"> <input type="text" name="MESSAGE" value="" class="input3" placeholder="* MESSAGE (maximally 300 words)"> </div>
+            <div class="demo3"> <input type="text" name="MESSAGE" value="" class="input3" placeholder="    * MESSAGE (maximally 300 words)" style="border:none;"> </div>
           </div>
         </div>
       </div>
@@ -114,8 +111,13 @@
       <div class="request">
           <span class="tablespan">* Required Field</span>
         </div>
+<<<<<<< HEAD:src/contact_us.html
       <div class="article-buttom">
           <input type="checkbox" checked />
+=======
+      <div class="article-buttom" style="text-align:left">
+          <input type="checkbox" checked class="checkbox" />
+>>>>>>> 26d04bc1bca6f4d680716ec5ac8a131fd5da9042:src/pages/contact_us.html
           <span>Yes, I would Like to receive newsletters from Fourier Intelligence</span>
         </div>
         <div><input type="button" class="btn-content" value="SUBMIT" />

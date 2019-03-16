@@ -19,7 +19,7 @@ body{
 .home_logo {
     height: 75px;
     width: 202px;
-    background: url(assets/home_logo4.png);
+    background: url(../assets/home_logo4.png);
     float: left;
     margin-left: 8px;
     margin-right: 97px;
@@ -74,15 +74,6 @@ footer {
     background-color:#303136;
 }
 
-/*.navi_btn span {
-    opacity: 1.0;
-    font-family: SourceSansPro-Regular;
-    font-size: 18px;
-    color: #FFF;
-    text-align: left;
-    line-height: 32px;
-}*/
-
 /*内容区渲染底层*/
 .article_display {
     width: 100%;
@@ -96,7 +87,6 @@ footer {
     width: 100%;
     /*高度自定*/
     height: auto;
-    /*background-image: url(assets/content_img_banner2.png);*/
     background-image: none;
 }
 
@@ -104,7 +94,7 @@ footer {
     position: absolute;
     width: 253px;
     height: 94px;
-    background-image: url(assets/home_logo4.png);
+    background-image: url(../assets/home_logo4.png);
     background-repeat: no-repeat;
     top: 46px;
     left: 7px;

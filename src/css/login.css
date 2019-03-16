@@ -5,11 +5,11 @@
     height: 630px;
     /*margin: 0 auto 0 auto;*/
     overflow-x: hidden;
-    background-image: url(assets/content_img_banner2.png);
+    background-image: url(../assets/content_img_banner2.png);
 }
 
 .contact-bg {
-    background-image: url(assets/content_bg.png)
+    background-image: url(../assets/content_bg.png)
 }
 
 .title {
@@ -170,7 +170,7 @@
 .btn-content {
     width: 480px;
     height: 62px;
-    background-image: url(assets/content_button3.png);
+    background-image: url(../assets/content_button3.png);
     margin-top: 40px;
     margin-left: 400px;
 
@@ -215,7 +215,7 @@
 .article_pic {
     width: 100%;
     height: 630px;
-    background-image: url(assets/content_img_banner2.png);
+    background-image: url(../assets/content_img_banner2.png);
 }
 
 /*覆盖样式*/
