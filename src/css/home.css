@@ -23,7 +23,9 @@
 }
 
 #home_img_banner{
-    height: 760px;
+    /* height: 760px; */
+    /* 高度应该是760px，为了适应轮播暂时改成591.06 */
+    height: 591.06px;
     width: 100%;
     /*宽度最小是1280px*/
     background-position: center;
