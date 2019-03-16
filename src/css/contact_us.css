@@ -42,7 +42,7 @@ input{
 .title{
     position: relative;
     text-align: left;
-    padding: 37px 0px 0 213px;
+    padding: 37px 0px 0 140px;
 }
 
 .title p{
@@ -74,7 +74,7 @@ text-align: left;
 }
 
 .text span1{
-    display:inline-block;
+    /* display:inline-block; */
     margin-left: 60px;
     height: 30px;
     width: 300px;
@@ -122,7 +122,7 @@ line-height: 26px;
 	height: 1px;
 	width: 848px;
 	border: 1px solid #E1E1E1;
-	margin-top: 54px;
+	margin-top: 40px;
 	margin-bottom: 40px;
 }
 /*表格*/
@@ -138,10 +138,12 @@ line-height: 26px;
     text-align: left;
 }
 .tablespan{
+    
     font-family: PingFangSC-Regular;
     font-size: 22px;
     color: #0A1017;
     letter-spacing: 0;
+    
 }
 
 
@@ -159,6 +161,13 @@ line-height: 26px;
   justify-content:center;
 }
 
+.demo2 input{
+    font-family: PingFangSC-Regular;
+font-size: 16px;
+color: #999999;
+letter-spacing: 0;
+text-align: left;
+}
 .biginput{
     background-color: #FFF;
     height: auto;
@@ -167,8 +176,16 @@ line-height: 26px;
     display: flex;
 }
 .demo3{
-    margin-top: 30px;
+    margin-top: 0px;
+    text-align: left;
   }
+.demo3 input{
+    font-family: PingFangSC-Regular;
+font-size: 16px;
+color: #999999;
+letter-spacing: 0;
+text-align: left;
+}
   .request{
     margin-top: 13px;
     text-align: right;
@@ -188,6 +205,7 @@ line-height: 26px;
     height: 62px;
     background-image: url(../assets/content_button3.png);
     margin-top: 40px;
+    margin-left: 40px;
 }
 .btn-content input{
     color: #FFFFFF;
@@ -238,4 +256,98 @@ footer{
     width: 1280px;
     margin:0 auto 0 auto;
     display: flex;
+}
+
+
+
+
+/*修改*/
+.icon1
+{
+width:31px;
+height:30px;
+display:inline-block;
+background:url("../assets/content_gq1.png");
+vertical-align:bottom;
+margin-top:40px;
+margin-left: 50px;
+margin-right: 20px;
+}
+.icon2
+{
+width:12px;
+height:12px;
+display:inline-block;
+background:url("../assets/content_icon6.png");
+vertical-align:0%;
+margin-top:40px;
+margin-left: 65px;
+margin-right: 20px;
+}
+.icon3
+{
+width:12px;
+height:12px;
+display:inline-block;
+background:url("../assets/content_icon6.png");
+vertical-align: 0%;
+margin-top:10px;
+margin-left: 65px;
+margin-right: 20px;
+}
+.icon4
+{
+    width:31px;
+    height:30px;
+    background:url("../assets/content_gq2.png");
+    display:inline-block;
+    vertical-align:bottom;
+    margin-top:10px;
+    margin-left: 50px;
+    margin-right: 20px;
+}
+.icon5
+{
+width:31px;
+height:30px;
+background:url("../assets/content_gq3.png");
+display:inline-block;
+vertical-align:bottom;
+margin-top:20px;
+margin-left: 50px;
+margin-right: 20px;
+}
+.request{
+    text-align: right;
+}
+.tablespan{
+    font-family: PingFangSC-Regular;
+font-size: 16px;
+color: #999999;
+letter-spacing: 0;
+text-align: left;
+}
+.checkbox{
+    width: 15px;
+    height: 15px;
+}
+.article-buttom span{
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #999999;
+    letter-spacing: 0;
+    text-align: left;
+}
+.checkbox{
+min-height: 0px;
+    min-width: 0px;
+    margin-left: 40px;
+}
+
+.table-dis span{
+    font-family: PingFangSC-Regular;
+font-size: 22px;
+color: #0A1017;
+letter-spacing: 0;
+text-align: left;
 }
