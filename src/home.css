@@ -361,7 +361,7 @@ ul li{
     background-repeat:no-repeat;  
 }
 #lirest{
-    ax-width: 520px;
+    max-width: 520px;
     height:auto;
     font-family: PingFangSC-Regular;
     color: #323643;
