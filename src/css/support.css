@@ -88,7 +88,19 @@ a{
 }
 
 .article-question{
-    display:block;font-family: PingFangSC-Regular;
+    background: rgba(255,255,255,0.20);
+    border: 1px solid #EAEAEA;
+    border-radius: 6px;
+    /*height:95px;
+    width: 100px;*/
+}
+.article-question-active{
+    background: #FFFFFF;
+    box-shadow: 0 4px 29px 0 rgba(0,0,0,0.10);
+    border-radius: 6px;
+}
+.article-question>span{
+    font-family: PingFangSC-Regular;
     font-size: 22px;
     /*color: #0086D1;*/
     color:#606470;
@@ -130,4 +142,10 @@ a{
 
 .article_display,.article_container,.article-container1,.article-container2{
     height: auto;
+}
+
+/*选项卡插件*/
+.nav-tabs>li>a{
+    width:150px;
+    margin-left: 85px;
 }

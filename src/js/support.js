@@ -10,13 +10,15 @@ var support={
             if(answer.css('display')==='none'){
                 answer.slideDown('slow');
                 $(e).attr('src','../assets/content_icon2_elected.png');
-                $(e).parent().css('color','#0086D1');
-                $(e).parent().parent().css('background-color','#FFF');
+                $(e).parent().children('span').css('color','#0086D1');
+                /*$(e).parent().parent().css('background-color','#FFF');*/
+                /*$(e).parent().removeClass('article-question').addClass('article-question-active');*/
             }else{
                 answer.slideUp('slow');
                 $(e).attr('src','../assets/content_icon2_default.png');
-                $(e).parent().css('color','#606470');
-                $(e).parent().parent().css('background-color','rgba(255,255,255,0.20)');
+                $(e).parent().children('span').css('color','#606470');
+                /*$(e).parent().parent().css('background-color','rgba(255,255,255,0.20)');*/
+                /*$(e).parent().removeClass('article-question-active').addClass('article-question');*/
             }
         });
     }
