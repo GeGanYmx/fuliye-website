@@ -16,7 +16,7 @@ input{
     background-color: #FFF;
     height: auto;
     width: 1000px;
-    margin:0 auto 0 auto;
+    margin:-300px auto 20px auto
 }
 /*大图片*/
 .article_pic{
@@ -31,6 +31,7 @@ input{
     width:100%;
     min-width: 1280px;
     height: 1013px;
+    margin-right: 0px;
 }
 .contact-info{
     background-image: url(../assets/content_bg.png);
@@ -69,9 +70,7 @@ text-align: left;
     margin-left: 140px;
     text-align: left;
 }
-.text content-border{
-    
-}
+
 
 .text span1{
     /* display:inline-block; */
@@ -181,13 +180,15 @@ margin-left: 20px;
 .demo3{
     margin-top: 0px;
     text-align: left;
+    background: #FAFAFA;
   }
-.demo3 input{
-    font-family: PingFangSC-Regular;
+.in{
+font-family: PingFangSC-Regular;
 font-size: 16px;
-color: #999999;
+background: #FAFAFA;
 letter-spacing: 0;
-text-align: left;
+
+
 }
 
 
@@ -196,9 +197,9 @@ text-align: left;
 
 
 
-.textarea{
+/* .textarea{
                min-height: 100px;
-				border: 1px solid #a0b3d6; 
+			
 				font-size: 14px;
                 max-height: 300px;
                 
@@ -209,12 +210,13 @@ text-align: left;
 				  
 				  position:absolute;z-index:9
 
-}
-.note{
-     position:absolute;
-     line-height:20px;
+}*/
+
+.textarea{
+position:absolute;
+line-height:20px;
  
-     font-family: PingFangSC-Regular;
+ font-family: PingFangSC-Regular;
 font-size: 16px;
 color: #999999;
 letter-spacing: 0;
@@ -396,3 +398,8 @@ color: #0A1017;
 letter-spacing: 0;
 text-align: left;
 }
+
+
+
+input{color: #999999;;}
+input::-webkit-input-placeholder{color: #999999;}
