@@ -184,7 +184,8 @@ a{
 
 /*选项卡插件*/
 .nav-tabs>li>a{
-    width:150px;
+    width:87px;
+    padding:10px 0;
     margin-left: 85px;
 }
 
