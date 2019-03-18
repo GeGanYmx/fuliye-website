@@ -36,9 +36,7 @@
   <!--主体-->
   <article>
     <!--目前需手动设置height-->
-    <div class="article_display">
-
-      
+    <div class="article_display">   
       <!--插入图片区域-->
       <div class="article_pic"></div>
       
@@ -62,8 +60,7 @@
             </div>
               <div class="content-border" style="border-top: 2px solid #E1E1E1;">
                 
-            </div>
-          
+            </div>          
             <div>
                 <span class="spitem"><span class="icon4" ></span>International Hub Office</span>
             </div>
@@ -81,8 +78,6 @@
           </div>
         </div>
       </div>
-
-
       <div class="article_container">
         <div class="table">
           <div class="table-dis">
@@ -106,21 +101,18 @@
                   </div>
             </div> 
             
-            <div  class="demo3" style="border:none;background: #FAFAFA;min-height:40px; width: 1000px; padding-left: 20px;margin-left: 160px; height: 325px;">
+            <div  class="demo3" style="border:none;background: #FAFAFA;min-height:40px; width: 1000px;margin-left: 150px; height: 325px;">
               
-              <!-- <input  class="in" type="text" placeholder="* MESSAGE (maximally 300 words)" style="border:none;padding-left: 15px;">
-               -->
-               <textarea rows="" class="in" style="width:100% ; height:100%; border:none;padding-left: 10px;padding-top: 17px;" cols="" id="teamIntroduction" onfocus=this.blur()>* MESSAGE (maximally 300 words)</textarea>
+         
+              
+               <textarea cols="50" rows="5"  style="width:100% ; 
+               height:100%; border:none;
+               padding-top: 17px;padding-left: 50px;"      class="in" id="textarea" onKeyDown="textdown(event)"
+    onKeyUp="textup()" onfocus="if(value=='* MESSAGE (maximally 300 words'){value=''}"
+    onblur="if (value ==''){value='* MESSAGE (maximally 300 words'}">* MESSAGE (maximally 300 words</textarea>
 
               </div> 
-            </div> 
-                       
-
-
-
-               
-
-                        
+            </div>     
                 </div>
              </div>
           </div>
@@ -138,8 +130,6 @@
         <div><input type="button" class="btn-content" value="SUBMIT" />
         </div>
       </div>
-
-
     </div>
   </article>
   <!--页脚-->
