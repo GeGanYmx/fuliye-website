@@ -1,0 +1,546 @@
+*{
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+    background-color:transparent; 
+}
+.carousel-indicators {
+    bottom: 120px;
+}
+.highlight{
+    color: #FFF;
+}
+#login{
+    font-family: SourceSansPro-Regular;
+    font-size: 18px;
+    color: #FFFFFF;
+    text-align: left;
+    line-height: 32px;
+}
+/* 宽度100%图片在分辨率小于1280时未填满解决 */
+#home_img_banner,#hardwarehead,#apihead,#apipic2area,#benefitshead,#benback{
+    min-width:1280px;
+}
+
+#home_img_banner{
+    /* height: 760px; */
+    /* 高度应该是760px，为了适应轮播暂时改成591.06 */
+    height: 591.06px;
+    width: 100%;
+    /*宽度最小是1280px*/
+    background-position: center;
+    /*background-image: url('../assets/home_img_banner.png');*/
+}
+.home_smllogo_group{
+    width:1200px;
+    height:105px;
+    background-color:#FFF;
+    margin:-50px 40px 0 40px;
+    position: relative;
+    box-shadow: 0 2px 32px 0 rgba(0,0,0,0.15);
+}
+#home_smllogo3{
+    background-image: url('../assets/home_logo3.png');
+    width:259px;
+    height:63px;
+    position: absolute;
+    margin: 23px 837px 19px 103px;
+}
+#home_smllogo2{
+    background-image: url('../assets/home_logo2.png');
+    width:227px;
+    height:59px;
+    position: absolute;
+    margin: 20px 479.5px 125px 494.5px;
+}
+#home_smllogo1{
+    background-image: url('../assets/home_logo1.png');
+    width:246px;
+    height:58px;
+    position: absolute;
+    margin: 20px 102px 27px 852px;
+}
+#home_img1{
+    background-image: url('../assets/home_img1.png');
+    width:528px;
+    height:337px;
+    margin: 112px 0 0 40px;
+}
+#why{
+    background-image: url('../assets/home_img_why.png');
+    background-position: 0px 170px;
+    font-family: Lato-Bold;
+    font-size: 300px;
+    color: #0065A3;
+    letter-spacing: 1.07px;
+    text-align: left;
+}
+#who{
+    background-image: url('../assets/home_img_who.png');
+    background-position:-4px 199px;
+    font-family: Lato-Bold;
+    font-size: 300px;
+    color: #0065A3;
+    letter-spacing: 1.07px;
+    text-align: left;
+}
+#what{
+    background-image: url('../assets/home_img_what.png');
+    background-position: 0 30px;
+    background-size: 640px 226px;
+    background-color:transparent; 
+    font-family: Lato-Bold;
+    font-size: 300px;
+    color: #0065A3;
+    letter-spacing: 1.07px;
+    text-align: left;
+
+}
+.girlpic{
+    background-image: url('../assets/home_img_bg.png');
+    height:  1111px;
+    background-position: bottom center;
+    min-width: 1280px;
+}
+#home_img1texthead{
+    max-width: 640px;
+    height:auto;
+    font-family: PingFangSC-Regular;
+    color: #323643;
+    font-size: 40px;
+    margin: 187px 40px 0 0;
+    letter-spacing: 0; 
+}
+#home_img1textp{
+    max-width: 640px;
+    height: auto;
+    color: #0A1017;
+    font-size: 14px;
+    margin: 10px 40px 0 0;
+    font-family: PingFangSC-Light;
+    letter-spacing: 0;
+    line-height: 20px;
+}    
+#boldexops{
+    font-family: PingFangSC-Medium;
+    font-size: 14px;
+    color: #0A1017;
+    letter-spacing: 0;
+    line-height: 20px;
+}   
+#home_img2texthead{
+    max-width: 640px;
+    height:auto;
+    font-family: PingFangSC-Regular;
+    color: #323643;
+    font-size: 40px;
+    margin: 242px 0 0 40px;
+    letter-spacing: 0;
+}
+#home_img2textp{
+    max-width: 640px;
+    height: auto;
+    color: #0A1017;
+    font-size: 14px;
+    margin: 10px 0 0 40px;
+    font-family: PingFangSC-Light;
+    letter-spacing: 0;
+}  
+#home_img2{
+    background-image: url('../assets/home_img2.png');
+    width:478px;
+    height:414px;
+    margin: 100px 40px 0 117px;
+}
+
+.widegraybg{
+    background: #F7F8F9;
+    width: 100%;
+    min-width: 1280px;
+    height: 405px;
+}
+#whatbg{
+    margin-top: 113px;
+}
+#home_img3area{
+    background-color: transparent;
+}
+#home_img3{
+    background-image: url('../assets/home_img3.png');
+    width:528px;
+    height:337px;
+    margin: -44px 0 40px 40px;
+}
+#home_img3texthead{
+    max-width: 640px;
+    height: auto;
+    font-family: PingFangSC-Regular;
+    color: #323643;
+    font-size: 40px;
+    margin: 54px 40px 0 0;
+    letter-spacing: 0;
+    }
+#home_img3textp{
+    max-width: 640px;
+    height: auto;
+    font-family: PingFangSC-Light;
+    color: #0A1017;
+    font-size: 14px;
+    margin: 10px 40px 0 0;
+}  
+#hardwarehead,#apihead,#benefitshead{
+    background-image: url('../assets/home_img_bg1.png');
+    width:100%;
+    height:100px;
+    text-align: center;
+}
+#hardinfo,#apiinfo,#beninfo{
+    margin:0 auto 0 auto;
+    padding-top: 20px;
+    font-size: 40px;
+    font-family: Helvetica;
+    font-size: 40px;
+    color: #FFFFFF;
+}
+#hardpic{
+    background-image: url('../assets/home_icon1.png');
+    width:42px;
+    height:37px; 
+    display: inline-block;
+    vertical-align: middle;
+}
+#hardtext{
+    color: #FFF;
+    display: inline-block;
+    vertical-align: middle;
+}
+#hard1bg{
+    margin-top: 0;
+    height: 444px
+}
+.hard1container{
+    height: 444px;
+}
+#hardpic1{
+    background-image: url('../assets/home_img4.png');
+    width:590px;
+    height:376px;
+    margin: 67px 40px 0 0;
+}
+#hardtext1head{
+    max-width: 640px;
+    height:auto;
+    font-family: PingFangSC-Regular;
+    color: #323643;
+    font-size: 40px;
+    margin: 172px 0 0 40px;   
+    letter-spacing: 0;
+}
+#hardtext1p{
+    max-width: 640px;
+    height: auto;
+    font-family: PingFangSC-Light;
+    color: #0A1017;
+    font-size: 14px;
+    margin: 10px 0 0 40px;
+    letter-spacing: 0;
+}
+#hardpic2{
+    background-image: url('../assets/home_img5\ 2.png');
+    width: 593px;
+    height: 346px;
+    margin: 0 0 0 47px;
+}
+#hardtext2{
+    width: 590px;
+}
+#hardtext2head{
+    max-width: 470px;
+    height:auto;
+    font-family: PingFangSC-Regular;
+    color: #323643;
+    font-size: 40px;
+    margin: 65px 0 0 40px;  
+    letter-spacing: 0;
+}
+#hardtext2p{
+    max-width: 520px;
+    height: auto;
+    font-family: PingFangSC-Light;
+    color: #0A1017;
+    font-size: 14px;
+    margin: 10px 0 0 40px;
+    letter-spacing: 0;
+}
+#hardpic3{
+    background-image: url('../assets/home_img6\ 2.png');
+    width:478px;
+    height:414px;
+    margin: 0px 0px 0px 60px;
+}
+#hardtext3head{
+    max-width: 640px;
+    height: auto;
+    font-family: PingFangSC-Regular;
+    color: #323643;
+    font-size: 40px;
+    margin: 150px 0 0 56px;
+    letter-spacing: 0;
+}
+#hardtext3p{
+    max-width: 640px;
+    height: auto;
+    color: #0A1017;
+    font-size: 14px;
+    margin: 10px 0 0 56px;
+    font-family: PingFangSC-Light;
+    letter-spacing: 0;
+}
+#hardpic4area{
+margin-bottom: 30px;
+}
+#hardpic4{
+    background-image: url('../assets/home_img7.png');
+    width:528px;
+    height:337px;
+    margin: 0px 0 40px 40px;
+}
+#hardtext4head{
+    max-width: 640px;
+    height:auto;
+    font-family: PingFangSC-Regular;
+    color: #323643;
+    font-size: 40px;
+    margin: 80px 0 0 40px; 
+    letter-spacing: 0;   
+}
+#hardtext4p{
+    max-width: 544px;
+    height: auto;
+    font-family: PingFangSC-Light;
+    color: #0A1017;
+    font-size: 14px;
+    margin: 10px 0 0 40px;
+    letter-spacing: 0;
+}
+#apipic{
+    background-image: url('../assets/home_icon2.png');
+    width:42px;
+    height:37px; 
+    display: inline-block;
+    vertical-align:middle;
+}
+#apitext{
+    display: inline-block;
+    color: #FFF;
+    vertical-align: middle;
+}
+ul li{
+    list-style-type:none;
+}
+/* ul{
+
+} */
+#apipic1{
+    background-image: url('../assets/home_img5.png');
+    width: 615px;
+    height: 410.8px;
+    margin: 60px 0 0 40px;
+}
+.textarea{
+    display: flex;
+    flex-direction: column;
+}
+#a11head,#a12head,#a13head,#a14head{
+    max-width: 520px;
+    font-family: PingFangSC-Regular;
+    color: #323643;
+    font-size: 40px;
+    margin: 50px 0 22px -17px;
+    letter-spacing: 0;
+    list-style-position:outside;
+    height:28px;  
+    line-height:28px;  
+    text-indent:15px;  
+    background-image:url('../assets/home_icon4.png');
+    background-position:left 45%;  
+    background-repeat:no-repeat;  
+}
+#lirest{
+    max-width: 520px;
+    height:auto;
+    font-family: PingFangSC-Regular;
+    color: #323643;
+    font-size: 40px;
+    margin: -11px 0 22px 0px;
+    letter-spacing: 0;
+}
+#a11text,#a12text,#a13text,#a14text{
+    max-width: 500px;
+    height: auto;
+    font-family: PingFangSC-Regular;
+    color: #0A1017;
+    font-size: 14px;
+    margin: 10px 40px 0 0;
+    letter-spacing: 0;
+}
+#apipic2area{
+    background-image: url('../assets/home_img6.png');
+    width:100%;
+    height:538px;
+}
+#apitext2{
+    color: #FFF;
+    max-width: 375px;
+    height:auto;
+    font-size: 40px;
+    padding: 130px 0 0 1px;
+    margin: 0 0px 0 90px;
+    font-family: PingFang-SC-Bold;
+    letter-spacing: 0.14px;
+    text-align: left;
+}
+#apitext02{
+    max-width:56px;
+    color: #FFF;
+    height:auto;
+    position: relative;
+    margin: 18px 0px 0 1135px;
+}
+#apipic3area{
+    background-image: url('../assets/apipic3_need.png');
+    width: 1156px;
+    height: 644px;
+    margin: 100px auto 100px auto;
+}
+#apparea{
+    background: #F7F8F9;  
+    text-align: center; 
+    min-width: 1280px;
+}
+.appcombine{
+    display: inline-block;
+    margin: 15px 65px 95px 47px;
+    font-family: PingFangSC-Medium;
+    font-size: 18px;
+    color: #0290D5;
+    letter-spacing: 0;
+    text-align: center;
+}
+.apiicontext{
+    max-width: 118px;
+}
+#apptext{
+    text-align: left;
+    color: #0A1017;
+    max-width: 1000px;
+    height:auto;
+    font-size: 40px;
+    padding: 60px 0 60px 0;
+    margin-left: 100px;
+    font-family: PingFangSC-Regular;
+    letter-spacing: 0.14px;
+}
+#apiicon1{
+    background-image: url('../assets/home_icon5.png');
+}
+#apiicon2{
+    background-image: url('../assets/home_icon6.png');
+}
+#apiicon3{
+    background-image: url('../assets/home_icon7.png');
+}
+#apiicon4{
+    background-image: url('../assets/home_icon8.png');
+}
+#apiicon5{
+    background-image: url('../assets/home_icon9.png');
+}
+#apiicon6{
+    background-image: url('../assets/home_icon10.png');
+}
+#apiicon6,#apiicon5,#apiicon4,#apiicon3,#apiicon2,#apiicon1{
+    width:89px;
+    height:100px;
+}
+.blue{
+    color:#0290D5;
+    background-color: #F7F8F9;
+}
+#benback{
+    background-image: url('../assets/home_img_bg2.png');
+    width: 100%;
+    height: 375px;
+}
+#benpic{
+    background-image: url('../assets/home_icon3.png');
+    width:46px;
+    height:46px;
+    display: inline-block;
+    vertical-align: middle;
+}
+#bentext{
+    color:#FFF;
+    display: inline-block;
+    vertical-align: middle;
+}
+#beneicon1,#beneicon2,#beneicon3{
+    display: inline-block;
+    vertical-align: top;
+    margin: 106px 90px 0 90px;
+}
+#bi1icon,#bi2icon,#bi3icon{
+    margin: 0;
+}
+#bi1icon{
+    background-image: url('../assets/home_icon11.png'); 
+    width:45px;
+    height:50px;
+}
+#bi2icon{
+    background-image: url('../assets/home_icon12.png'); 
+    width:54px;
+    height:53px;
+}
+#bi3icon{
+    background-image: url('../assets/home_icon13.png');
+    width:54px;
+    height:53px;
+}
+.benefitstext{
+    color: #0A1017;
+    max-width: 300px;
+    height:auto;
+    font-size: 14px;
+    margin: 40px 0 0 0;
+    font-family: PingFangSC-Light;
+    letter-spacing: 0;
+}
+
+
+
+/* 覆盖全局样式 */
+.article_display{
+    /*高度根据具体情况暂时修改*/
+    height: auto;
+}
+.article_container{
+    background-color:transparent; 
+    width:1280px;
+    height:auto;
+    margin:0 auto 0 auto;
+    display: flex;
+}
+.article_container_part{
+    /* background-color:pink; */
+    width:640px;
+    /* height:100%; */
+    margin:0 auto 0 auto;
+}
+.navi_bar,.article_container,.footer_container{
+width: 1280px;
+min-width: 1280px;
+}
+.navi_btn{
+border-color: rgb(63,64,69)
+}

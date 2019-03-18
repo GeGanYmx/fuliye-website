@@ -1,0 +1,20 @@
+{
+  "name": "fuliye-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node nanogen/lib/cli.js start -p 5000",
+    "build": "node nanogen/lib/cli.js build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://git.adinnet.cn/LeenguiTeam/fuliye-website.git"
+  },
+  "author": "Gui Leen <guileen>",
+  "license": "ISC",
+  "devDependencies": {
+    "nanogen": "file:nanogen"
+  }
+}

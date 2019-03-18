@@ -59,20 +59,20 @@
     margin-left: 27px;
     margin-right:355px;
 }
-/*.article-span{
+.article-span{
     display:block;
     font-family: PingFangSC-Regular;
     font-size: 22px;
     color: #0086D1;
     letter-spacing: 0;
     text-align: left;
-}*/
+}
 #img3{
     margin-left: 34px;
 }
 
 .icon-span{
-    display: inline-block;
+    display: block;
     align-content: center;
     margin-left: 35px;
     font-family: PingFangSC-Regular;
@@ -88,10 +88,11 @@ a{
 }
 
 .article-question{
-    /*background: rgba(255,255,255,0.20);*/
-    /*border: 1px solid #EAEAEA;*/
+    background: rgba(255,255,255,0.20);
+    border: 1px solid #EAEAEA;
     border-radius: 6px;
-    padding: 28px 20px 27px 40px;
+    /*height:95px;
+    width: 100px;*/
 }
 .article-question-active{
     background: #FFFFFF;
@@ -102,50 +103,25 @@ a{
     font-family: PingFangSC-Regular;
     font-size: 22px;
     /*color: #0086D1;*/
-    display: inline-block;
     color:#606470;
     letter-spacing: 0;
     text-align: left;
     height: 30px;
-    width:728px;
-
 }
-
 .article-answer{
-    /*隐藏*/
     display:none;
+    font-family: PingFangSC-Regular;
     height: 55px;
     background-color: #FFF;
-    color: #606470;
-    margin-bottom: 39px;
-}
-.article-answer-A{
-    display: inline-block;
-    font-family: Helvetica;
-    font-size: 22px;
-    color: #606470;
-    letter-spacing: 0;
-    text-align: left;
-    margin-left: 40px;
-}
-.article-answer-smaltext{
-    display: inline-block;
-    font-family: PingFangSC-Regular;
     font-size: 14px;
     color: #606470;
     letter-spacing: 0;
     text-align: left;
     line-height: 26px;
-    width:840px;
-    margin-left: 10px;
+    border-top-width: 2px;
+    border-top-style: solid;
+    border-top-color: gray;
 }
-
-/*固定字母A的位置*/
-.answer-A-parent{
-    float: left;
-    margin-top: -5px
-}
-
 .question-answer{
     width:1000px;
     /*height:30px;*/
@@ -157,24 +133,10 @@ a{
     border-radius: 6px;
 
 }
-/*回答框弹出*/
-.question-answer-active{
-    width:1000px;
-    /*height:30px;*/
-    height: auto;
-    background-color:transparent;
-    margin-bottom: 30px;
-    background-color:#FFF;
-    /*opacity: 0.1;*/
-    /*border: 1px solid #EAEAEA;*/
-    border-radius: 6px;
-    box-shadow: 0 4px 29px 0 rgba(0,0,0,0.10); 
-    overflow: hidden;
-}
 /*向下箭头*/
 .down-arrow{
     margin-bottom: 4px;
-    margin-left: 150px;
+    margin-left: 190px;
     cursor: pointer;
 }
 
@@ -186,9 +148,4 @@ a{
 .nav-tabs>li>a{
     width:150px;
     margin-left: 85px;
-}
-
-/*覆盖样式bootstrap选项卡被激活时的状态*/
-.nav-tabs>li.active>a:hover{
-    border-bottom-color: #606470;
 }
