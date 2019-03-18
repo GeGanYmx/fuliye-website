@@ -47,6 +47,8 @@ input{
 }
 
 .title p{
+    margin-top: 10px;
+    margin-left: -5px;
 font-family: PingFangSC-Regular;
 font-size: 40px;
 color: #0A1017;
@@ -88,6 +90,7 @@ text-align: left;
 }
 .text p{
     margin-left: 103px;
+    margin-top: 14px;
     height: 66px;
     width: 858px;
     font-family: PingFangSC-Regular;
@@ -133,7 +136,7 @@ line-height: 26px;
 .table-dis{
     padding-top: 80px;
     margin-bottom: 50px;
-    margin-left: 140px;
+    margin-left: 160px;
     text-align: left;
 }
 .tablespan{
@@ -253,11 +256,20 @@ text-align: left;
     background-image: url(../assets/content_button3.png);
     margin-top: 40px;
     margin-left: 40px;
+    margin-bottom: 70px;
+    border: none;
 }
 .btn-content input{
     color: #FFFFFF;
 text-align: center;
 }
+
+
+
+
+
+
+
   .inner{
     height: 70px;
     width: 480px;
@@ -309,54 +321,55 @@ footer{
 
 
 /*修改*/
-.icon1
-{
+.contact-flag-cn  {
+    border: none;
 width:32px;
 height:31px;
 display:inline-block;
+vertical-align:-40%;
 background:url("../assets/content_gq1.png");
-vertical-align:bottom;
 margin-top:40px;
 margin-left: 50px;
-margin-right: 20px;
+margin-right: 12px;
 }
-.icon2
+
+.contact-flag-phone
 {
-width:12px;
-height:12px;
+    width:12px;
+    height:12px;
 display:inline-block;
 background:url("../assets/content_icon6.png");
-vertical-align:0%;
-margin-top:40px;
+vertical-align:5%;
+margin-top:10px;
 margin-left: 65px;
 margin-right: 20px;
 }
-.icon3
+.contact-flag-web
 {
-width:12px;
-height:12px;
+    width:12px;
+    height:12px;
 display:inline-block;
 background:url("../assets/content_icon6.png");
 vertical-align: 0%;
 margin-top:10px;
 margin-left: 65px;
-margin-right: 20px;
+margin-right: 25px;
 }
-.icon4
+.contact-flag-in
 {
-    width:31px;
-    height:30px;
+    width:34px;
+    height:33px;
     background:url("../assets/content_gq2.png");
     display:inline-block;
-    vertical-align:bottom;
+    vertical-align:-60%;
     margin-top:10px;
     margin-left: 50px;
     margin-right: 20px;
 }
-.icon5
+.contact-flag-us
 {
-width:31px;
-height:30px;
+    width:32px;
+    height:32px;
 background:url("../assets/content_gq3.png");
 display:inline-block;
 vertical-align:bottom;
@@ -404,7 +417,17 @@ html{
     overflow-x:hidden;
     }
 
-input{color: #999999;;}
-input::-webkit-input-placeholder{color: #999999;}
-textarea{color: #999999;;}
+input{color: black;}
+input::-webkit-input-placeholder{color:#999999;}
+textarea{color:#999999;}
 textarea::-webkit-input-placeholder{color: #999999;}
+
+
+input:focus
+{
+  color:black;
+}
+textarea:focus
+{
+  color:black;
+}
