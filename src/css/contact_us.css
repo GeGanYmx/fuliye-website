@@ -399,7 +399,10 @@ letter-spacing: 0;
 text-align: left;
 }
 
-
+html{     
+    width:100%;    
+    overflow-x:hidden;
+    }
 
 input{color: #999999;;}
 input::-webkit-input-placeholder{color: #999999;}
