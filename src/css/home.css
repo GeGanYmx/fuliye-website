@@ -1,11 +1,19 @@
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img{
+    width: auto;
+    max-width: 1920px;
+    max-height: 840px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
 *{
     background-repeat: no-repeat;
     background-position: center;
     margin: 0 auto;
     background-color:transparent; 
+    max-width: 1920px;
 }
 .carousel-indicators {
-    bottom: 120px;
+    bottom: 170px;
 }
 .highlight{
     color: #FFF;
@@ -21,7 +29,11 @@
 #home_img_banner,#hardwarehead,#apihead,#apipic2area,#benefitshead,#benback{
     min-width:1280px;
 }
-
+.carousel-indicators{
+    left: 50%;
+    margin-left: -618px;
+    list-style: none;
+}
 #home_img_banner{
     /* height: 760px; */
     /* 高度应该是760px，为了适应轮播暂时改成591.06 */
@@ -35,7 +47,7 @@
     width:1200px;
     height:105px;
     background-color:#FFF;
-    margin:-50px 40px 0 40px;
+    margin: 200px 40px 0 40px;
     position: relative;
     box-shadow: 0 2px 32px 0 rgba(0,0,0,0.15);
 }
