@@ -97,15 +97,15 @@ footer {
     background-image: url(../assets/home_logo4.png);
     background-repeat: no-repeat;
     top: 46px;
-    left: 7px;
+    left: 38px;
 }
 
 #footer_text1 {
     position: absolute;
     width: 593px;
     height: 72px;
-    top: 163px;
-    left: 35px;
+    top: 130px;
+    left: 34px;
     font-family: Lato-Bold;
     font-size: 24px;
     color: #FFFFFF;
@@ -118,8 +118,8 @@ footer {
     position: absolute;
     width: 487px;
     height: 20px;
-    top: 209px;
-    left: 35px;
+    top: 225px;
+    left: 34px;
     font-family: PingFangSC-Light;
     font-size: 14px;
     color: #FFFFFF;
@@ -131,8 +131,8 @@ footer {
     position: absolute;
     width: 188px;
     height: 20px;
-    top: 235px;
-    left: 35px;
+    top: 255px;
+    left: 34px;
     font-family: PingFangSC-Light;
     font-size: 14px;
     color: #FFFFFF;
@@ -144,8 +144,8 @@ footer {
     position: absolute;
     width: 157px;
     height: 48px;
-    top: 157px;
-    left: 1083px;
+    top: 120px;
+    left: 1075px;
     border-radius: 100px;
     opacity: 0.2;
     background-color: #303136;
