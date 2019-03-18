@@ -179,8 +179,9 @@ footer {
 }
 
 /*设置连接激活态*/
-a:active {
+a:hover,a:active{
     color: #FFF;
+    text-decoration: none;
 }
 /*去除按钮点击时外边框*/
 button:focus{

@@ -108,12 +108,19 @@ a{
     text-align: left;
     height: 30px;
     width:728px;
-
 }
 
 .article-answer{
     /*隐藏*/
     display:none;
+    height: 55px;
+    background-color: #FFF;
+    color: #606470;
+    margin-bottom: 39px;
+}
+.article-answer2{
+    /*隐藏*/
+    /*display:none;*/
     height: 55px;
     background-color: #FFF;
     color: #606470;
@@ -143,7 +150,7 @@ a{
 /*固定字母A的位置*/
 .answer-A-parent{
     float: left;
-    margin-top: -5px
+    margin-top: -3px;
 }
 
 .question-answer{
@@ -162,15 +169,32 @@ a{
     width:1000px;
     /*height:30px;*/
     height: auto;
-    background-color:transparent;
     margin-bottom: 30px;
     background-color:#FFF;
     /*opacity: 0.1;*/
     /*border: 1px solid #EAEAEA;*/
+   
     border-radius: 6px;
     box-shadow: 0 4px 29px 0 rgba(0,0,0,0.10); 
     overflow: hidden;
 }
+/*选项卡中的*/
+.question-answer-active2{
+    width:1000px;
+    /*height:30px;*/
+    height: auto;
+    margin-bottom: 30px;
+    background-color:#FFF;
+    border-bottom-color: #EAEAEA;
+    border-bottom-width:1px;
+    border-bottom-style: solid;
+    /*opacity: 0.1;*/
+    /*border: 1px solid #EAEAEA;*/
+    border-radius: 6px;
+    /*box-shadow: 0 4px 29px 0 rgba(0,0,0,0.10); */
+    overflow: hidden;
+}
+
 /*向下箭头*/
 .down-arrow{
     margin-bottom: 4px;
@@ -188,8 +212,29 @@ a{
     padding:10px 0;
     margin-left: 85px;
 }
-
 /*覆盖样式bootstrap选项卡被激活时的状态*/
-.nav-tabs>li.active>a:hover{
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus,.nav-tabs>li.active>a:hover{
     border-bottom-color: #606470;
+    border-bottom-width:2px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-top-width: 0px;
 }
+
+/*搜索框样式*/
+#search{
+    width:940px;height:60px;
+    float: left;
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #878787;
+    letter-spacing: 0;border: 0;padding: 0;
+    /*去掉搜索框的默认蓝色发光边框*/
+    outline:none;
+}
+/*input#search:-ms-input-placeholder,input#search::-moz-placeholder,input#search::-webkit-input-placeholder{
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #878787;
+    letter-spacing: 0;
+}*/
