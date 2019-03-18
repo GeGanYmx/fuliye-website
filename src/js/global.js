@@ -1,9 +1,9 @@
 `use strict`;
 var Global={
     register:function(){
-        window.location.href='../pages/register.html';
+        window.location.href='register.html';
     },
     login:function(){
-        window.location.href='../pages/login.html';
+        window.location.href='login.html';
     }
 }
