@@ -227,14 +227,36 @@ a{
     float: left;
     font-family: PingFangSC-Regular;
     font-size: 16px;
-    color: #878787;
+    /*color: #878787;*/
     letter-spacing: 0;border: 0;padding: 0;
     /*去掉搜索框的默认蓝色发光边框*/
     outline:none;
 }
-/*input#search:-ms-input-placeholder,input#search::-moz-placeholder,input#search::-webkit-input-placeholder{
-    font-family: PingFangSC-Regular;
-    font-size: 16px;
-    color: #878787;
-    letter-spacing: 0;
+/*
+input:focus{
+    outline:none;
+}
+*/
+
+/*input::placeholder{
+    color:red;
+    padding:10px;
 }*/
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {   
+    /* WebKit browsers */   
+    padding:8px;
+   }   
+   input:-moz-placeholder, textarea:-moz-placeholder {   
+   /* Mozilla Firefox 4 to 18 */   
+    padding:8px;
+   }   
+   input::-moz-placeholder, textarea::-moz-placeholder {   
+    /* Mozilla Firefox 19+ */   
+    padding:8px;  
+   }   
+   input:-ms-input-placeholder, textarea:-ms-input-placeholder {   
+    /* Internet Explorer 10+ */   
+    padding:8px;
+   }
+   
