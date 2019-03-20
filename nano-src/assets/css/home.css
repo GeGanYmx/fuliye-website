@@ -537,7 +537,7 @@ ul li{
     /* height:100%; */
     margin:0 auto 0 auto;
 }
-.navi_bar,.article_container,.footer_container{
+.article_container{
 width: 1280px;
 min-width: 1280px;
 }
