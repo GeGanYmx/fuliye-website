@@ -28,11 +28,11 @@
   <header>
     <div style="background-color:#303136;width:100%">
       <div class="navi_bar">
-        <div class="home_logo"></div>
+        <a href="home.html" ></a><div class="home_logo"></div>
         <nav>
-          <a class="navi_nav_link" href="home.html"><span class="highlight">Solutions</span></a>
-          <a class="navi_nav_link" href="support.html" style="width:195px">Resource Center</a>
-          <a class="navi_nav_link" href="contact_us.html">Contact Us</a>
+          <a class="navi_nav_link" href="home.html"><span class="<%=page.home %>">Solutions</span></a>
+          <a class="navi_nav_link" href="support.html" style="width:195px" class="<%=page.support %>">Resource Center</a>
+          <a class="navi_nav_link" href="contact_us.html" class="<%=page.contct %>">Contact Us</a>
         </nav>
         <div class="nav_btn_group">
           <button class="navi_btn" onclick="Global.login()"><span id="login">Log In</span></button>
@@ -56,15 +56,17 @@
         <div id="footer_text1">
           <span>Join Us and Sign up Your Developer Account</span>
         </div>
-        <div id="footer_text2">
-            <span>Copyright 2019 Shanghai Fourier Intelligence Co. Ltd. All rights reserved.</span>
-          </div>
-        <div id="footer_text3">
-              <span>Privacy Policy| Terms of Use</span>
-        </div>
-        <button id="footer_btn" onclick="Global.register()">
+        <button id="footer_btn"  class="navi_btn"  onclick="Global.register()">
           Register Now
         </button>
+      </div>
+      <div id="underfooter">
+          <div id="footer_text2">
+            <span>Copyright 2019 Shanghai Fourier Intelligence Co. Ltd. All rights reserved.</span>
+          </div>
+          <div id="footer_text3">
+            <span>Privacy Policy| Terms of Use</span>
+          </div>
       </div>
   </footer>
 </body>
