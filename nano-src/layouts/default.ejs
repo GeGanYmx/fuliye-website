@@ -26,22 +26,23 @@
 <body>
   <!--头部导航栏-->
   <header>
-      <div class="navi_bar" id="head_container">
-        <div><a href="home.html" ><div class="home_logo"></div></a></div> 
-        <nav class="nav_agroup">
-          <div><a class="navi_nav_link" href="home.html"><span class="<%=page.home %>">Solutions</span></a></div> 
-          <div><a class="navi_nav_link" href="support.html" class="<%=page.support %>">Resource Centre</a></div> 
-          <div><a class="navi_nav_link" href="contact_us.html" class="<%=page.contct %>">Contact Us</a></div> 
-        </nav>
-        <div class="nav_btn_group">
-          <button class="navi_btn" onclick="Global.login()"><span id="login">Log In</span></button>
-          <button class="navi_btn" onclick="Global.register()"><span>Sign Up</span></button>
+      <div class="navi_bar">
+        <div  id="head_container">
+          <div><a href="home.html" ><div class="home_logo"></div></a></div> 
+            <nav class="nav_agroup">
+              <div><a class="navi_nav_link" href="home.html"><span class="<%=page.home %>">Solutions</span></a></div> 
+              <div><a class="navi_nav_link" href="support.html" class="<%=page.support %>">Resource Centre</a></div> 
+              <div><a class="navi_nav_link" href="contact_us.html" class="<%=page.contct %>">Contact Us</a></div> 
+            </nav>
+            <div class="nav_btn_group">
+              <button class="navi_btn" onclick="Global.login()"><span id="login">Log In</span></button>
+              <button class="navi_btn" onclick="Global.register()"><span>Sign Up</span></button>
+            </div>
         </div>
       </div>
   </header>
   <!--主体-->
   <article>
-    <!--目前需手动设置height-->
     <div class="article_display">
         <%- body %>
     </div>   <!-- display end-->
@@ -49,22 +50,13 @@
   </article>
   <!--页脚-->
   <footer>
-      <div class="footer_container">
-        <div class="footer_logo"></div>
-        <div id="footer_text1">
-          <span>Join Us and Sign up Your Developer Account</span>
-        </div>
-        <button id="footer_btn"  class="navi_btn"  onclick="Global.register()">
-          Register Now
-        </button>
-      </div>
       <div id="underfooter">
         <div id="foot_left">
           <div class="listgroup">
             <div id="list1">
               <ul>
                 <a href="home.html"><li>Solutions</li></a> 
-                <a href="wwww.fftai.com"><li>EXOPS</li></a> 
+                <a href="http://www.fftai.com"><li>EXOPS</li></a> 
               </ul>
             </div>
             <div id="list2">
@@ -87,7 +79,7 @@
         <div id="footer_right">
           <div id="footer_pic"></div>
           <div id="footer_text3">
-              <a href="wwww.fftai.com"><div id="webbtn"></div></a>
+              <a href="http://www.fftai.com/"><div id="webbtn"></div></a>
             <span>Privacy Policy| Terms of Use</span>
           </div>
         </div>
