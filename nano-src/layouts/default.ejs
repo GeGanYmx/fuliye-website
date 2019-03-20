@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title><%= page.title %></title>
+  <!--全局样式文件-->
+  <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css"> 
+  
+  <script src="./js/jquery-3.0.0.min.js"></script>
+  <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <link type="text/css" rel="stylesheet" href="./css/global.css" />
+  <script src="./js/global.js"></script>
+  <!--私有文件-->
+  <% if (page.private_css) { %>
+  <link type="text/css" rel="stylesheet" href="<%= page.private_css %>">
+  <% } %>
+  <% if (page.private_js) { %>
+  <script src="<%= page.private_js %>"></script>
+  <% } %>
+</head>
+
+<body>
+  <!--头部导航栏-->
+  <header>
+      <div class="navi_bar" id="head_container">
+        <div><a href="home.html" ><div class="home_logo"></div></a></div> 
+        <nav class="nav_agroup">
+          <div><a class="navi_nav_link" href="home.html"><span class="<%=page.home %>">Solutions</span></a></div> 
+          <div><a class="navi_nav_link" href="support.html" class="<%=page.support %>">Resource Centre</a></div> 
+          <div><a class="navi_nav_link" href="contact_us.html" class="<%=page.contct %>">Contact Us</a></div> 
+        </nav>
+        <div class="nav_btn_group">
+          <button class="navi_btn" onclick="Global.login()"><span id="login">Log In</span></button>
+          <button class="navi_btn" onclick="Global.register()"><span>Sign Up</span></button>
+        </div>
+      </div>
+  </header>
+  <!--主体-->
+  <article>
+    <!--目前需手动设置height-->
+    <div class="article_display">
+        <%- body %>
+    </div>   <!-- display end-->
+
+  </article>
+  <!--页脚-->
+  <footer>
+      <div class="footer_container">
+        <div class="footer_logo"></div>
+        <div id="footer_text1">
+          <span>Join Us and Sign up Your Developer Account</span>
+        </div>
+        <button id="footer_btn"  class="navi_btn"  onclick="Global.register()">
+          Register Now
+        </button>
+      </div>
+      <div id="underfooter">
+        <div id="foot_left">
+          <div class="listgroup">
+            <div id="list1">
+              <ul>
+                <a href="home.html"><li>Solutions</li></a> 
+                <a href="wwww.fftai.com"><li>EXOPS</li></a> 
+              </ul>
+            </div>
+            <div id="list2">
+              <ul><a href="#">Resource Centre</a>
+                <a href="#"><li>Documentation</li></a> 
+                <a href="#"><li>SDK</li></a> 
+                <a href="#"><li>FAQ</li></a> 
+              </ul>
+            </div>
+            <div id="list3">
+              <ul>
+                  <a href="#"><li>Contact Us</li></a> 
+              </ul>
+            </div>
+          </div>
+          <div id="footer_text2">
+            <span>Copyright 2019 Shanghai Fourier Intelligence Co. Ltd. All rights reserved.</span>
+          </div>
+        </div>  
+        <div id="footer_right">
+          <div id="footer_pic"></div>
+          <div id="footer_text3">
+              <a href="wwww.fftai.com"><div id="webbtn"></div></a>
+            <span>Privacy Policy| Terms of Use</span>
+          </div>
+        </div>
+      </div>
+  </footer>
+</body>
+
+</html>

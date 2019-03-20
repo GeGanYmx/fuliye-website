@@ -16,7 +16,7 @@ input{
     background-color: #FFF;
     height: auto;
     width: 1000px;
-    margin:0 auto 0 auto;
+    margin:-300px auto 20px auto
 }
 /*大图片*/
 .article_pic{
@@ -31,6 +31,7 @@ input{
     width:100%;
     min-width: 1280px;
     height: 1013px;
+    margin-right: 0px;
 }
 .contact-info{
     background-image: url(../assets/content_bg.png);
@@ -44,8 +45,16 @@ input{
     text-align: left;
     padding: 37px 0px 0 140px;
 }
-
+.title p1{
+    font-family: PingFangSC-Regular;
+font-size: 40px;
+color: #0A1017;
+letter-spacing: 0.14px;
+text-align: left;
+}
 .title p{
+    margin-top: 10px;
+    margin-left: -5px;
 font-family: PingFangSC-Regular;
 font-size: 40px;
 color: #0A1017;
@@ -69,9 +78,7 @@ text-align: left;
     margin-left: 140px;
     text-align: left;
 }
-.text content-border{
-    border: 1px solid #E1E1E1;
-}
+
 
 .text span1{
     /* display:inline-block; */
@@ -89,6 +96,7 @@ text-align: left;
 }
 .text p{
     margin-left: 103px;
+    margin-top: 14px;
     height: 66px;
     width: 858px;
     font-family: PingFangSC-Regular;
@@ -121,7 +129,7 @@ line-height: 26px;
 .content-border{
 	height: 1px;
 	width: 848px;
-	border: 1px solid #E1E1E1;
+	
 	margin-top: 40px;
 	margin-bottom: 40px;
 }
@@ -134,7 +142,7 @@ line-height: 26px;
 .table-dis{
     padding-top: 80px;
     margin-bottom: 50px;
-    margin-left: 140px;
+    margin-left: 160px;
     text-align: left;
 }
 .tablespan{
@@ -167,6 +175,7 @@ font-size: 16px;
 color: #999999;
 letter-spacing: 0;
 text-align: left;
+margin-left: 20px;
 }
 .biginput{
     background-color: #FFF;
@@ -175,17 +184,64 @@ text-align: left;
     margin: 66px 0px 0 9px;
     display: flex;
 }
+
+
 .demo3{
     margin-top: 0px;
     text-align: left;
+    background: #FAFAFA;
   }
-.demo3 input{
-    font-family: PingFangSC-Regular;
+.in{
+font-family: PingFangSC-Regular;
+font-size: 16px;
+background: #FAFAFA;
+letter-spacing: 0;
+
+
+}
+
+
+
+
+
+
+
+/* .textarea{
+               min-height: 100px;
+			
+				font-size: 14px;
+                max-height: 300px;
+                
+				overflow-y: auto;
+				   resize:none;
+                   background: #FAFAFA;
+                   border-radius: 6px;
+				  
+				  position:absolute;z-index:9
+
+}*/
+
+.textarea{
+position:absolute;
+line-height:20px;
+ 
+ font-family: PingFangSC-Regular;
 font-size: 16px;
 color: #999999;
 letter-spacing: 0;
 text-align: left;
-}
+     }
+
+
+
+
+
+
+
+
+
+
+
   .request{
     margin-top: 13px;
     text-align: right;
@@ -206,11 +262,20 @@ text-align: left;
     background-image: url(../assets/content_button3.png);
     margin-top: 40px;
     margin-left: 40px;
+    margin-bottom: 70px;
+    border: none;
 }
 .btn-content input{
     color: #FFFFFF;
 text-align: center;
 }
+
+
+
+
+
+
+
   .inner{
     height: 70px;
     width: 480px;
@@ -262,54 +327,55 @@ footer{
 
 
 /*修改*/
-.icon1
-{
-width:31px;
-height:30px;
+.contact-flag-cn  {
+    border: none;
+width:32px;
+height:31px;
 display:inline-block;
+vertical-align:-40%;
 background:url("../assets/content_gq1.png");
-vertical-align:bottom;
 margin-top:40px;
 margin-left: 50px;
-margin-right: 20px;
+margin-right: 12px;
 }
-.icon2
+
+.contact-flag-phone
 {
-width:12px;
-height:12px;
+    width:12px;
+    height:12px;
 display:inline-block;
 background:url("../assets/content_icon6.png");
-vertical-align:0%;
-margin-top:40px;
+vertical-align:5%;
+margin-top:10px;
 margin-left: 65px;
 margin-right: 20px;
 }
-.icon3
+.contact-flag-web
 {
-width:12px;
-height:12px;
+    width:12px;
+    height:12px;
 display:inline-block;
 background:url("../assets/content_icon6.png");
 vertical-align: 0%;
 margin-top:10px;
 margin-left: 65px;
-margin-right: 20px;
+margin-right: 25px;
 }
-.icon4
+.contact-flag-in
 {
-    width:31px;
-    height:30px;
+    width:34px;
+    height:33px;
     background:url("../assets/content_gq2.png");
     display:inline-block;
-    vertical-align:bottom;
+    vertical-align:-60%;
     margin-top:10px;
     margin-left: 50px;
     margin-right: 20px;
 }
-.icon5
+.contact-flag-us
 {
-width:31px;
-height:30px;
+    width:32px;
+    height:32px;
 background:url("../assets/content_gq3.png");
 display:inline-block;
 vertical-align:bottom;
@@ -350,4 +416,24 @@ font-size: 22px;
 color: #0A1017;
 letter-spacing: 0;
 text-align: left;
+}
+
+html{     
+    width:100%;    
+    overflow-x:hidden;
+    }
+
+input{color: black;}
+input::-webkit-input-placeholder{color:#999999;}
+textarea{color:#999999;}
+textarea::-webkit-input-placeholder{color: #999999;}
+
+
+input:focus
+{
+  color:black;
+}
+textarea:focus
+{
+  color:black;
 }

@@ -9,17 +9,20 @@ var support={
             console.log(answer.css('display'));
             if(answer.css('display')==='none'){
                 answer.slideDown('slow');
-                $(e).attr('src','../assets/content_icon2_elected.png');
+                $(e).attr('src','./assets/content_icon2_elected.png');
                 $(e).parent().children('span').css('color','#0086D1');
-                /*$(e).parent().parent().css('background-color','#FFF');*/
-                /*$(e).parent().removeClass('article-question').addClass('article-question-active');*/
+                $(e).parent().parent().removeClass('question-answer').addClass('question-answer-active');
             }else{
                 answer.slideUp('slow');
-                $(e).attr('src','../assets/content_icon2_default.png');
+                $(e).attr('src','./assets/content_icon2_default.png');
                 $(e).parent().children('span').css('color','#606470');
-                /*$(e).parent().parent().css('background-color','rgba(255,255,255,0.20)');*/
-                /*$(e).parent().removeClass('article-question-active').addClass('article-question');*/
+                $(e).parent().parent().removeClass('question-answer-active').addClass('question-answer');
             }
         });
-    }
+    },
+    toggleTab:function(e){
+       console.log($(e));
+       $(e).find('span.icon-span').css('color',' #0A1017');
+       $(e).siblings('li').find('span.icon-span').css('color','#999999');
+}
 }
