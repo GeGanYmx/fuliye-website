@@ -29,7 +29,7 @@
 }
 
 /* 清除链接点击出现下划线样式 */
-a{
+a,a:visited{
     color: #B5B5B5;
 }
 a:focus{
@@ -57,12 +57,46 @@ a:hover{
     z-index: 16;
 }
 /* 导航栏下拉 */
-.menu ul a:hover .slidedown{
+/* 先隐藏menu类下的li，当鼠标悬浮menu类时，显示 */
+#slidehead{
+    margin-left: -40px;
+}
+#slide:link，#slide:visited，#slidehead:hover,#slidehead:active{
+    color:#B5B5B5;
+}
+.menu:hover ul{
     visibility: visible;
 }
-.slidedown{
+.slidedowncontent{
     visibility: hidden;
+    /* visibility: visible; */
 }
+.slidedowncontent{
+    position: absolute;
+    background-color: #FFFFFF;
+    height: 120px;
+    width: 300px;
+    margin-top: 10px;
+    margin-left: -40px;
+}
+.slidedown{
+    font-family: Roboto-Medium;
+    font-size: 18px;
+    color: #919191;
+    letter-spacing: 0;
+    text-align: left;
+    margin: 0 0 0 0;
+}
+.slidedown a:hover{
+    color: #323643;
+}
+#doc{
+    margin: 20px 0 0 0;
+}
+#faq{
+    margin: 20px 0 0 0;
+}
+
 header{
     background-color:#303136;
 }
@@ -95,7 +129,7 @@ header{
 .navi_btn {
     width: 112px;
     height: 48px;
-    border: 1px solid #808285;
+    border: 1px solid #3F4045;
     border-radius: 100px;
     color: #FFF;
     font-size: 18px;
@@ -168,6 +202,7 @@ footer {
     text-align: center;
     line-height: 32px;
     margin: 0 auto;
+    text-decoration: underline;
 }
 #underfooter{
 background-image: url('../assets/bg5.png');

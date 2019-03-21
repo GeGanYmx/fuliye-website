@@ -34,11 +34,13 @@
               <div>
                  
                 <ul class="menu">
-                    <a class="navi_nav_link" href="support.html"> <span class="<%=page.support %>"> Resource Centre</span></a>
-                  <li class="slidedown"><a href="javascript:viod(0)">Documentation</a></li>
-                  <!-- SDK预留，以后加页面 -->
-                  <!-- <li><a href="javascript:viod(0)">SDK</a></li> -->
-                  <li class="slidedown"><a href="javascript:viod(0)">FAQ</a></li>
+                    <a class="navi_nav_link" href="javascript:viod(0)"> <span class="<%=page.support %>" id="slidehead"> Resource Centre</span></a>
+                  <ul class="slidedowncontent">
+                    <li class="slidedown" id="doc"><a href="documentation.html">Documentation</a></li>
+                    <!-- SDK预留，以后加页面 -->
+                    <!-- <li class="slidedown"><a href="javascript:viod(0)">SDK</a></li> -->
+                    <li class="slidedown" id="faq"><a href="support.html">FAQ</a></li>
+                  </ul>
                 </ul> 
               </div> 
               <div><a class="navi_nav_link" href="contact_us.html"><span class="<%=page.contact %>"> Contact Us</a></div> 
@@ -69,10 +71,10 @@
               </ul>
             </div>
             <div id="list2">
-              <ul><a href="support.html">Resource Centre</a>
+              <ul><a href="javascript:void(0)">Resource Centre</a>
                 <a href="javascript:void(0)"><li>Documentation</li></a> 
-                <a href="javascript:void(0)"><li>SDK</li></a> 
-                <a href="javascript:void(0)"><li>FAQ</li></a> 
+                <!-- <a href="javascript:void(0)"><li>SDK</li></a>  -->
+                <a href="support.html"><li>FAQ</li></a> 
               </ul>
             </div>
             <div id="list3">
