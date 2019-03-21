@@ -3,6 +3,7 @@ const debounce = require('lodash.debounce');
 const server = require('../utils/server');
 const log = require('../utils/logger');
 const build = require('./build');
+const {spawn} = require('child_process')
 const { parseOptions } = require('../utils/parser');
 
 /**
@@ -19,7 +20,11 @@ const serve = (options, flags) => {
   chokidar.watch(srcPath, { ignoreInitial: true }).on(
     'all',
     debounce(() => {
-      build(options);
+      // build(options);
+      spawn('npm', ['run', 'build'], {
+        stdio: 'pipe',
+        shell: true,
+      })
       log.info('Waiting for changes...');
     }, 500)
   );
