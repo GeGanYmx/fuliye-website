@@ -369,10 +369,13 @@ ul li{
     letter-spacing: 0;
 }
 #apipic2area{
-    background-image: url('../assets/bg.png');
+    /* background-image: url('../assets/bg.png'); */
+    
+    /* 静态图 */
+    background-image: url('../assets/home_img6.png');
     width:100%;
     height:538px;
-    position: relative;
+    margin-top: 100px;
 }
 #apitext2{
     color: #FFF;
@@ -679,6 +682,8 @@ line-height: 24px;
 }
 /*第五行*/
 	#home_img5{
+        /* 动态图效果测试 */
+        /* background-image: url('../assets/11111111111.gif'); */
         background-image: url('../assets/5.png');
         margin-right: 0;
    
