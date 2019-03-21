@@ -447,26 +447,11 @@ line-height: 24px;
     height:414px;
     margin: 0px 40px 0 117px;
 }
-<<<<<<< HEAD
-/* ul{
-
-} */
-#apipic1{
-    background-image: url('../assets/home_img5.png');
-    width: 615px;
-    height: 410.8px;
-    margin: 50px 0 0 40px;
-}
-.textarea{
-    display: flex;
-    flex-direction: column;
-=======
 #home_img9{
     background-image: url('../assets/home_img3.png');
     width:528px;
     height:337px;
     margin: 0px 0 0px 40px;
->>>>>>> lize
 }
 #home_img9texthead{
     max-width: 640px;
@@ -992,11 +977,6 @@ line-height: 24px;
     margin-left: 110px;
    
 }
-<<<<<<< HEAD
-.navi_btn{
-border-color: rgb(63,64,69)
-}
-=======
 #eleven{
     background-position: 0px 170px;
     font-family: Lato-Bold;
@@ -1028,4 +1008,3 @@ border-color: rgb(63,64,69)
     margin-left: 60px
 }
 
->>>>>>> lize
