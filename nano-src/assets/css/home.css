@@ -31,7 +31,7 @@
     max-width: 850px;;
 }
 #login{
-    font-family: SourceSansPro-Regular;
+    font-family: Roboto-Regular;
     font-size: 18px;
     color: #FFFFFF;
     text-align: left;
@@ -382,7 +382,7 @@ ul li{
     max-width: 375px;
     height:auto;
     font-size: 40px;
-    font-family: PingFang-SC-Bold;
+    font-family: Roboto-Bold;
     letter-spacing: 0.14px;
     text-align: left;
     position: absolute;
@@ -527,7 +527,7 @@ ul li{
     margin:0 auto 0 auto;
 }
 .navi_btn{
-border-color: rgb(63,64,69)
+border-color: #3F4045;
 }
 
 
@@ -543,7 +543,7 @@ border-color: rgb(63,64,69)
 }
 #first{
     background-position: 0px 170px;
-    font-family: Lato-Bold;
+    font-family: Roboto-Bold;
     font-size: 300px;
     color: #0065A3;
     letter-spacing: 1.07px;
@@ -574,7 +574,7 @@ border-color: rgb(63,64,69)
 #second{
     
     background-position:-4px 199px;
-    font-family: Lato-Bold;
+    font-family: Roboto-Bold;
     font-size: 300px;
     color: #0065A3;
     letter-spacing: 1.07px;
@@ -615,7 +615,7 @@ line-height: 24px;
 }
 #third{
     background-position: 0px 170px;
-    font-family: Lato-Bold;
+    font-family: Roboto-Bold;
     font-size: 300px;
     color: #0065A3;
     letter-spacing: 1.07px;
@@ -647,7 +647,7 @@ line-height: 24px;
 #fourth{
     
     background-position:-4px 199px;
-    font-family: Lato-Bold;
+    font-family: Roboto-Bold;
     font-size: 300px;
     color: #0065A3;
     letter-spacing: 1.07px;
@@ -690,7 +690,7 @@ line-height: 24px;
 }
 #fifth{
     background-position: 0px 170px;
-    font-family: Lato-Bold;
+    font-family: Roboto-Bold;
     font-size: 300px;
     color: #0065A3;
     letter-spacing: 1.07px;
@@ -722,7 +722,7 @@ line-height: 24px;
 #sixth{
     
     background-position:-4px 199px;
-    font-family: Lato-Bold;
+    font-family: Roboto-Bold;
     font-size: 300px;
     color: #0065A3;
     letter-spacing: 1.07px;
@@ -763,7 +763,7 @@ line-height: 24px;
 }
 #seventh{
     background-position: 0px 170px;
-    font-family: Lato-Bold;
+    font-family: Roboto-Bold;
     font-size: 300px;
     color: #0065A3;
     letter-spacing: 1.07px;
@@ -795,7 +795,7 @@ line-height: 24px;
 #eighth{
     
     background-position:-4px 199px;
-    font-family: Lato-Bold;
+    font-family: Roboto-Bold;
     font-size: 300px;
     color: #0065A3;
     letter-spacing: 1.07px;
@@ -836,7 +836,7 @@ line-height: 24px;
 }
 #nineth{
     background-position: 0px 170px;
-    font-family: Lato-Bold;
+    font-family: Roboto-Bold;
     font-size: 300px;
     color: #0065A3;
     letter-spacing: 1.07px;
@@ -868,7 +868,7 @@ line-height: 24px;
 #tenth{
     
     background-position:-4px 199px;
-    font-family: Lato-Bold;
+    font-family: Roboto-Bold;
     font-size: 300px;
     color: #0065A3;
     letter-spacing: 1.07px;
@@ -910,7 +910,7 @@ line-height: 24px;
 }
 #eleven{
     background-position: 0px 170px;
-    font-family: Lato-Bold;
+    font-family: Roboto-Bold;
     font-size: 300px;
     color: #0065A3;
     letter-spacing: 1.07px;

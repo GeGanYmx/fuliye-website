@@ -153,9 +153,9 @@ footer {
     width: 157px;
     height: 48px;
     border-radius: 100px;
-    border-color: rgb(63,64,69);
+    border-color: #3f4045;
     /*字体颜色*/
-    font-family: Roboto-Bold;
+    font-family: Roboto-Light;
     font-size: 18px;
     color: #FFF;
     text-align: center;
@@ -236,7 +236,7 @@ ul li {
 
 /*页面内容区域*/
 .footer_container{
-    background-color: rgb(76 76 85);
+    background-color: #4C4C56;
     height:320px;
     width:1920px;
     min-width: 1280px;;
