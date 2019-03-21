@@ -683,8 +683,8 @@ line-height: 24px;
 /*第五行*/
 	#home_img5{
         /* 动态图效果测试 */
-        /* background-image: url('../assets/11111111111.gif'); */
-        background-image: url('../assets/5.png');
+        background-image: url('../assets/11111111111.gif');
+        /* background-image: url('../assets/5.png'); */
         margin-right: 0;
    
 }
