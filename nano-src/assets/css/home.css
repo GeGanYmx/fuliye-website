@@ -677,13 +677,15 @@ letter-spacing: 0;
 line-height: 24px;
 }  
 #home_img4{
-    background-image: url('../assets/4.png');
+    /* background-image: url('../assets/4.png'); */
+     /* 动态图效果测试 */
+     background-image: url('../assets/1111.gif');
     margin: 0px ;
 }
 /*第五行*/
 	#home_img5{
         /* 动态图效果测试 */
-        background-image: url('../assets/11111111111.gif');
+        background-image: url('../assets/2222.gif');
         /* background-image: url('../assets/5.png'); */
         margin-right: 0;
    
@@ -752,13 +754,16 @@ letter-spacing: 0;
 line-height: 24px;
 }  
 #home_img6{
-    background-image: url('../assets/6.png');
+     /* GIF测试 */
+    background-image: url('../assets/3333.gif');
+    /* background-image: url('../assets/6.png'); */
     margin: 0px ;
-   
 }
 /*第七行*/
 	#home_img7{
-    background-image: url('../assets/7.png');
+    /* GIF测试 */
+    background-image: url('../assets/4444.gif');
+    /* background-image: url('../assets/7.png'); */
     margin-right: 0;
 }
 #seventh{

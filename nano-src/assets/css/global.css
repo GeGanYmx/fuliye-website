@@ -56,6 +56,13 @@ a:hover{
     transform: translateX(-50%);
     z-index: 16;
 }
+/* 导航栏下拉 */
+.menu ul a:hover .slidedown{
+    visibility: visible;
+}
+.slidedown{
+    visibility: hidden;
+}
 header{
     background-color:#303136;
 }
