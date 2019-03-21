@@ -45,7 +45,13 @@ input{
     text-align: left;
     padding: 37px 0px 0 140px;
 }
-
+.title p1{
+    font-family: PingFangSC-Regular;
+font-size: 40px;
+color: #0A1017;
+letter-spacing: 0.14px;
+text-align: left;
+}
 .title p{
     margin-top: 10px;
     margin-left: -5px;

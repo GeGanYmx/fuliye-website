@@ -26,24 +26,23 @@
 <body>
   <!--头部导航栏-->
   <header>
-    <div style="background-color:#303136;width:100%">
       <div class="navi_bar">
-        <div class="home_logo"></div>
-        <nav>
-          <a class="navi_nav_link" href="home.html"><span class="highlight">Solutions</span></a>
-          <a class="navi_nav_link" href="support.html" style="width:195px">Resource Center</a>
-          <a class="navi_nav_link" href="contact_us.html">Contact Us</a>
-        </nav>
-        <div class="nav_btn_group">
-          <button class="navi_btn" onclick="Global.login()"><span id="login">Log In</span></button>
-          <button class="navi_btn" onclick="Global.register()"><span>Sign Up</span></button>
+        <div  id="head_container">
+          <div><a href="home.html" ><div class="home_logo"></div></a></div> 
+            <nav class="nav_agroup">
+              <div><a class="navi_nav_link" href="home.html"><span class="<%=page.home %>">Solutions</span></a></div> 
+              <div><a class="navi_nav_link" href="support.html"> <span class="<%=page.support %>"> Resource Centre</span></a></div> 
+              <div><a class="navi_nav_link" href="contact_us.html"><span class="<%=page.contact %>"> Contact Us</a></div> 
+            </nav>
+            <div class="nav_btn_group">
+              <button class="navi_btn" onclick="Global.login()"><span id="login">Log In</span></button>
+              <button class="navi_btn" onclick="Global.register()"><span>Sign Up</span></button>
+            </div>
         </div>
       </div>
-    </div>
   </header>
   <!--主体-->
   <article>
-    <!--目前需手动设置height-->
     <div class="article_display">
         <%- body %>
     </div>   <!-- display end-->
@@ -51,20 +50,39 @@
   </article>
   <!--页脚-->
   <footer>
-      <div class="footer_container">
-        <div class="footer_logo"></div>
-        <div id="footer_text1">
-          <span>Join Us and Sign up Your Developer Account</span>
-        </div>
-        <div id="footer_text2">
+      <div id="underfooter">
+        <div id="foot_left">
+          <div class="listgroup">
+            <div id="list1">
+              <ul>
+                <a href="home.html"><li>Solutions</li></a> 
+                <a href="http://www.fftai.com"><li>EXOPS</li></a> 
+              </ul>
+            </div>
+            <div id="list2">
+              <ul><a href="support.html">Resource Centre</a>
+                <a href="javascript:void(0)"><li>Documentation</li></a> 
+                <a href="javascript:void(0)"><li>SDK</li></a> 
+                <a href="javascript:void(0)"><li>FAQ</li></a> 
+              </ul>
+            </div>
+            <div id="list3">
+              <ul>
+                  <a href="contact_us.html"><li>Contact Us</li></a> 
+              </ul>
+            </div>
+          </div>
+          <div id="footer_text2">
             <span>Copyright 2019 Shanghai Fourier Intelligence Co. Ltd. All rights reserved.</span>
           </div>
-        <div id="footer_text3">
-              <span>Privacy Policy| Terms of Use</span>
+        </div>  
+        <div id="footer_right">
+          <div id="footer_pic"></div>
+          <div id="footer_text3">
+              <a href="http://www.fftai.com/"><div id="webbtn"></div></a>
+            <span>Privacy Policy | Terms of Use</span>
+          </div>
         </div>
-        <button id="footer_btn" onclick="Global.register()">
-          Register Now
-        </button>
       </div>
   </footer>
 </body>

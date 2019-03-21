@@ -1,40 +1,87 @@
+/* 引入字体 */
+@font-face{
+    font-family: Roboto-Bold;
+    src: url('../font/Roboto_ttf/Roboto-Bold.ttf');
+}
+@font-face{
+    font-family: Roboto-Regular;
+    src: url('../font/Roboto_ttf/Roboto-Regular.ttf');
+}
+@font-face{
+    font-family: Roboto-Medium;
+    src: url('../font/Roboto_ttf/Roboto-Medium.ttf');
+}
+@font-face{
+    font-family: Roboto-Light;
+    src: url('../font/Roboto_ttf/Roboto-Light.ttf');
+}
+
 /*全局样式表*/
 /*body{text-align: center;}*/
 /*将某些浏览器的body的边距消除*/
-body{
-    margin:0px;
+
+*{
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+    background-color:transparent; 
+    max-width: 1920px;
+}
+
+/* 清除链接点击出现下划线样式 */
+a{
+    color: #B5B5B5;
+}
+a:focus{
+    text-decoration: none;
+}
+/* 初始化链接样式 鼠标悬停显示白色 不显示下划线 */
+a:hover{
+    text-decoration: none;
+    color:#FFFFFF;
+}
+/* 导航高亮样式 */
+.highlight{
+    color:#FFFFFF;
 }
 /*导航栏样式*/
 .navi_bar {
-    height: 80px;
-    /*width: 1920px;*/
-    width: 1280px;
+    height: 70px;
+    width: 1920px;
+    min-width: 1280px;
     background-color: #303136;
-    margin-left: auto;
-    margin-right: auto;
-    overflow: hidden;
+    position: fixed;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 16;
 }
-
+header{
+    background-color:#303136;
+}
+#head_container{
+    width:1280px;
+    min-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
 /*logo样式*/
 .home_logo {
-    height: 75px;
-    width: 202px;
+    height: 40px;
+    width: 133px;
     background: url(../assets/home_logo4.png);
-    float: left;
-    margin-left: 8px;
-    margin-right: 97px;
-    background-repeat: no-repeat;
-    margin-top: 15px;
 }
-
+.nav_agroup{
+    display: flex;
+    height: 70px;
+    width: 460px;
+    padding-top: 20px;
+}
 /*按钮外部div*/
 .nav_btn_group {
-    /* width:300px;*/
     width: 250px;
     height: 50px;
-    float: left;
-    margin-left: 227.1px;
-    margin-top: 17px;
 }
 
 /*导航栏按钮样式*/
@@ -43,22 +90,17 @@ body{
     height: 48px;
     border: 1px solid #808285;
     border-radius: 100px;
-    /*opacity: 0.2;*/
-    background-color: #303136;
     color: #FFF;
     font-size: 18px;
     margin-right: 10px;
+    font-family: Roboto-Regular;
 }
 
 /*导航链接*/
 .navi_nav_link {
-    display: block;
     height: 32px;
-    width: 140px;
-    float: left;
-    margin-top: 25px;
-    /*链接字体*/
-    font-family: SourceSansPro-Semibold;
+    max-width: 120px;
+    font-family: Roboto-Medium;
     font-size: 18px;
     color: #B5B5B5;
     letter-spacing: 0;
@@ -70,8 +112,8 @@ body{
 /*页眉底部渲染层*/
 footer {
     width: 100%;
-    height: 384px;
-    background-color:#303136;
+    height: auto;
+
 }
 
 /*内容区渲染底层*/
@@ -89,93 +131,123 @@ footer {
     height: auto;
     background-image: none;
 }
-
 .footer_logo {
-    position: absolute;
-    width: 253px;
-    height: 94px;
+    width: 133px;
+    height: 40px;
     background-image: url(../assets/home_logo4.png);
     background-repeat: no-repeat;
-    top: 46px;
-    left: 7px;
+    margin-top: 45px;
 }
-
 #footer_text1 {
-    position: absolute;
-    width: 593px;
-    height: 72px;
-    top: 163px;
-    left: 35px;
-    font-family: Lato-Bold;
+    max-width: 1000px;
+    height: auto;
+    font-family: Roboto-Bold;
     font-size: 24px;
     color: #FFFFFF;
     letter-spacing: 0.11px;
-    text-align: left;
-
-}
-
-#footer_text2 {
-    position: absolute;
-    width: 487px;
-    height: 20px;
-    top: 209px;
-    left: 35px;
-    font-family: PingFangSC-Light;
-    font-size: 14px;
-    color: #FFFFFF;
-    letter-spacing: 0;
-
-}
-
-#footer_text3 {
-    position: absolute;
-    width: 188px;
-    height: 20px;
-    top: 235px;
-    left: 35px;
-    font-family: PingFangSC-Light;
-    font-size: 14px;
-    color: #FFFFFF;
-    letter-spacing: 0;
-
+    text-align: center;
+    margin: 45px auto;
 }
 
 #footer_btn {
-    position: absolute;
     width: 157px;
     height: 48px;
-    top: 157px;
-    left: 1083px;
     border-radius: 100px;
-    opacity: 0.2;
-    background-color: #303136;
-    border: 2px solid #0090D6;
+    border-color: #3f4045;
     /*字体颜色*/
-    font-family: SourceSansPro-Semibold;
+    font-family: Roboto-Light;
     font-size: 18px;
-    color: #0090D6;
+    color: #FFF;
     text-align: center;
     line-height: 32px;
+    margin: 0 auto;
+}
+#underfooter{
+background-image: url('../assets/bg5.png');
+width: 100%;
+height: 360px;
+min-width: 1280px;
+display: flex;
+}
+.footer_right,.footer_right{
+    width: 640px;
+    display: flex;
+    flex-direction: column;
+}
+.footer_right{
+    align-items: flex-end;
+}
+#list1,#list2,#list3{
+    display: flex;
+    flex-direction: column;
+    height: 260px;
+    color:#B5B5B5;
+    font-size: 18px;
+    font-family: Roboto-Medium;
+    letter-spacing: 0px;
+    line-height: 32px;
+    margin-top: 50px;
+}
+.listgroup{
+    display: flex;
+    justify-content: center;
+}
+ul li {
+    list-style-type: none;
+}
+#footer_pic{
+    width: 224px;
+    height: 290px;
+    background-image: url(../assets/home_logo2.png);
+    background-position: bottom center;
+    margin-bottom: 20px;
+}
+#webbtn{
+    width: 224px;
+    height: 110px;
+    background-color: transparent;
+    margin-top: -110px;
+    margin-left: -20px;
+}
+#footer_text2 {
+    width: 487px;
+    height: 20px;
+    font-family: Roboto-Light;
+    font-size: 14px;
+    color:#B5B5B5;
+    letter-spacing: 0;
+    bottom:0;
+}
+#footer_text3 {
+    width: 191px;
+    height: 20px;
+    font-family: Roboto-Light;
+    font-size: 14px;
+    color:#B5B5B5;
+    letter-spacing: 0;
 }
 .article_container{
     background-color:blue;
     width:1280px;
-    /*和article_display一致*/
-    height:1760px;
+    min-width: 1280px;
+    height:auto;
     margin:0 auto 0 auto;
 }
 
 /*页面内容区域*/
 .footer_container{
-    background-color:#303136;
-    height:100%;
-    width:1280px;
+    background-color: #4C4C56;
+    height:320px;
+    width:1920px;
+    min-width: 1280px;;
     margin:0 auto 0 auto;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .article_display,.article_container{
     /*高度根据具体情况暂时修改*/
-    height: 1760px;
+    height: auto;
 }
 
 /*设置连接激活态*/
@@ -188,6 +260,6 @@ button:focus{
 }
 
 .navi_bar,.article_container,.footer_container{
-    width:1260px;
-    /*min-width: 980px;*/
+    width: 100%;
+min-width:1280px;
 }

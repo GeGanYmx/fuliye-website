@@ -1,17 +1,37 @@
-*{
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: 0 auto;
-    background-color:transparent; 
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img{
+    width: auto;
+    max-width: 1920px;
+    max-height: 770px;
+    margin-left: 50%;
+    transform: translateX(-50%);
 }
-.carousel-indicators {
-    bottom: 120px;
+#abovearea{
+    flex-direction: column;
+    background-color: #F2F2F2;
+    max-width: 1920px;
+    height: 360px;
+    min-width: 1280px;
 }
-.highlight{
-    color: #FFF;
+#abovehead{
+    font-family: Roboto-Bold;
+    font-size: 40px;
+    color: #303136;
+    letter-spacing: 0.14px;
+    text-align: center;
+    padding-top: 60px;
+}
+#abovetext{
+    font-family: Roboto-Light;
+    font-size: 14px;
+    color: #0A1017;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 24px;
+    margin-top: 20px;
+    max-width: 850px;;
 }
 #login{
-    font-family: SourceSansPro-Regular;
+    font-family: Roboto-Regular;
     font-size: 18px;
     color: #FFFFFF;
     text-align: left;
@@ -21,23 +41,23 @@
 #home_img_banner,#hardwarehead,#apihead,#apipic2area,#benefitshead,#benback{
     min-width:1280px;
 }
-
+.carousel-indicators{
+    list-style: none;
+    margin-left: -3%;
+}
 #home_img_banner{
-    /* height: 760px; */
-    /* 高度应该是760px，为了适应轮播暂时改成591.06 */
-    height: 591.06px;
+    height: 770px;
     width: 100%;
     /*宽度最小是1280px*/
     background-position: center;
-    /*background-image: url('../assets/home_img_banner.png');*/
+    margin-top: 70px;
 }
 .home_smllogo_group{
     width:1200px;
     height:105px;
-    background-color:#FFF;
-    margin:-50px 40px 0 40px;
-    position: relative;
-    box-shadow: 0 2px 32px 0 rgba(0,0,0,0.15);
+    background-color:transparent;
+    margin-top: 60px;
+    margin-bottom: 65.9;
 }
 #home_smllogo3{
     background-image: url('../assets/home_logo3.png');
@@ -64,48 +84,12 @@
     background-image: url('../assets/home_img1.png');
     width:528px;
     height:337px;
-    margin: 112px 0 0 40px;
-}
-#why{
-    background-image: url('../assets/home_img_why.png');
-    background-position: 0px 170px;
-    font-family: Lato-Bold;
-    font-size: 300px;
-    color: #0065A3;
-    letter-spacing: 1.07px;
-    text-align: left;
-}
-#who{
-    background-image: url('../assets/home_img_who.png');
-    background-position:-4px 199px;
-    font-family: Lato-Bold;
-    font-size: 300px;
-    color: #0065A3;
-    letter-spacing: 1.07px;
-    text-align: left;
-}
-#what{
-    background-image: url('../assets/home_img_what.png');
-    background-position: 0 30px;
-    background-size: 640px 226px;
-    background-color:transparent; 
-    font-family: Lato-Bold;
-    font-size: 300px;
-    color: #0065A3;
-    letter-spacing: 1.07px;
-    text-align: left;
-
-}
-.girlpic{
-    background-image: url('../assets/home_img_bg.png');
-    height:  1111px;
-    background-position: bottom center;
-    min-width: 1280px;
+    margin: 100px 0 0 40px;
 }
 #home_img1texthead{
     max-width: 640px;
     height:auto;
-    font-family: PingFangSC-Regular;
+    font-family: Roboto-Regular;
     color: #323643;
     font-size: 40px;
     margin: 187px 40px 0 0;
@@ -117,12 +101,12 @@
     color: #0A1017;
     font-size: 14px;
     margin: 10px 40px 0 0;
-    font-family: PingFangSC-Light;
+    font-family: Roboto-Light;
     letter-spacing: 0;
     line-height: 20px;
 }    
 #boldexops{
-    font-family: PingFangSC-Medium;
+    font-family: Roboto-Medium;
     font-size: 14px;
     color: #0A1017;
     letter-spacing: 0;
@@ -131,7 +115,7 @@
 #home_img2texthead{
     max-width: 640px;
     height:auto;
-    font-family: PingFangSC-Regular;
+    font-family: Roboto-Regular;
     color: #323643;
     font-size: 40px;
     margin: 242px 0 0 40px;
@@ -143,14 +127,14 @@
     color: #0A1017;
     font-size: 14px;
     margin: 10px 0 0 40px;
-    font-family: PingFangSC-Light;
+    font-family: Roboto-Light;
     letter-spacing: 0;
 }  
 #home_img2{
     background-image: url('../assets/home_img2.png');
     width:478px;
     height:414px;
-    margin: 100px 40px 0 117px;
+    margin: 0px 40px 0 117px;
 }
 
 .widegraybg{
@@ -169,12 +153,12 @@
     background-image: url('../assets/home_img3.png');
     width:528px;
     height:337px;
-    margin: -44px 0 40px 40px;
+    margin: 0px 0 0 40px;
 }
 #home_img3texthead{
     max-width: 640px;
     height: auto;
-    font-family: PingFangSC-Regular;
+    font-family: Roboto-Regular;
     color: #323643;
     font-size: 40px;
     margin: 54px 40px 0 0;
@@ -183,7 +167,7 @@
 #home_img3textp{
     max-width: 640px;
     height: auto;
-    font-family: PingFangSC-Light;
+    font-family: Roboto-Light;
     color: #0A1017;
     font-size: 14px;
     margin: 10px 40px 0 0;
@@ -230,7 +214,7 @@
 #hardtext1head{
     max-width: 640px;
     height:auto;
-    font-family: PingFangSC-Regular;
+    font-family: Roboto-Regular;
     color: #323643;
     font-size: 40px;
     margin: 172px 0 0 40px;   
@@ -239,7 +223,7 @@
 #hardtext1p{
     max-width: 640px;
     height: auto;
-    font-family: PingFangSC-Light;
+    font-family: Roboto-Light;
     color: #0A1017;
     font-size: 14px;
     margin: 10px 0 0 40px;
@@ -257,7 +241,7 @@
 #hardtext2head{
     max-width: 470px;
     height:auto;
-    font-family: PingFangSC-Regular;
+    font-family: Roboto-Regular;
     color: #323643;
     font-size: 40px;
     margin: 65px 0 0 40px;  
@@ -266,7 +250,7 @@
 #hardtext2p{
     max-width: 520px;
     height: auto;
-    font-family: PingFangSC-Light;
+    font-family: Roboto-Light;
     color: #0A1017;
     font-size: 14px;
     margin: 10px 0 0 40px;
@@ -281,7 +265,7 @@
 #hardtext3head{
     max-width: 640px;
     height: auto;
-    font-family: PingFangSC-Regular;
+    font-family: Roboto-Regular;
     color: #323643;
     font-size: 40px;
     margin: 150px 0 0 56px;
@@ -293,7 +277,7 @@
     color: #0A1017;
     font-size: 14px;
     margin: 10px 0 0 56px;
-    font-family: PingFangSC-Light;
+    font-family: Roboto-Light;
     letter-spacing: 0;
 }
 #hardpic4area{
@@ -308,7 +292,7 @@ margin-bottom: 30px;
 #hardtext4head{
     max-width: 640px;
     height:auto;
-    font-family: PingFangSC-Regular;
+    font-family: Roboto-Regular;
     color: #323643;
     font-size: 40px;
     margin: 80px 0 0 40px; 
@@ -317,7 +301,7 @@ margin-bottom: 30px;
 #hardtext4p{
     max-width: 544px;
     height: auto;
-    font-family: PingFangSC-Light;
+    font-family: Roboto-Light;
     color: #0A1017;
     font-size: 14px;
     margin: 10px 0 0 40px;
@@ -345,7 +329,7 @@ ul li{
     background-image: url('../assets/home_img5.png');
     width: 615px;
     height: 410.8px;
-    margin: 60px 0 0 40px;
+    margin: 50px 0 0 40px;
 }
 .textarea{
     display: flex;
@@ -353,7 +337,7 @@ ul li{
 }
 #a11head,#a12head,#a13head,#a14head{
     max-width: 520px;
-    font-family: PingFangSC-Regular;
+    font-family: Roboto-Regular;
     color: #323643;
     font-size: 40px;
     margin: 50px 0 22px -17px;
@@ -369,7 +353,7 @@ ul li{
 #lirest{
     max-width: 520px;
     height:auto;
-    font-family: PingFangSC-Regular;
+    font-family: Roboto-Regular;
     color: #323643;
     font-size: 40px;
     margin: -11px 0 22px 0px;
@@ -378,27 +362,32 @@ ul li{
 #a11text,#a12text,#a13text,#a14text{
     max-width: 500px;
     height: auto;
-    font-family: PingFangSC-Regular;
+    font-family: Roboto-Regular;
     color: #0A1017;
     font-size: 14px;
     margin: 10px 40px 0 0;
     letter-spacing: 0;
 }
 #apipic2area{
+    /* background-image: url('../assets/bg.png'); */
+    
+    /* 静态图 */
     background-image: url('../assets/home_img6.png');
     width:100%;
     height:538px;
+    margin-top: 100px;
 }
 #apitext2{
     color: #FFF;
     max-width: 375px;
     height:auto;
     font-size: 40px;
-    padding: 130px 0 0 1px;
-    margin: 0 0px 0 90px;
-    font-family: PingFang-SC-Bold;
+    font-family: Roboto-Bold;
     letter-spacing: 0.14px;
     text-align: left;
+    position: absolute;
+    left: 50%;
+    transform: translate(-590px,143px);
 }
 #apitext02{
     max-width:56px;
@@ -421,9 +410,9 @@ ul li{
 .appcombine{
     display: inline-block;
     margin: 15px 65px 95px 47px;
-    font-family: PingFangSC-Medium;
+    font-family: Roboto-Medium;
     font-size: 18px;
-    color: #0290D5;
+    color: #0A1017;
     letter-spacing: 0;
     text-align: center;
 }
@@ -433,31 +422,33 @@ ul li{
 #apptext{
     text-align: left;
     color: #0A1017;
-    max-width: 1000px;
+    max-width: 540px;
     height:auto;
     font-size: 40px;
     padding: 60px 0 60px 0;
-    margin-left: 100px;
-    font-family: PingFangSC-Regular;
+    margin-left: -600px;
+    font-family: Roboto-Regular;
     letter-spacing: 0.14px;
+    left: 50%;
+    position: relative;
 }
 #apiicon1{
-    background-image: url('../assets/home_icon5.png');
+    background-image: url('../assets/icon1.png');
 }
 #apiicon2{
-    background-image: url('../assets/home_icon6.png');
+    background-image: url('../assets/icon2.png');
 }
 #apiicon3{
-    background-image: url('../assets/home_icon7.png');
+    background-image: url('../assets/icon3.png');
 }
 #apiicon4{
-    background-image: url('../assets/home_icon8.png');
+    background-image: url('../assets/icon4.png');
 }
 #apiicon5{
-    background-image: url('../assets/home_icon9.png');
+    background-image: url('../assets/icon5.png');
 }
 #apiicon6{
-    background-image: url('../assets/home_icon10.png');
+    background-image: url('../assets/icon6.png');
 }
 #apiicon6,#apiicon5,#apiicon4,#apiicon3,#apiicon2,#apiicon1{
     width:89px;
@@ -471,6 +462,7 @@ ul li{
     background-image: url('../assets/home_img_bg2.png');
     width: 100%;
     height: 375px;
+    justify-content: center;
 }
 #benpic{
     background-image: url('../assets/home_icon3.png');
@@ -487,23 +479,23 @@ ul li{
 #beneicon1,#beneicon2,#beneicon3{
     display: inline-block;
     vertical-align: top;
-    margin: 106px 90px 0 90px;
+    margin: 106px 80px 0 80px;
 }
 #bi1icon,#bi2icon,#bi3icon{
     margin: 0;
 }
 #bi1icon{
-    background-image: url('../assets/home_icon11.png'); 
+    background-image: url('../assets/icon7.png'); 
     width:45px;
     height:50px;
 }
 #bi2icon{
-    background-image: url('../assets/home_icon12.png'); 
+    background-image: url('../assets/icon8.png'); 
     width:54px;
     height:53px;
 }
 #bi3icon{
-    background-image: url('../assets/home_icon13.png');
+    background-image: url('../assets/icon9.png'); 
     width:54px;
     height:53px;
 }
@@ -513,17 +505,14 @@ ul li{
     height:auto;
     font-size: 14px;
     margin: 40px 0 0 0;
-    font-family: PingFangSC-Light;
+    font-family: Roboto-Light;
     letter-spacing: 0;
 }
 
 
 
 /* 覆盖全局样式 */
-.article_display{
-    /*高度根据具体情况暂时修改*/
-    height: auto;
-}
+
 .article_container{
     background-color:transparent; 
     width:1280px;
@@ -537,10 +526,416 @@ ul li{
     /* height:100%; */
     margin:0 auto 0 auto;
 }
-.navi_bar,.article_container,.footer_container{
-width: 1280px;
-min-width: 1280px;
-}
 .navi_btn{
-border-color: rgb(63,64,69)
+border-color: #3F4045;
 }
+
+
+/* 统一定义所有图片宽高 */
+#home_img1,#home_img2,#home_img3,#home_img4,#home_img5,#home_img6,#home_img7,#home_img8,#home_img9,#home_img10,#home_img11{
+    width: 600px;
+    height: 360px;
+}
+/*第一行*/
+#home_img1{
+    background-image: url('../assets/1.png');
+    margin-right: 0;
+}
+#first{
+    background-position: 0px 170px;
+    font-family: Roboto-Bold;
+    font-size: 300px;
+    color: #0065A3;
+    letter-spacing: 1.07px;
+    text-align: left;
+}
+#home_img1texthead{
+    font-family: Roboto-Bold;
+    font-size: 30px;
+    color: #303136;
+    letter-spacing: 0.11px;
+    max-width: 540px;
+    height:auto;
+    margin-left: 60px;
+    margin-top:120px ;  
+}
+#home_img1textp{
+    max-width: 540px;
+    height: auto;
+    color: #0A1017;
+    font-size: 14px;
+    margin: 10px 40px 0 0;
+    font-family: Roboto-Light;
+    letter-spacing: 0;
+    line-height: 20px;
+    margin-left: 60px
+} 
+/*第二行*/
+#second{
+    
+    background-position:-4px 199px;
+    font-family: Roboto-Bold;
+    font-size: 300px;
+    color: #0065A3;
+    letter-spacing: 1.07px;
+    text-align: left;
+}
+#home_img2texthead{
+    max-width: 540px;
+    height:auto;
+    margin: 0px;
+    font-family: Roboto-Bold;
+font-size: 30px;
+color: #303136;
+letter-spacing: 0.11px;
+margin-top: 120px;
+margin-left: 40px;
+margin-bottom: 20px;
+}
+#home_img2textp{
+    max-width: 540px;
+    height: auto;
+    color: #0A1017;
+    font-size: 14px;
+    margin: 10px 0 0 41px;  
+    font-family: Roboto-Light;
+font-size: 14px;
+letter-spacing: 0;
+line-height: 24px;
+}  
+#home_img2{
+    background-image: url('../assets/2.png');
+    margin: 0px ;
+}
+/*第三行*/
+	#home_img3{
+    background-image: url('../assets/3.png');
+    margin-right: 0;
+    
+}
+#third{
+    background-position: 0px 170px;
+    font-family: Roboto-Bold;
+    font-size: 300px;
+    color: #0065A3;
+    letter-spacing: 1.07px;
+    text-align: left;
+}
+#home_img3texthead{
+    font-family: Roboto-Bold;
+    font-size: 30px;
+    color: #303136;
+    letter-spacing: 0.11px;
+    max-width: 540px;
+    height:auto;
+    margin-left: 60px;
+   
+    margin-top:120px ;  
+}
+#home_img3textp{
+    max-width: 540px;
+    height: auto;
+    color: #0A1017;
+    font-size: 14px;
+    margin: 10px 40px 0 0;
+    font-family: Roboto-Light;
+    letter-spacing: 0;
+    line-height: 20px;
+    margin-left: 60px
+}
+/*第四行*/
+#fourth{
+    
+    background-position:-4px 199px;
+    font-family: Roboto-Bold;
+    font-size: 300px;
+    color: #0065A3;
+    letter-spacing: 1.07px;
+    text-align: left;
+}
+#home_img4texthead{
+    max-width: 540px;
+    height:auto;
+    margin: 0px;
+    font-family: Roboto-Bold;
+font-size: 30px;
+color: #303136;
+letter-spacing: 0.11px;
+margin-top: 120px;
+margin-left: 40px;
+margin-bottom: 20px;
+}
+#home_img4textp{
+    max-width: 540px;
+    height: auto;
+    color: #0A1017;
+    font-size: 14px;
+    margin: 10px 0 0 41px;  
+    font-family: Roboto-Light;
+font-size: 14px;
+letter-spacing: 0;
+line-height: 24px;
+}  
+#home_img4{
+    background-image: url('../assets/4.png');
+    margin: 0px ;
+}
+/*第五行*/
+	#home_img5{
+        /* 动态图效果测试 */
+        background-image: url('../assets/11111111111.gif');
+        /* background-image: url('../assets/5.png'); */
+        margin-right: 0;
+   
+}
+#fifth{
+    background-position: 0px 170px;
+    font-family: Roboto-Bold;
+    font-size: 300px;
+    color: #0065A3;
+    letter-spacing: 1.07px;
+    text-align: left;
+}
+#home_img5texthead{
+    font-family: Roboto-Bold;
+    font-size: 30px;
+    color: #303136;
+    letter-spacing: 0.11px;
+    max-width: 540px;
+    height:auto;
+    margin-left: 60px;
+   
+    margin-top:120px ;  
+}
+#home_img5textp{
+    max-width: 540px;
+    height: auto;
+    color: #0A1017;
+    font-size: 14px;
+    margin: 10px 40px 0 0;
+    font-family: Roboto-Light;
+    letter-spacing: 0;
+    line-height: 20px;
+    margin-left: 60px
+}
+/*第六行*/
+#sixth{
+    
+    background-position:-4px 199px;
+    font-family: Roboto-Bold;
+    font-size: 300px;
+    color: #0065A3;
+    letter-spacing: 1.07px;
+    text-align: left;
+}
+#home_img6texthead{
+    max-width: 540px;
+    height:auto;
+    margin: 0px;
+    font-family: Roboto-Bold;
+font-size: 30px;
+color: #303136;
+letter-spacing: 0.11px;
+margin-top: 120px;
+margin-left: 40px;
+margin-bottom: 20px;
+}
+#home_img6textp{
+    max-width: 540px;
+    height: auto;
+    color: #0A1017;
+    font-size: 14px;
+    margin: 10px 0 0 40px;  
+    font-family: Roboto-Light;
+font-size: 14px;
+letter-spacing: 0;
+line-height: 24px;
+}  
+#home_img6{
+    background-image: url('../assets/6.png');
+    margin: 0px ;
+   
+}
+/*第七行*/
+	#home_img7{
+    background-image: url('../assets/7.png');
+    margin-right: 0;
+}
+#seventh{
+    background-position: 0px 170px;
+    font-family: Roboto-Bold;
+    font-size: 300px;
+    color: #0065A3;
+    letter-spacing: 1.07px;
+    text-align: left;
+}
+#home_img7texthead{
+    font-family: Roboto-Bold;
+    font-size: 30px;
+    color: #303136;
+    letter-spacing: 0.11px;
+    max-width: 540px;
+    height:auto;
+    margin-left: 60px;
+   
+    margin-top:120px ;  
+}
+#home_img7textp{
+    max-width: 540px;
+    height: auto;
+    color: #0A1017;
+    font-size: 14px;
+    margin: 10px 40px 0 0;
+    font-family: Roboto-Light;
+    letter-spacing: 0;
+    line-height: 20px;
+    margin-left: 60px
+}
+/*第八行*/
+#eighth{
+    
+    background-position:-4px 199px;
+    font-family: Roboto-Bold;
+    font-size: 300px;
+    color: #0065A3;
+    letter-spacing: 1.07px;
+    text-align: left;
+}
+#home_img8texthead{
+    max-width: 540px;
+    height:auto;
+    margin: 0px;
+    font-family: Roboto-Bold;
+font-size: 30px;
+color: #303136;
+letter-spacing: 0.11px;
+margin-top: 50px;
+margin-left: 40px;
+margin-bottom: 20px;
+}
+#home_img8textp{
+    max-width: 540px;
+    height: auto;
+    color: #0A1017;
+    font-size: 14px;
+    margin: 10px 0 0 40px;  
+    font-family: Roboto-Light;
+font-size: 14px;
+letter-spacing: 0;
+line-height: 24px;
+}  
+#home_img8{
+    background-image: url('../assets/8.png');
+    margin: 0px ; 
+}
+/*第九行*/
+	#home_img9{
+    background-image: url('../assets/9.png');
+    margin-right: 0;
+    
+}
+#nineth{
+    background-position: 0px 170px;
+    font-family: Roboto-Bold;
+    font-size: 300px;
+    color: #0065A3;
+    letter-spacing: 1.07px;
+    text-align: left;
+}
+#home_img9texthead{
+    font-family: Roboto-Bold;
+    font-size: 30px;
+    color: #303136;
+    letter-spacing: 0.11px;
+    max-width: 540px;
+    height:auto;
+    margin-left: 60px;
+   
+    margin-top:120px ;  
+}
+#home_img9textp{
+    max-width: 540px;
+    height: auto;
+    color: #0A1017;
+    font-size: 14px;
+    margin: 10px 40px 0 0;
+    font-family: Roboto-Light;
+    letter-spacing: 0;
+    line-height: 20px;
+    margin-left: 60px
+}
+/*第十行*/
+#tenth{
+    
+    background-position:-4px 199px;
+    font-family: Roboto-Bold;
+    font-size: 300px;
+    color: #0065A3;
+    letter-spacing: 1.07px;
+    text-align: left;
+}
+#home_img10texthead{
+    max-width: 540px;
+    height:auto;
+    margin: 0px;
+    font-family: Roboto-Bold;
+font-size: 30px;
+color: #303136;
+letter-spacing: 0.11px;
+margin-top: 120px;
+margin-left: 40px;
+margin-bottom: 20px;
+}
+#home_img10textp{
+    max-width: 540px;
+    height: auto;
+    color: #0A1017;
+    font-size: 14px;
+    margin: 10px 0 0 40px;  
+    font-family: Roboto-Light;
+font-size: 14px;
+letter-spacing: 0;
+line-height: 24px;
+}  
+#home_img10{
+    background-image: url('../assets/10.png');
+    margin: 0px ;
+
+}
+/*第十一行*/
+	#home_img11{
+    background-image: url('../assets/11.png');
+    margin-right: 0;
+   
+}
+#eleven{
+    background-position: 0px 170px;
+    font-family: Roboto-Bold;
+    font-size: 300px;
+    color: #0065A3;
+    letter-spacing: 1.07px;
+    text-align: left;
+}
+#home_img11texthead{
+    font-family: Roboto-Bold;
+    font-size: 30px;
+    color: #303136;
+    letter-spacing: 0.11px;
+    max-width: 540px;
+    height:auto;
+    margin-left: 60px;
+   
+    margin-top:120px ;  
+}
+#home_img11textp{
+    max-width: 540px;
+    height: auto;
+    color: #0A1017;
+    font-size: 14px;
+    margin: 10px 40px 0 0;
+    font-family: Roboto-Light;
+    letter-spacing: 0;
+    line-height: 20px;
+    margin-left: 60px
+}
+
