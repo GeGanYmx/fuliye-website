@@ -378,7 +378,10 @@ ul li{
     margin-top: 100px;
 }
 #apipic2gif{
-    background-image: url('../assets/apipic2.gif');
+   /* 旧架构图 */
+    /* background-image: url('../assets/apipic2.gif'); */
+    /* 新架构图 */
+    background-image: url('../assets/5555.gif');
     width: 694px;
     height: 400px;
     transform: translate(30%,-10%);
