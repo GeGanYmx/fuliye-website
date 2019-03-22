@@ -1,5 +1,5 @@
 .all{
-    margin-top: 100px;
+    margin-top: 170px;
     margin-bottom: 100px;
 	background: #F5F7F8;
     border-radius: 6px;
@@ -50,7 +50,7 @@
 	width: 270px;
 
     margin-left: 0px;
-    margin-top: 40px;
+    margin-top: 10px;
     
 	}
 	.left-third p{
@@ -78,9 +78,7 @@ font-size: 14px;
 color: #999999;
 letter-spacing: 0;
 text-align: left;
-background: #FFFFFF;
-border: 1px solid #D4D4D4;
-border-radius: 6px;
+
 	
 }
 .left-fourth input2{
@@ -180,7 +178,7 @@ text-align: left;
 .right-second{
 	width: 430px;
 	margin-left: 40px;
-	margin-top: 30px;
+	margin-top: 10px;
 	padding: 0px;
 }
 .right-second p{
