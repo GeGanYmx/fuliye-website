@@ -78,6 +78,9 @@ a:hover{
     width: 300px;
     margin-top: 0px;
     margin-left: -40px;
+    background: #FFFFFF;
+    box-shadow: 0 4px 29px 0 rgba(0,0,0,0.10);
+    border-radius: 6px 0px 2px 0px 6px 6px 6px;
 }
 .slidedown{
     font-family: Roboto-Medium;

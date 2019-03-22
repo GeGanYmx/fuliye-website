@@ -1,236 +1,57 @@
-/*第一个大图*/
-.article_pic {
-    width: 1920px;
-    /*height: auto;*/
-    height: 630px;
-    /*margin: 0 auto 0 auto;*/
-    overflow-x: hidden;
-    background-image: url(../assets/content_img_banner2.png);
+#singupcontent{
+    width:1000px;
+    min-width: 1000px;
+    height: auto; 
+    margin: 100px auto;
 }
-
-.contact-bg {
-    background-image: url(../assets/content_bg.png)
+.texthead{
+    font-family: Roboto-Bold;
+    font-size: 30px;
+    color: #303136;
+    letter-spacing: 0.11px;
 }
-
-.title {
-    margin-left: 140px;
-}
-
-.title p {
-    font-family: PingFangSC-Regular;
-    font-size: 40px;
-    color: #0A1017;
-    letter-spacing: 0.14px;
-    text-align: left;
-}
-
-
-.title span {
-    font-family: PingFangSC-Regular;
-    font-size: 40px;
-    color: #0A1017;
-    letter-spacing: 0.14px;
-    text-align: left;
-
-}
-
-.text {
-    background: #FFFFFF;
-    border-radius: 6px;
-    width: 1000px;
-    height: 743px;
-    /* margin-top: 173px; */
-    margin-left: 140px;
-    text-align: left;
-
-}
-
-.text content-border {
-    border: 1px solid #E1E1E1;
-}
-
-.text span1 {
-    display: inline-block;
-    margin-left: 60px;
-    height: 30px;
-    width: 300px;
-    margin-left: 103px;
-    margin-right: 648px;
-    font-family: PingFangSC-Regular;
-    font-size: 22px;
-    color: #0A1017;
+.text{
+    font-family: Roboto-Regular;
+    font-size: 16px;
+    color: #999999;
     letter-spacing: 0;
-    text-align: left;
-
+}
+#inputgroup{
 }
 
-.text p {
-    margin-left: 103px;
-    height: 66px;
-    width: 858px;
-    font-family: PingFangSC-Regular;
-    font-size: 18px;
-    color: #606470;
-    letter-spacing: 0;
-    text-align: left;
-    line-height: 33px;
+.table { display: table ;height: 500px;}
+.tr { display: table-row ;width: 200px;height:50px;}
+.thead { display: table-header-group }
+.tbody { display: table-row-group }
+.tfoot { display: table-footer-group }
+.col { display: table-column }
+.colgroup { display: table-column-group }
+.td,.th { display: table-cell }
+.caption { display: table-caption }
+
+#left{
+    display: table-column;
+    width: 200px;
 }
-
-.text span2 {
-    margin-left: 60px;
-    font-family: PingFangSC-Regular;
-    font-size: 14px;
-    color: #0086D1;
-    letter-spacing: 0;
-    text-align: left;
-    line-height: 26px;
+#right{
+    display: table-column;
+    width: 500px;
 }
-
-.text span3 {
-
-    font-family: PingFangSC-Regular;
-    font-size: 14px;
-    color: #606470;
-    letter-spacing: 0;
-    text-align: left;
-    line-height: 26px;
-}
-
-
-.content-border {
-    height: 1px;
-    width: 848px;
-    border: 1px solid #E1E1E1;
-    margin-top: 54px;
-    margin-bottom: 40px;
-}
-
-
-
-
-/*表格*/
-.table {
-    height: 560px;
-    width: 1260px;
+.tabl-left{
 
 }
-
-.table-dis {
-    margin-top: 80px;
-    margin-bottom: 50px;
-    margin-left: 140px;
-    text-align: left;
-}
-
-.table span {
-    font-family: PingFangSC-Regular;
-    font-size: 22px;
-    color: #0A1017;
-    letter-spacing: 0;
-    text-align: left;
-}
-
-
-
-.demo {
-    display: flex;
-    justify-content: center;
-    width: 1260px;
-}
-
-.demo2 {
-    height: 365px;
-    width: 1090px;
-    display: flex;
-    justify-content: center;
-}
-
-
-
-.demo3 {
-    width: 1000px;
-    height: 325px;
-    margin: 30px 140px 0px 140px;
-}
-
-.request {
-    float: right;
-    margin-top: 13px;
-    margin-right: 150px;
-}
-
-.article-buttom {
-    float: right;
-    height: 20px;
-    margin-top: 71px;
-    margin-right: 633px;
+.tabl{
 
 }
+#btngroup{
 
-.btn-content {
-    width: 480px;
-    height: 62px;
-    background-image: url(../assets/content_button3.png);
-    margin-top: 40px;
-    margin-left: 400px;
-
-    /*字体*/
-    color: #FFFFFF; 
-    font-size: 24px;
-    letter-spacing: 0;
-    font-family: PingFangSC-Regular;
 }
+.btn{
 
-.btn-content input {
-    color: #FFFFFF;
-
-    text-align: center;
 }
+#creat{
 
+}
+#cancle{
 
-.inner {
-    height: 360px;
-    width: 480px;
-    font-size: 26px;
-    margin: 0 auto 0 auto;
-}
-
-.input {
-    height: 70px;
-    width: 480px;
-    margin: 0px 0px 15px 0px;
-    background: #FAFAFA;
-    border-radius: 6px;
-}
-
-.input3 {
-    height: 325px;
-    width: 1000px;
-    margin: 0px 0px 15px 0px;
-    background: #FAFAFA;
-    border-radius: 6px;
-}
-
-/*覆盖原样式*/
-.article_pic {
-    width: 100%;
-    height: 630px;
-    background-image: url(../assets/content_img_banner2.png);
-}
-
-/*覆盖样式*/
-footer {
-    background-color: #303136;
-}
-
-.article_container {
-    background-color: #FFF;
-}
-.article_display{
-    height: 640px;
-    /*height:auto;*/
-    background-color: #FFF;
-}
-.article_container{
-    height:640px;
 }
