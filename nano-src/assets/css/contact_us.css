@@ -333,6 +333,6 @@ input[type="checkbox"] + label {
 }
 [id="checkbox-1"]:checked + label {
     
-    background-image: url(../assets/content_button4_elected.png);
+    background-image: url(../assets/checked.png);
    
 }
