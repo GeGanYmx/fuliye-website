@@ -3,6 +3,8 @@
     min-width: 1000px;
     height: auto; 
     margin: 100px auto;
+    background: #F5F7F8;
+    border-radius: 6px;
 }
 .texthead{
     font-family: Roboto-Bold;
@@ -17,10 +19,14 @@
     letter-spacing: 0;
 }
 #inputgroup{
+    margin: 100px auto;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .table { display: table ;height: 500px;}
-.tr { display: table-row ;width: 200px;height:50px;}
+.tr { display: table-row ;width: 200px;height:50px;text-align: center;vertical-align: middle;}
 .thead { display: table-header-group }
 .tbody { display: table-row-group }
 .tfoot { display: table-footer-group }
@@ -29,19 +35,20 @@
 .td,.th { display: table-cell }
 .caption { display: table-caption }
 
-#left{
-    display: table-column;
+.table-left{
     width: 200px;
+    text-align: right;
+    padding-right: 20px;
 }
-#right{
-    display: table-column;
+.table-right{
+    text-align: left;
     width: 500px;
 }
-.tabl-left{
-
-}
-.tabl{
-
+.input{
+    width: 500px;
+    height: 50px;
+    padding-left: 10px;
+    background-color: #FFFFFF;
 }
 #btngroup{
 
