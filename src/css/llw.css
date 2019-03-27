@@ -1,0 +1,32 @@
+.menu{
+    display: inline;
+}
+.menuLogo{
+    position: absolute;
+    left:500PX;
+    font-size: 20PX;
+    padding: 40px;
+    background-color: red;
+}
+.menuBtmMid{
+    font-size: 20PX;
+    color: grey;
+    padding: 40px;
+    margin-left: 700px;
+    background-color: green;
+    width: 45%;
+}
+.menuBtmRight{
+    float:right;
+    margin-right: 400PX;
+    background-color: pink;
+    margin-top: -65PX;
+
+}
+.menuBtmRight * {
+    margin-left: 50PX;
+    font-size: 20PX;
+}
+.menuBtmMid * {
+    padding:5px;
+}
