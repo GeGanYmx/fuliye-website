@@ -389,7 +389,8 @@ ul li{
     font-family: Roboto-Bold;
     letter-spacing: 0.14px;
     text-align: left;
-    margin-left: 40px;
+    left: 50%;
+    transform: translateX(-90%);
     margin-top: 60px;
     margin-bottom: 60px;
   
@@ -402,7 +403,8 @@ ul li{
     background-image: url('../assets/home-frame.gif'); 
     width: 800px;
     height: 400px;
-    margin-left: 220px;
+    left: 50%;
+   
     
     /* transform: translate(30%,-10%); */
 
