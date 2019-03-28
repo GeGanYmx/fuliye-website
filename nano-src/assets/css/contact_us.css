@@ -50,8 +50,7 @@ margin: 0 auto;
     display: flex;
 }
 .left-first img{
-	width: 24px;
-	height: 24px;
+	height: 20px;
 	display: inline-block;
 	
 }
@@ -151,8 +150,8 @@ text-align: left;
     color: #FFFFFF; font-size: 20px;
     letter-spacing: 0;
     font-family: PingFangSC-Regular;
-    width: 160px;
-    height: 50px;
+    width: 120px;
+    height: 40px;
     background-image: url(../assets/content_button3.png);
     border: none;
 }
@@ -166,9 +165,9 @@ text-align: center;
 .right{
 	flex-direction:column;
 	background: #F5F7F8;
-border-radius: 6px;
+    border-radius: 6px;
     width: 500px;
-    height: 670px;
+    height: 630px;
 }
 .right-first{
 	width: 378px;
@@ -258,9 +257,9 @@ margin-right: 12px;
     width:12px;
     height:12px;
 display:inline-block;
-background:url("../assets/content_icon6.png");
+background:url("../assets/content_icon8.png");
 vertical-align:5%;
-margin-top:30px;
+margin-top:10px;
 margin-left: 20px;
 margin-right: 18px;
 

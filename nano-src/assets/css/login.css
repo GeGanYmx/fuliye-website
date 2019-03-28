@@ -93,34 +93,28 @@ text-align: left;
 	
 }
 .left-fifth-btn-left{
+	color: #FFFFFF;
+    font-size: 18px;
+    letter-spacing: 0;
+    font-family: PingFangSC-Regular;
+    width: 160px;
+    height: 50px;
+    background-image: url(../assets/content_button3.png);
+	border: none;
 	margin-left: 30px;
-    margin-top: 20px;
-	width: 210px;
-	height: 50px;
-	background: #A8AEB2;
-	padding: 13px 74px;
-border-radius: 4px;
-font-family: Roboto-Medium;
-font-size: 20px;
-color: #FFFFFF;
-letter-spacing: 0;
-text-align: left;
+	margin-top: 20px;
 }
 .left-fifth-btn-right{
+	color: #FFFFFF;
+    font-size: 18px;
+    letter-spacing: 0;
+    font-family: PingFangSC-Regular;
+    width: 160px;
+    height: 50px;
+    background-image: url(../assets/content_button3.png);
+	border: none;
 	margin-left: 30px;
-    margin-top: 20px;
-	width: 210px;
-	height: 50px;
-	margin-left: 10px;
-	background: #0086D1;
-border-radius: 4px;
-padding: 13px 74px;
-border-radius: 4px;
-font-family: Roboto-Medium;
-font-size: 20px;
-color: #FFFFFF;
-letter-spacing: 0;
-text-align: left;
+	margin-top: 20px;
 }
 
 .left-sixth{
@@ -146,7 +140,7 @@ text-align: left;
 .left-sixth-span2{
 	width: 165px;
 	height: 19px;
-	margin-left:146px ;
+	margin-left:30px ;
 	font-family: Roboto-Regular;
 font-size: 14px;
 color: #0086D1;
@@ -195,16 +189,13 @@ line-height: 24px;
 	margin-top: 25px;
 	}
 .right-third-button{
-	width: 210px;
-	
-	height: 50px;
-	padding: 10px 20px;
-	background: #0086D1;
-border-radius: 4px;
-font-family: Roboto-Medium;
-font-size: 20px;
-color: #FFFFFF;
-letter-spacing: 0;
-text-align: left;
+	color: #FFFFFF;
+    font-size: 16px;
+    letter-spacing: 0;
+    font-family: PingFangSC-Regular;
+    width: 160px;
+    height: 50px;
+    background-image: url(../assets/content_button3.png);
+    border: none;
 }
 

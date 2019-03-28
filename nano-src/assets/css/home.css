@@ -173,14 +173,15 @@
     margin: 10px 40px 0 0;
 }  
 #hardwarehead,#apihead,#benefitshead{
-    background-image: url('../assets/home_img_bg1.png');
+    /*background-image: url('../assets/home_img_bg1.png');*/
+    background-color: black;
     width:100%;
-    height:100px;
+    height:70px;
     text-align: center;
 }
 #hardinfo,#apiinfo,#beninfo{
     margin:0 auto 0 auto;
-    padding-top: 20px;
+    padding-top: 7px;
     font-size: 40px;
     font-family: Helvetica;
     font-size: 40px;
@@ -369,34 +370,48 @@ ul li{
     letter-spacing: 0;
 }
 #apipic2area{
-    background-image: url('../assets/bg.png');
+    /* background-image: url('../assets/bg.png'); */
+    background-color: #FFF;
     
     /* 静态图 */
     /* background-image: url('../assets/home_img6.png'); */
     width:100%;
-    height:538px;
     margin-top: 100px;
+    /* 修改布局 */
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(240, 240, 240);
+}
+#apitext2{
+    color: #000;
+    max-width: 555px;
+    font-size: 30px;
+    font-family: Roboto-Bold;
+    letter-spacing: 0.14px;
+    text-align: left;
+    left: 50%;
+    transform: translateX(-90%);
+    margin-top: 60px;
+    margin-bottom: 60px;
+  
 }
 #apipic2gif{
    /* 旧架构图 */
     /* background-image: url('../assets/apipic2.gif'); */
     /* 新架构图 */
-    background-image: url('../assets/5555.gif');
-    width: 694px;
+    /* background-image: url('../assets/5555.gif'); */
+    background-image: url('../assets/home-frame.gif'); 
+    width: 800px;
     height: 400px;
-    transform: translate(30%,-10%);
+    left: 50%;
+    margin-bottom: 50px;
+   
+    
+    /* transform: translate(30%,-10%); */
 
 }
-#apitext2{
-    color: #FFF;
-    max-width: 375px;
-    height:auto;
-    font-size: 40px;
-    font-family: Roboto-Bold;
-    letter-spacing: 0.14px;
-    text-align: left;
-    transform: translate(-108%,150%);
-}
+
+
 #apitext02{
     max-width:56px;
     color: #FFF;
@@ -467,7 +482,6 @@ ul li{
     background-color: #F7F8F9;
 }
 #benback{
-    background-image: url('../assets/home_img_bg2.png');
     width: 100%;
     height: 375px;
     justify-content: center;
@@ -480,14 +494,14 @@ ul li{
     vertical-align: middle;
 }
 #bentext{
-    color:#FFF;
+    color:white;
     display: inline-block;
     vertical-align: middle;
 }
 #beneicon1,#beneicon2,#beneicon3{
     display: inline-block;
     vertical-align: top;
-    margin: 106px 80px 0 80px;
+    margin: 66px 80px 0 80px;
 }
 #bi1icon,#bi2icon,#bi3icon{
     margin: 0;
@@ -687,13 +701,13 @@ line-height: 24px;
 #home_img4{
     /* background-image: url('../assets/4.png'); */
      /* 动态图效果测试 */
-     background-image: url('../assets/1111.gif');
+     background-image: url('../assets/1111_1.png');
     margin: 0px ;
 }
 /*第五行*/
 	#home_img5{
         /* 动态图效果测试 */
-        background-image: url('../assets/2222.gif');
+        background-image: url('../assets/2222_2.png');
         /* background-image: url('../assets/5.png'); */
         margin-right: 0;
    
@@ -763,14 +777,14 @@ line-height: 24px;
 }  
 #home_img6{
      /* GIF测试 */
-    background-image: url('../assets/3333.gif');
+    background-image: url('../assets/3333_1.png');
     /* background-image: url('../assets/6.png'); */
     margin: 0px ;
 }
 /*第七行*/
 	#home_img7{
     /* GIF测试 */
-    background-image: url('../assets/4444.gif');
+    background-image: url('../assets/2222_1.png');
     /* background-image: url('../assets/7.png'); */
     margin-right: 0;
 }
@@ -951,4 +965,14 @@ line-height: 24px;
     line-height: 20px;
     margin-left: 60px
 }
-
+#home_img6:hover{
+    background-image: url(../assets/3333.gif);
+}
+#home_img4:hover{
+    background-image: url(../assets/1111.gif);
+}
+#home_img5:hover{
+    background-image: url(../assets/2222.gif);
+}
+#home_img7:hover{
+    background-image: url(../assets/4444.gif);
