@@ -62,7 +62,7 @@
 }
 /*.article-span{
     display:block;
-    font-family: PingFangSC-Regular;
+    font-family: Roboto-Light;
     font-size: 22px;
     color: #0086D1;
     letter-spacing: 0;
@@ -76,7 +76,7 @@
     display: inline-block;
     align-content: center;
     margin-left: 35px;
-    font-family: PingFangSC-Regular;
+    font-family: Roboto-Light;
     font-size: 22px;
     color: #999999;
     letter-spacing: 0;
@@ -99,7 +99,7 @@ a{
     border-radius: 6px;
 }
 .article-question>span{
-    font-family: PingFangSC-Regular;
+    font-family: Roboto-Light;
     font-size: 22px;
     /*color: #0086D1;*/
     display: inline-block;
@@ -137,7 +137,7 @@ a{
 }
 .article-answer-smaltext{
     display: inline-block;
-    font-family: PingFangSC-Regular;
+    font-family: Roboto-Light;
     font-size: 14px;
     color: #606470;
     letter-spacing: 0;
@@ -226,7 +226,7 @@ a{
 #search{
     width:940px;height:60px;
     float: left;
-    font-family: PingFangSC-Regular;
+    font-family: Roboto-Light;
     font-size: 16px;
     /*color: #878787;*/
     letter-spacing: 0;border: 0;padding: 0;
