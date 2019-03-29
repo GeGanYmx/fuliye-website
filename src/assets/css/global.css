@@ -114,7 +114,8 @@ header{
 .home_logo {
     height: 43px;
     width: 140px;
-    background: url(../assets/home_logo4.png);
+    background: url(../assets/logo1.svg);
+    margin-left: -36px;
 }
 .nav_agroup{
     display: flex;
@@ -158,7 +159,6 @@ header{
 footer {
     width: 100%;
     height: auto;
-
 }
 
 /*内容区渲染底层*/
@@ -213,12 +213,21 @@ background-image: url('../assets/bg5.png');
 width: 100%;
 height: 360px;
 min-width: 1280px;
-display: flex;
+
+}
+#footcontainer{
+    width: 1280px;
+    min-width: 1280px;
+    display: flex;
 }
 .footer_right,.footer_right{
     width: 640px;
     display: flex;
     flex-direction: column;
+    margin-right: 0;
+}
+.footer_left{
+    margin-left: 0;
 }
 .footer_right{
     align-items: flex-end;
@@ -245,7 +254,7 @@ ul li {
 #footer_pic{
     width: 224px;
     height: 290px;
-    background-image: url(../assets/home_logo6.png);
+    background-image: url(../assets/logo4.png);
     background-position: bottom center;
     margin-bottom: 20px;
 }

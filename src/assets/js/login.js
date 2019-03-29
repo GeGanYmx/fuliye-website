@@ -1,21 +1,23 @@
 // console.log("调用成功 from login");
 
     function callLogin(data, callback) { 
-        // $.ajax({
-        //     type: "post",
-        //     url: "",
-        //     data: data,
-        //     dataType: "dataType",
-        //     success: callback,
-        // });
-    console.log(data);
-    callback({
-        error_code: 0,
-        data: {
-          token: "hfkjshHJKHH-fkkkfjf.fjks4322JHHLl",
-          name:"张三"
-        }
-     })
+        $.ajax({
+            type: "post",
+            url: "http://140.207.48.210:8022/api/sys/webLogin",
+            data: data,
+            dataType: "dataType",
+            success: callback,
+        });
+
+    // console.log(data);
+    // callback({
+    //     error_code: 0,
+    //     data: {
+    //       token: "hfkjshHJKHH-fkkkfjf.fjks4322JHHLl",
+    //       name:"张三"
+    //     }
+    //  })
+
     }
 
     $(function() {
