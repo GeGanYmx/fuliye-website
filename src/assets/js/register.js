@@ -47,6 +47,8 @@ $(function() {
         alert(response.data.code);
         alert(response.data.id);
         location.href="sentemail.html"; 
+      }else{
+        alert(response.data.code);
       }
       alert("register调用成功")
     })

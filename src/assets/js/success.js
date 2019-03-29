@@ -39,9 +39,9 @@ let id=GetQueryString(id);
 let code=GetQueryString(code);
 callActivation({id,code}, function (data) {
     if( data.error_code === 0){
-    alert(data.data.message)
-    jump();
+      alert(data.data.message)
+      jump();
     }else {
-      alert("激活出错，请稍后再试！")
+      alert(data.data.message)
     }
 })

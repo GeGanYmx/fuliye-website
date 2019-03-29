@@ -26,7 +26,7 @@
           callLogin($("#form2").serialize(), function (response) {
             console.log(response);
             if(response.error_code===0){
-              alert(response.data.name);
+              alert("姓名:"+response.data.name);
               location.href="home.html"; 
               localStorage.token=response.data.token;
             }
