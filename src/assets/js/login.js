@@ -5,7 +5,7 @@
             type: "post",
             url: "http://140.207.48.210:8022/api/sys/webLogin",
             data: data,
-            dataType: "dataType",
+            dataType: "json",
             success: callback,
         });
 

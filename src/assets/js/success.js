@@ -17,7 +17,6 @@ function GetQueryString(name)   //获取数据函数
   }
 
 // 激活界面函数,检查页面参数
-// http://demo.adinnet.cn/demo2/fuliye/activation.html
 function callActivation(data, callback) { 
   // console.log(data);
   // callback({
@@ -28,18 +27,17 @@ function callActivation(data, callback) {
   //       }
   //   })
   $.ajax({
-    type: "method",
+    type: "post",
     url: "http://140.207.48.210:8022/api/sys/emailUrl",
-    data: "data",
-    dataType: "dataType",
-    success: function (response) {
-    }
+    data: data,
+    dataType: "json",
+    success: callback
   });
 }
 
-// let error_code=GetQueryString(error_code);
-// let code=GetQueryString(code);
-callActivation({}, function (data) {
+let id=GetQueryString(id);
+let code=GetQueryString(code);
+callActivation({id,code}, function (data) {
     if( data.error_code === 0){
     alert(data.data.message)
     jump();
