@@ -35,6 +35,10 @@ function callRegister(data, callback) {
 }
 
 $(function() {
+
+  let href=location.href;
+  href=href.substring(0,href.lastIndexOf("/"))+"/success.html"; 
+  $('#link').val(href)
   $('#form1').submit(function(e) {
     e.preventDefault();
     callRegister($("#form1").serialize(), function (response) {
