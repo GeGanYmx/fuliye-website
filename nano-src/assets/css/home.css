@@ -35,7 +35,7 @@
     font-size: 18px;
     color: #FFFFFF;
     text-align: left;
-    line-height: 32px;
+  
 }
 /* 宽度100%图片在分辨率小于1280时未填满解决 */
 #home_img_banner,#hardwarehead,#apihead,#apipic2area,#benefitshead,#benback{
@@ -976,3 +976,4 @@ line-height: 24px;
 }
 #home_img7:hover{
     background-image: url(../assets/4444.gif);
+}
