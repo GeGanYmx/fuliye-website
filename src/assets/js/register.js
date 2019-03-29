@@ -48,7 +48,6 @@ $(function() {
         location.href="sentemail.html"; 
       }else{
         alert(response.data.code);
-        location.href="sentemail.html"; 
       }
     })
   })
