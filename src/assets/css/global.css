@@ -1,0 +1,328 @@
+/* 引入字体 */
+@font-face{
+    font-family: Roboto-Bold;
+    src: url('../font/Roboto_ttf/Roboto-Bold.ttf');
+}
+@font-face{
+    font-family: Roboto-Regular;
+    src: url('../font/Roboto_ttf/Roboto-Regular.ttf');
+}
+@font-face{
+    font-family: Roboto-Medium;
+    src: url('../font/Roboto_ttf/Roboto-Medium.ttf');
+}
+@font-face{
+    font-family: Roboto-Light;
+    src: url('../font/Roboto_ttf/Roboto-Light.ttf');
+}
+
+/*全局样式表*/
+/*body{text-align: center;}*/
+/*将某些浏览器的body的边距消除*/
+
+*{
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+    background-color:transparent; 
+    max-width: 1920px;
+}
+
+/* 清除链接点击出现下划线样式 */
+a,a:visited{
+    color: #B5B5B5;
+}
+a:focus{
+    text-decoration: none;
+}
+/* 初始化链接样式 鼠标悬停显示白色 不显示下划线 */
+a:hover{
+    text-decoration: none;
+    color:#FFFFFF;
+}
+/* 导航高亮样式 */
+.highlight{
+    color:#FFFFFF;
+}
+/*导航栏样式*/
+.navi_bar {
+    height: 70px;
+    width: 1920px;
+    min-width: 1280px;
+    background-color: #303136;
+    position: fixed;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 16;
+}
+/* 导航栏下拉 */
+/* 先隐藏menu类下的li，当鼠标悬浮menu类时，显示 */
+#slidehead{
+    margin-left: -40px;
+}
+#slide:link，#slide:visited，#slidehead:hover,#slidehead:active{
+    color:#B5B5B5;
+}
+.menu:hover ul{
+    visibility: visible;
+}
+.slidedowncontent{
+    visibility: hidden;
+    /* visibility: visible; */
+}
+.slidedowncontent{
+    position: absolute;
+    background-color: #FFFFFF;
+    height: 120px;
+    width: 300px;
+    margin-top: 0px;
+    margin-left: -40px;
+    background: #FFFFFF;
+    box-shadow: 0 4px 29px 0 rgba(0,0,0,0.10);
+    border-radius: 6px 0px 2px 0px 6px 6px 6px;
+}
+.slidedown{
+    font-family: Roboto-Medium;
+    font-size: 18px;
+    color: #919191;
+    letter-spacing: 0;
+    text-align: left;
+    margin: 0 0 0 0;
+}
+.slidedown a:hover{
+    color: #323643;
+}
+#doc{
+    margin: 20px 0 0 0;
+}
+#faq{
+    margin: 20px 0 0 0;
+}
+
+header{
+    background-color:#303136;
+}
+#head_container{
+    width:1280px;
+    min-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+/*logo样式*/
+.home_logo {
+    height: 43px;
+    width: 140px;
+    background: url(../assets/logo1.svg);
+    margin-left: -36px;
+}
+.nav_agroup{
+    display: flex;
+    height: 70px;
+    width: 460px;
+    padding-top: 20px;
+}
+/*按钮外部div*/
+.nav_btn_group {
+    width: 250px;
+    height: 50px;
+}
+
+/*导航栏按钮样式*/
+.navi_btn {
+    width: 112px;
+    height: 48px;
+    border: 1px solid #3F4045;
+    border-radius: 100px;
+    color: #FFF;
+    font-size: 18px;
+    margin-right: 10px;
+    padding: 10px;
+    font-family: Roboto-Regular;
+}
+
+/*导航链接*/
+.navi_nav_link {
+    height: 32px;
+    max-width: 120px;
+    font-family: Roboto-Medium;
+    font-size: 18px;
+    color: #B5B5B5;
+    letter-spacing: 0;
+    text-align: left;
+    line-height: 32px;
+    text-decoration: none;
+}
+
+/*页眉底部渲染层*/
+footer {
+    width: 100%;
+    height: auto;
+}
+
+/*内容区渲染底层*/
+.article_display {
+    width: 100%;
+    /*background-color: red;*/
+    background-color: #FFF;
+}
+
+/*内容区图片区域*/
+.article_pic {
+    /*width: 1920px;*/
+    width: 100%;
+    /*高度自定*/
+    height: auto;
+    background-image: none;
+}
+.footer_logo {
+    width: 100%;
+    height: 30%;
+    background-image: url(../assets/home_logo5.png);
+    background-repeat: no-repeat;
+}
+#footer_text1 {
+    max-width: 1000px;
+    height: auto;
+    font-family: Roboto-Bold;
+    font-size: 24px;
+    color:black;
+    letter-spacing: 0.11px;
+    text-align: center;
+    margin: 45px auto;
+}
+
+#footer_btn {
+    width: 157px;
+    height: 48px;
+    border-radius: 100px;
+    border-color:#D2D3D4;
+    /*字体颜色*/
+    font-family: Roboto-Light;
+    font-size: 18px;
+    color:black;
+    text-align: center;
+    line-height: 32px;
+    margin: 0 auto;
+    text-decoration: underline;
+    font-weight: 700;
+}
+#underfooter{
+background-image: url('../assets/bg5.png');
+width: 100%;
+height: 360px;
+min-width: 1280px;
+
+}
+#footcontainer{
+    width: 1280px;
+    min-width: 1280px;
+    display: flex;
+}
+.footer_right,.footer_right{
+    width: 640px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 0;
+}
+.footer_left{
+    margin-left: 0;
+}
+.footer_right{
+    align-items: flex-end;
+}
+#list1,#list2,#list3{
+    display: flex;
+    flex-direction: column;
+    height: 260px;
+    color:#B5B5B5;
+    font-size: 18px;
+    font-family: Roboto-Medium;
+    letter-spacing: 0px;
+    line-height: 32px;
+    margin-top: 50px;
+    margin-left: -40px;
+}
+.listgroup{
+    display: flex;
+    justify-content: center;
+}
+ul li {
+    list-style-type: none;
+}
+#footer_pic{
+    width: 224px;
+    height: 290px;
+    background-image: url(../assets/logo4.png);
+    background-position: bottom center;
+    margin-bottom: 20px;
+}
+#webbtn{
+    width: 224px;
+    height: 110px;
+    background-color: transparent;
+    margin-top: -110px;
+    margin-left: -20px;
+}
+#footer_text2 {
+    width: 487px;
+    height: 20px;
+    font-family: Roboto-Light;
+    font-size: 14px;
+    color:#B5B5B5;
+    letter-spacing: 0;
+    bottom:0;
+}
+#footer_text3 {
+    width: 191px;
+    height: 20px;
+    font-family: Roboto-Light;
+    font-size: 14px;
+    color:#B5B5B5;
+    letter-spacing: 0;
+}
+.article_container{
+    background-color:blue;
+    width:1280px;
+    min-width: 1280px;
+    height:auto;
+    margin:0 auto 0 auto;
+}
+
+/*页面内容区域*/
+.footer_container{
+    height:320px;
+    width:1920px;
+    min-width: 1280px;;
+    margin:0 auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(../assets/home_img_bg2.png); 
+}
+.article_display,.article_container{
+    /*高度根据具体情况暂时修改*/
+    height: auto;
+}
+
+/*设置连接激活态*/
+a:active {
+    color: #FFF;
+}
+/*去除按钮点击时外边框*/
+button:focus{
+    outline: none;
+}
+
+.navi_bar,.article_container,.footer_container{
+    width: 100%;
+min-width:1280px;
+}
+.contact-flag-websit{
+    color: black;
+    margin-top: -5px;
+}
+#login{
+    line-height: 52px;
+}
