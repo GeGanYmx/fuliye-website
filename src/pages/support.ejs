@@ -137,15 +137,15 @@ support: highlight
                           </a>
                         </li>
                         <li style="width:200.4px; " onclick="support.toggleTab(this)">
-                          <a href="#power" data-toggle="tab" style="margin-left:85px;">
-                            <img src="./assets/application.png" id="img1" style="height:60px;margin-left: 20px;"/>
-                            <span class="icon-span" style="height:30px;width:64px;margin-left: 0px;">application</span>
+                          <a href="#application" data-toggle="tab" style="margin-left:65px; width: 120px;">
+                            <img src="./assets/application.png" id="img1" style="height:60px;margin-left: 25px;"/>
+                            <span class="icon-span" style="height:30px;margin-left: 0.5px;">application</span>
                          </a>
                         </li>
                       <li style="width:200.4px ; margin-left:50px" onclick="support.toggleTab(this)">
-                        <a href="#power" data-toggle="tab" style="margin-left:85px;">
-                          <img src="./assets/support_icon2.png" id="img1" style="height:60px;margin-left: 20px;"/>
-                          <span class="icon-span" style="height:30px;width:64px;margin-left: 0px;">Computer</span>
+                        <a href="#computer" data-toggle="tab" style="margin-left:85px; width: 120px;">
+                          <img src="./assets/support_icon2.png" id="img1" style="height:60px;margin-left: 22px;"/>
+                          <span class="icon-span" style="height:30px;margin-left: 3px;">Computer</span>
                        </a>
                       </li>
                       <li style="width:200.4px; margin-left:50px" onclick="support.toggleTab(this)">
@@ -163,80 +163,113 @@ support: highlight
                 <div class="tab-pane fade in active" id="sdk">
                 <div class="question-answer-active2">
                     <div class="article-question">
-                      <span style="color:#0086D1;">1Q: What kind of parameters the EXOPS users can adjust via SDK?</span>
+                      <span style="color:#0086D1;">
+                        Q: What programming language does EXOPS SDK support?
+                      </span>
                  
                   </div>
                     <!--展文-->
                     <div class="article-answer2">
                       <div class="answer-A-parent"><span class="article-answer-A">A:</span></div>
                       <span class="article-answer-smaltext">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor.
-                          Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet.
+                        SDK supports C++, C#, Python, MATLAB programming language.
                       </span>
                    </div>
                   </div>
                   <div class="question-answer-active2">
                       <div class="article-question">
-                        <span style="color:#0086D1;">2Q: What kind of parameters the EXOPS users can adjust via SDK?</span>
+                        <span style="color:#0086D1;">
+                          Q: What is the development environment of EXOPS SDK?
+                        </span>
           
                     </div>
                     
                       <div class="article-answer2">
                         <div class="answer-A-parent"><span class="article-answer-A">A:</span></div>
                         <span class="article-answer-smaltext">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor.
-                            Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet.
-                        </span>
+                           SDK supports Visual Studio, PyCharm,  LabView, MATLAB developing environment. </span>
                      </div>
                     </div>
                     <div class="question-answer-active2" style="border-bottom-width:  0px;">
                         <div class="article-question">
-                          <span style="color:#0086D1;">3Q: What kind of parameters the EXOPS users can adjust via SDK?</span>
+                          <span style="color:#0086D1;">
+                            Q: On the pre-customized SDK packages, how can SDK provide reference to quantify and make modification on current gait pattern to user desired gait pattern with user’s customization gait pattern? </span>
     
                       </div>
                         
                         <div class="article-answer2">
                           <div class="answer-A-parent"><span class="article-answer-A">A:</span></div>
                           <span class="article-answer-smaltext">
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor.
-                              Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet.
-                          </span>
+                            Pre-customized gait pattern would be the next stage of our open platform system but currently, Fourier’s MMU controller board couldn’t be connected to other sensor. User can only self-customize and configure the system or algorithm value for own data processing. If users have already had a fully customized gait value, National Instrument CompactRIO system or CAN-PCI would be an option. </span>
                        </div>
+                      </div>
+
+                      <!-- 3 -->
+                    
+                    <div class="question-answer-active2">
+                        <div class="article-question">
+                          <span style="color:#0086D1;">
+                            Q: What kind of parameters the EXOPS users can adjust via SDK?
+                          </span>
+            
+                      </div>
+                      
+                        <div class="article-answer2">
+                          <div class="answer-A-parent"><span class="article-answer-A">A:</span></div>
+                          <span class="article-answer-smaltext">
+                            The adjustment of gait trajectory, motor torque, motor speed and acceleration.
+                            </span>
+                           </div>
+                      </div>
+                      <div class="question-answer-active2">
+                        <div class="article-question">
+                          <span style="color:#0086D1;">
+                            Q: Can users directly control the Actuators of Fourier X2 without SDK? 
+                          </span>
+            
+                      </div>
+                      
+                        <div class="article-answer2">
+                          <div class="answer-A-parent"><span class="article-answer-A">A:</span></div>
+                          <span class="article-answer-smaltext">
+                            Yes, users can control the actuators through the motor driver via CANopen.
+                            </span>
+                           </div>
                       </div>
                   </div>
     
                   <div class="tab-pane fade" id="computer">
                       <div class="question-answer-active2">
                           <div class="article-question">
-                            <span style="color:#0086D1;">4Q: What kind of parameters the EXOPS users can adjust via SDK?</span>
+                            <span style="color:#0086D1;">
+                              Q: What are the minimal hardware requirements and operating systems for host computer use?
+                            </span>
                            
                         </div>
                           
                           <div class="article-answer2">
                             <div class="answer-A-parent"><span class="article-answer-A">A:</span></div>
                             <span class="article-answer-smaltext">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor.
-                                Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet.
-                            </span>
+                              The computer should at least be 1GHz CPU and 1GB RAM. As for the operating systems, currently we support Windows XP, Windows 7 and Windows 8.</span>
                          </div>
                         </div>
                         <div class="question-answer-active2">
                             <div class="article-question">
-                              <span style="color:#0086D1;">5Q: What kind of parameters the EXOPS users can adjust via SDK?</span>
+                              <span style="color:#0086D1;">
+                                Q: If users are required to build their own computer controller board, how can the board communicate with our pre-existing controller board? How’s the protocol can be carried out?
+                              </span>
                              
                           </div>
                            
                             <div class="article-answer2">
                               <div class="answer-A-parent"><span class="article-answer-A">A:</span></div>
                               <span class="article-answer-smaltext">
-                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor.
-                                  Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet.
-                              </span>
+                                If user intend to build their own controller board, Fourier able to provide SDK, specific LAN-Ethernet connection information and protocol can be found in related document.  </span>
                            </div>
                           </div>
-                          <div class="question-answer-active2" style="border-bottom-width:  0px;">
+                          <!-- <div class="question-answer-active2" style="border-bottom-width:  0px;">
                               <div class="article-question">
-                                <span style="color:#0086D1;">6Q: What kind of parameters the EXOPS users can adjust via SDK?</span>
+                                <span style="color:#0086D1;">Q: What kind of parameters the EXOPS users can adjust via SDK?</span>
                                 
                             </div>
                               
@@ -247,41 +280,39 @@ support: highlight
                                     Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet.
                                 </span>
                              </div>
-                            </div>
+                            </div> -->
                   </div>
     
                   <div class="tab-pane fade" id="power">
                       <div class="question-answer-active2">
                           <div class="article-question">
-                            <span style="color:#0086D1;">7Q: What kind of parameters the EXOPS users can adjust via SDK?</span>
+                            <span style="color:#0086D1;">
+                              Q: What is the battery type used in Fourier X2? </span>
                           
                         </div>
                         
                           <div class="article-answer2">
                             <div class="answer-A-parent"><span class="article-answer-A">A:</span></div>
                             <span class="article-answer-smaltext">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor.
-                                Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet.
-                            </span>
+                              Fourier are using lithium battery in X2. The voltage is 48 V DC, the capacity is 6.4 AH and the power source is 220 V. </span>
                          </div>
                         </div>
                         <div class="question-answer-active2">
                             <div class="article-question">
-                              <span style="color:#0086D1;">8Q: What kind of parameters the EXOPS users can adjust via SDK?</span>
+                              <span style="color:#0086D1;">
+                                Q: : In case of adding in sensor add-on to X2, how can they configure the power line and in what way can the cabling be carried out? </span>
     
                           </div>
                             
                             <div class="article-answer2">
                               <div class="answer-A-parent"><span class="article-answer-A">A:</span></div>
                               <span class="article-answer-smaltext">
-                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor.
-                                  Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet.
-                              </span>
+                                X2’s battery able to supply DC 48V of power, if third party sensor’s power specification is 48V, user able to fit the sensor into the device. If the power supply needed for sensor is beyond 48V, user has to customize or configure own power supply line. </span>
                            </div>
                           </div>
-                          <div class="question-answer-active2" style="border-bottom-width:  0px;">
+                          <!-- <div class="question-answer-active2" style="border-bottom-width:  0px;">
                               <div class="article-question">
-                                <span style="color:#0086D1;">9Q: What kind of parameters the EXOPS users can adjust via SDK?</span>
+                                <span style="color:#0086D1;">Q: What kind of parameters the EXOPS users can adjust via SDK?</span>
                             </div>
                              
                               <div class="article-answer2">
@@ -291,8 +322,59 @@ support: highlight
                                     Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet.
                                 </span>
                              </div>
-                            </div>
+                            </div> -->
                   </div>
+                  <div class="tab-pane fade" id="application">
+                    <div class="question-answer-active2">
+                        <div class="article-question">
+                          <span style="color:#0086D1;"> 
+                            Q: Can user directly acquire sensor data from Fourier X2?
+                          </span>
+                        
+                      </div>
+                      
+                        <div class="article-answer2">
+                          <div class="answer-A-parent"><span class="article-answer-A">A:</span></div>
+                          <span class="article-answer-smaltext">
+                            Yes, we offer two different choices: <br/>
+                            You can acquire sensor date from our MMU via SDK;<br/>
+                            You can purchase standard data acquisition hardware, such as PXI from National Instruments.
+                            
+                          </span>
+                       </div>
+                      </div>
+                      <div class="question-answer-active2">
+                          <div class="article-question">
+                            <span style="color:#0086D1;">
+                              Q: How EXOPS users can control the Fourier X2?
+                              </span>
+  
+                        </div>
+                          
+                          <div class="article-answer2">
+                            <div class="answer-A-parent"><span class="article-answer-A">A:</span></div>
+                            <span class="article-answer-smaltext" >
+                              we offer three different choices: <br/>
+                              You can use the CAN Card; <br/>
+                              You can use the CompactRIO from National Instruments; <br/>
+                              You can use the X2 build-in MMU. <br/>
+                              </span>
+                         </div>
+                        </div>
+                        <!-- <div class="question-answer-active2" style="border-bottom-width:  0px;">
+                            <div class="article-question">
+                              <span style="color:#0086D1;">Q: What kind of parameters the EXOPS users can adjust via SDK?</span>
+                          </div>
+                           
+                            <div class="article-answer2">
+                              <div class="answer-A-parent"><span class="article-answer-A">A:</span></div>
+                              <span class="article-answer-smaltext">
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor.
+                                  Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet.
+                              </span>
+                           </div>
+                          </div> -->
+                </div>
     
                 <div style="height:38px;width:100%;font-family: Roboto-Regular;
                   font-size: 20px;
