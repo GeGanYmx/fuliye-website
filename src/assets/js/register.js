@@ -45,12 +45,11 @@ $(function() {
       console.log(response);
       if(response.error_code===0){
         alert(response.data.code);
-        alert(response.data.id);
         location.href="sentemail.html"; 
       }else{
         alert(response.data.code);
+        location.href="sentemail.html"; 
       }
-      alert("register调用成功")
     })
   })
 })
