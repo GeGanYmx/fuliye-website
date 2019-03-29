@@ -137,6 +137,7 @@ header{
     color: #FFF;
     font-size: 18px;
     margin-right: 10px;
+    padding: 10px;
     font-family: Roboto-Regular;
 }
 
@@ -312,4 +313,7 @@ min-width:1280px;
 .contact-flag-websit{
     color: black;
     margin-top: -5px;
+}
+#login{
+    line-height: 52px;
 }
