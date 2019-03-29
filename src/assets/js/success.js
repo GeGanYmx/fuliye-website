@@ -19,14 +19,22 @@ function GetQueryString(name)   //获取数据函数
 // 激活界面函数,检查页面参数
 // http://demo.adinnet.cn/demo2/fuliye/activation.html
 function callActivation(data, callback) { 
-  console.log(data);
-  callback({
-        error_code: 0,
-        data: {
-            code: 200,
-            message: "激活成功！"
-        }
-    })
+  // console.log(data);
+  // callback({
+  //       error_code: 0,
+  //       data: {
+  //           code: 200,
+  //           message: "激活成功！"
+  //       }
+  //   })
+  $.ajax({
+    type: "method",
+    url: "http://140.207.48.210:8022/api/sys/emailUrl",
+    data: "data",
+    dataType: "dataType",
+    success: function (response) {
+    }
+  });
 }
 
 // let error_code=GetQueryString(error_code);

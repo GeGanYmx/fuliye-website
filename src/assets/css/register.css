@@ -8,6 +8,9 @@
     margin-top: 170px;
     text-align: center;
 }
+#link{
+    display: none;
+}
 .texthead{
     font-family: Roboto-Bold;
     font-size: 30px;
