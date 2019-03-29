@@ -1,6 +1,6 @@
 module.exports = {
   build: {
-    srcPath: './nano-src',
+    srcPath: './src',
     outputPath: './public',
     cleanUrls: false,
   },
