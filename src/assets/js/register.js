@@ -43,11 +43,11 @@ $(function() {
     e.preventDefault();
     callRegister($("#form1").serialize(), function (response) {
       console.log(response);
-      if(response.error_code===0){
-        alert(response.data.code);
+      if(response.code===200){
+        console.log('注册成功 response.data.code '+response.data.code)
         location.href="sentemail.html"; 
       }else{
-        alert(response.data.code);
+        console.log('失败 response.data.code '+response.data.code)
       }
     })
   })

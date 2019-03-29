@@ -25,7 +25,7 @@
           e.preventDefault();
           callLogin($("#form2").serialize(), function (response) {
             console.log(response);
-            if(response.error_code===0){
+            if(response.code===200){
               alert("姓名:"+response.data.name);
               location.href="home.html"; 
               localStorage.token=response.data.token;

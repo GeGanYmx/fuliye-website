@@ -38,7 +38,7 @@ function callActivation(data, callback) {
 let id=GetQueryString(id);
 let code=GetQueryString(code);
 callActivation({id,code}, function (data) {
-    if( data.error_code === 0){
+    if( data.code === 200){
       alert(data.data.message)
       jump();
     }else {
