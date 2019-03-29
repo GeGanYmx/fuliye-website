@@ -16,22 +16,22 @@
 
 //假接口，模拟接收服务器callback
 function callRegister(data, callback) {
-  console.log(data)
-  callback({
-    error_code: 0,
-    data: {
-     code: "注册成功！",
-    id: "15805611ef0f44b1b32cf48012d03adf"
-    }
-  })
+  // console.log(data)
+  // callback({
+  //   error_code: 0,
+  //   data: {
+  //    code: "注册成功！",
+  //   id: "15805611ef0f44b1b32cf48012d03adf"
+  //   }
+  // })
 
-  // $.ajax({
-  //   type: "post",
-  //   url: "http://140.207.48.210:8022/",
-  //   data: data,
-  //   dataType: "json",
-  //   success: callback
-  // });
+  $.ajax({
+    type: "post",
+    url: "http://140.207.48.210:8022/api/sys/registerByEmail",
+    data: data,
+    dataType: "json",
+    success: callback
+  });
 }
 
 $(function() {
