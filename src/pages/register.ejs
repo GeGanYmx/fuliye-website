@@ -1,0 +1,73 @@
+---
+title: Register
+private_css: css/register.css
+private_js: js/register.js
+---
+
+
+
+
+      <div id="singupcontent">
+        <div class="texthead">Create your account</div>
+        <div class="text" id="headbelow">
+            <img src="./assets/content_icon7.png" />
+          Please fill your account details below.
+        </div>
+        <form id="form1" action="#" method="GET">
+          <div id="inputgroup" class="table">
+            <div class="tr">
+              <div class="td table-left">* FIRST NAME</div>
+              <div class="td table-right"><input type="text" name="firstname" class="input" required></div>
+            </div>
+            <div class="tr">
+                <div class="td table-left">* LAST NAME</div>
+                <div class="td table-right"><input type="text" name="lastname" class="input" required></div>
+              </div>
+            <div class="tr">
+              <div class="td table-left">* EMAIL</div>
+              <div class="td table-right"><input type="email" name="email" class="input" required></div>
+            </div>
+            <div class="tr">
+              <div class="td table-left">* PASSWORD</div>
+              <div class="td table-right"><input type="password" name="password" class="input" required id="pwd"></div>
+            </div>
+            <div class="tr">
+              <div class="td table-left">* PASSWORD CONFIRMATION</div>
+              <div class="td table-right"><input type="password" name="pwd2" class="input" required id="pwd2" onblur="validate()"></div>
+            </div>
+            <div class="tr">
+              <div class="td table-left">* COMPANY/INSTITUTION</div>
+              <div class="td table-right"><input type="text" name="company" class="input" required></div>
+            </div>
+            <div class="tr">
+                <div class="td table-left">* COUNTRY</div>
+                <div class="td table-right"><input type="text" name="cuontry" class="input" required></div>
+              </div>
+          </div>
+
+          <div id="textgroup">
+            <div class="text" id="check1">
+                <input type="checkbox" value="0" id="checkbox-1" style="display: none;">
+                <label for="checkbox-1"></label> I want to receive EXOPS Newsletter.</div>
+              <div class="text" id="check2">
+                  <input type="checkbox" value="0" id="checkbox-2" style="display: none;">
+                  <label for="checkbox-2"></label> I agree with EXOPS <span class="blue"> Terms of Use </span>and <span class="blue"> Privacy Policy</span>.</div>
+              <div class="text" >* Required Fields</div>
+        </div>
+         
+          <div id="btngroup">
+            <button class="btn" id="cancle" type="reset">Cancel</button>
+            <button class="btn" id="creat" type="submit">Create an account</button>
+          </div>
+
+
+        </form>
+       
+      
+      
+     
+      
+      </div>
+
+
+
