@@ -12,35 +12,6 @@
 // }
 
 
-//激活界面函数,检查页面参数
-// http://demo.adinnet.cn/demo2/fuliye/activation.html
-// function callActivation(data, callback) { 
-//   if(data.ok) {
-//     location.href="login.html"
-//   } else {
-//     alert("激活出错，请稍后再试！")
-//   }
-// }
-// let id=GetQueryString(id);
-// let code=GetQueryString(GetQueryString);
-// callActivation({id,code}, function (data) {
-//     if(data.ok) {
-//       location.href="login.html"
-//     } else {
-//       alert("激活出错，请稍后再试！")
-//     }
-// })
-// function GetQueryString(name)   //获取数据函数
-//   {
-//        var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
-//        var r = window.location.search.substr(1).match(reg);
-//        if(r!=null)return  unescape(r[2]); return null;
-//   }
-
-// function callLogin(data, callback) { 
-// }
-
-
 
 
 //假接口，模拟接收服务器callback
@@ -71,7 +42,7 @@ $(function() {
       if(response.error_code===0){
         alert(response.data.code);
         alert(response.data.id);
-        // location.href="login.html"; //发邮件界面弄好后跳转到邮件界面。
+        location.href="sentemail.html"; 
       }
       alert("register调用成功")
     })

@@ -8,7 +8,9 @@ var Global={
     }
 }
 
-
+function callLogout(data, callback) { 
+    delete localStorage.token;
+}
 
 
 //每个页面检查是否登录状态
@@ -25,7 +27,8 @@ $(
 
 //登出清除token
 $(
-    function callLogout(data, callback) { 
-        delete localStorage.token;
-    }
+    $('#logout').click(function (e) { 
+        e.preventDefault();
+        callLogout();
+    })
 )
