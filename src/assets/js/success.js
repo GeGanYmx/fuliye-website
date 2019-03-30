@@ -4,7 +4,7 @@ function jump(){
     var interval=setInterval(function(){
     if(num==0){
     clearInterval(interval);
-    location.href="home.html"
+    location.href="login.html"
     }
     countdown.innerHTML=num--;
     },1000);
@@ -15,7 +15,6 @@ function GetQueryString(name)   //获取数据函数
        var r = window.location.search.substr(1).match(reg);
        if(r!=null)return  unescape(r[2]); return null;
   }
-
 // 激活界面函数,检查页面参数
 function callActivation(data, callback) { 
   // console.log(data);
@@ -35,13 +34,26 @@ function callActivation(data, callback) {
   });
 }
 
-let id=GetQueryString(id);
-let code=GetQueryString(code);
-callActivation({id,code}, function (data) {
-    if( data.code === 200){
-      alert(data.data.message)
+let uid=GetQueryString('uid');
+
+
+    $(function(){
+      let token=localStorage.token||undefined;
+      if(token){
+        location.href="login.html"
+      }else{
+          console.log("等待激活");
+      }
+    })
+
+$(
+  callActivation(uid, function (response) {
+    console.log(response);
+    if( response.code === 200){
+      console.log("成功:"+response.message)
       jump();
     }else {
-      alert(data.data.message)
+      console.log("失败："+response.message)
     }
-})
+  })
+)

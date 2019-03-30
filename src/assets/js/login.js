@@ -4,7 +4,8 @@
         $.ajax({
             type: "post",
             url: "http://140.207.48.210:8022/api/sys/webLogin",
-            data: data,
+            contentType:"application/json",
+            data: JSON.stringify($('form').serializeObject()),
             dataType: "json",
             success: callback,
         });
@@ -20,17 +21,39 @@
 
     }
 
+    $.fn.serializeObject = function() {
+      var o = {};
+      var a = this.serializeArray();
+      $.each(a, function() {
+          if (o[this.name]) {
+              if (!o[this.name].push) {
+                  o[this.name] = [ o[this.name] ];
+              }
+              o[this.name].push(this.value || '');
+          } else {
+              o[this.name] = this.value || '';
+          }
+      });
+      return o;
+  };
+
     $(function() {
         $('#form2').submit(function(e) {
           e.preventDefault();
-          callLogin($("#form2").serialize(), function (response) {
+          callLogin($("#form2").serializeArray(), function (response) {
+            console.log($("#form2").serializeArray());
             console.log(response);
             if(response.code===200){
-              alert("姓名:"+response.data.name);
-              location.href="home.html"; 
+              console.log("UserNamae:"+response.data.name);
               localStorage.token=response.data.token;
+              localStorage.username=response.data.name;
+              location.href="home.html"; 
+            }else{
+              console.log("失败message:"+response.message);
             }
-            alert("login调用成功")
+            console.log("login调用成功")
           })
         })
       })
+
+      
