@@ -3,7 +3,7 @@ $(
     function (data, callback) {  
         let token=localStorage.token||undefined;
         if(token){
-            alert('已登陆')
+            console.log('已登陆')
             location.href='home.html'
         }else{
             console.log("等待激活");

@@ -48,9 +48,14 @@
             <div class="nav_btn_group">
               <!-- <button class="navi_btn" onclick="Global.login()"><span id="login">Log In</span></button>
               <button class="navi_btn" onclick="Global.register()"><span>Sign Up</span></button> -->
-              <a class="navi_btn" href="login.html"><span id="login">Log In</span></a>
-              <a class="navi_btn" href="register.html"><span>Sign Up</span></a>
-              <!-- <a class="navi_btn" href="javascript:void(0)" id="logout"><span>logout</span></a> -->
+              <div id="unlog" class="hidden">
+                  <a class="navi_btn" href="login.html" ><span id="login">Log In</span></a>
+                  <a class="navi_btn" href="register.html" ><span id="signup">Sign Up</span></a>
+              </div>
+              <div id="loged" class="hidden">
+                  <a class="navi_btn" href="javascript:void(0)" id="username"><span>User</span></a>
+                  <a class="navi_btn" href="home.html"  id="logout"><span >logout</span></a>
+              </div>
             </div>
         </div>
       </div>
@@ -66,7 +71,7 @@
   <footer>
       <div id="underfooter">
         <div id="footcontainer">
-            <div id="foot_left">
+            <div id="footer_left">
                 <div class="listgroup">
                   <div id="list1">
                     <ul>
