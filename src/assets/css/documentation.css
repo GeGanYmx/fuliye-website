@@ -10,15 +10,21 @@
     min-width: 1280px;
     width: 1280px;
     display: flex;
-    
+}
+.document-head{
+    width: 100%;
+    height: 230px;
+    background-image: url("../assets/support_banner.png")
 }
 .message{
     margin-top: 70px;
-  
+    min-width: 1280px;
     background-color: #303136;
 /* background-image: url(./assets/bg2.png); */
 width: 100%;
 text-align: center;
+display: flex;
+flex-direction: column;
 }
 .message span{
 
