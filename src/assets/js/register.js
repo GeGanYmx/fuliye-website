@@ -39,34 +39,30 @@ $(function() {
   let href=location.href;
   href=href.substring(0,href.lastIndexOf("/"))+"/success.html"; 
   let samePsw=validate();
-
-
-  
-  if(samePsw){
     $('#form1').submit(function(e) {
       e.preventDefault();
       if(!document.getElementById('checkbox-1').checked || !document.getElementById('checkbox-2').checked){
         alert("Please confirm that the checkbox has been checked.");
         return false;
       }
-      if($("#pwd").val()!==$("#pwd2").val()){
+      if($("#pwd2").val() && ($("#pwd").val()!==$("#pwd2").val())){
         alert("Please confirm password.");
         return false;
       }
       callRegister($("#form1").serialize(), function (response) {
         console.log(response);
-        if(response.code===200){
+        if(response.data.code==200){
           console.log('注册成功 code: '+response.data.code)
-          // location.href="sentemail.html"; 
+          location.href="sentemail.html"; 
+        }else if(response.data.code==4000){
+          console.log('注册失败,邮箱已被注册！')
+          alert('注册失败,邮箱已被注册！')
         }else{
-          console.log('注册失败 code: '+response.data.code)
+          console.log('注册失败');
+          alert('注册失败');
         }
       })
     })
-  }else{
-    alert ('Password do not match!')
-  }
-
 })
 
 
@@ -75,12 +71,12 @@ function validate() {
   var pwd = $("#pwd").val();
   var pwd2 = $("#pwd2").val();
 // <!-- 对比两次输入的密码 -->
-  if(pwd === pwd2){
+  if(pwd2 &&(pwd === pwd2)){
     $("#pwd2").css("border","1px solid green");
     $("#creat").removeAttr("disabled");
     return true;
   }
-  else {
+  else if(pwd2 &&(pwd !== pwd2)){
     $("#pwd2").css("border","1px solid red")
     $("creat").attr("disabled","disabled");  
     return false;

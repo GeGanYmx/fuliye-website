@@ -6,6 +6,7 @@
             url: "http://140.207.48.210:8022/api/sys/webLogin",
             contentType:"application/json",
             data: JSON.stringify($('form').serializeObject()),
+            
             dataType: "json",
             success: callback,
         });
@@ -43,14 +44,20 @@
           callLogin($("#form2").serializeArray(), function (response) {
             console.log($("#form2").serializeArray());
             console.log(response);
-            if(response.code===200){
+            if(response.data.code==200){
               console.log("UserNamae:"+response.data.name);
               localStorage.token=response.data.token;
               localStorage.username=response.data.name;
               location.href="home.html"; 
-            }else{
-              alert("登录失败："+response.message)
-              console.log("失败message:"+response.message);
+            }else if(response.data.code==400){
+              alert("登录失败：密码错误！")
+              console.log("登录失败：密码错误！");
+            }else if(response.data.code==4000){
+              alert("登录失败：用户不存在！")
+              console.log("登录失败：用户不存在！");
+            }else if(response.data.code==5000){
+              alert("登录失败：账号未激活！！")
+              console.log("登录失败：账号未激活！！");
             }
             console.log("login调用成功")
           })

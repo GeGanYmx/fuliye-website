@@ -2,7 +2,7 @@
 function jump(){
     var num=5;
     var interval=setInterval(function(){
-    if(num==0){
+    if(num==1){
     clearInterval(interval);
     location.href="login.html"
     }
@@ -34,26 +34,26 @@ function callActivation(data, callback) {
   });
 }
 
-let uid=GetQueryString('uid');
 
 
-    $(function(){
-      let token=localStorage.token||undefined;
+$(function(){
+  let token=localStorage.token||undefined;
       if(token){
-        location.href="login.html"
+        alert('已经登陆')
+        location.href="home.html"
       }else{
           console.log("等待激活");
       }
-    })
-
-$(
+  let uid=GetQueryString('uid');
   callActivation(uid, function (response) {
     console.log(response);
-    if( response.code === 200){
-      console.log("成功:"+response.message)
+    if( response.data.message == 200){
+      console.log("激活成功!")
       jump();
     }else {
-      console.log("失败："+response.message)
+      console.log("激活失败！")
     }
   })
+}
+  
 )
