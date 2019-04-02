@@ -57,7 +57,7 @@ a:hover{
     top: 0px;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 16;
+    z-index: 10000;
 }
 /* 导航栏下拉 */
 /* 先隐藏menu类下的li，当鼠标悬浮menu类时，显示 */
