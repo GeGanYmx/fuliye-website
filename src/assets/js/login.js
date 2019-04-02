@@ -49,6 +49,7 @@
               localStorage.username=response.data.name;
               location.href="home.html"; 
             }else{
+              alert("登录失败："+response.message)
               console.log("失败message:"+response.message);
             }
             console.log("login调用成功")

@@ -38,19 +38,35 @@ $(function() {
 
   let href=location.href;
   href=href.substring(0,href.lastIndexOf("/"))+"/success.html"; 
-  $('#link').val(href)
-  $('#form1').submit(function(e) {
-    e.preventDefault();
-    callRegister($("#form1").serialize(), function (response) {
-      console.log(response);
-      if(response.code===200){
-        console.log('注册成功 response.data.code '+response.data.code)
-        location.href="sentemail.html"; 
-      }else{
-        console.log('失败 response.data.code '+response.data.code)
+  let samePsw=validate();
+
+
+  
+  if(samePsw){
+    $('#form1').submit(function(e) {
+      e.preventDefault();
+      if(!document.getElementById('checkbox-1').checked || !document.getElementById('checkbox-2').checked){
+        alert("Please confirm that the checkbox has been checked.");
+        return false;
       }
+      if($("#pwd").val()!==$("#pwd2").val()){
+        alert("Please confirm password.");
+        return false;
+      }
+      callRegister($("#form1").serialize(), function (response) {
+        console.log(response);
+        if(response.code===200){
+          console.log('注册成功 code: '+response.data.code)
+          // location.href="sentemail.html"; 
+        }else{
+          console.log('注册失败 code: '+response.data.code)
+        }
+      })
     })
-  })
+  }else{
+    alert ('Password do not match!')
+  }
+
 })
 
 
@@ -62,9 +78,11 @@ function validate() {
   if(pwd === pwd2){
     $("#pwd2").css("border","1px solid green");
     $("#creat").removeAttr("disabled");
+    return true;
   }
   else {
     $("#pwd2").css("border","1px solid red")
     $("creat").attr("disabled","disabled");  
+    return false;
   }
 }

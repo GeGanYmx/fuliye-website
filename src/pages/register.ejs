@@ -17,31 +17,31 @@ private_js: js/register.js
           <div id="inputgroup" class="table">
             <div class="tr">
               <div class="td table-left">* FIRST NAME</div>
-              <div class="td table-right"><input type="text" name="firstname" class="input" required></div>
+              <div class="td table-right"><input type="text" name="firstName" class="input" required required oninvalid="setCustomValidity('Please fill this blank');" oninput="setCustomValidity('');"></div>
             </div>
             <div class="tr">
                 <div class="td table-left">* LAST NAME</div>
-                <div class="td table-right"><input type="text" name="lastname" class="input" required></div>
+                <div class="td table-right"><input type="text" name="lastName" class="input" required oninvalid="setCustomValidity('Please fill this blank');" oninput="setCustomValidity('');"></div>
               </div>
             <div class="tr">
               <div class="td table-left">* EMAIL</div>
-              <div class="td table-right"><input type="email" name="email" class="input" required></div>
+              <div class="td table-right"><input type="email" name="email" class="input" required oninvalid="setCustomValidity('Please fill this blank');" oninput="setCustomValidity('');"></div>
             </div>
             <div class="tr">
               <div class="td table-left">* PASSWORD</div>
-              <div class="td table-right"><input type="password" name="password" class="input" required id="pwd"></div>
+              <div class="td table-right"><input type="password" name="password" class="input" required id="pwd" oninvalid="setCustomValidity('Please fill this blank');" oninput="setCustomValidity('');"></div>
             </div>
             <div class="tr">
               <div class="td table-left">* PASSWORD CONFIRMATION</div>
-              <div class="td table-right"><input type="password" name="pwd2" class="input" required id="pwd2" onblur="validate()"></div>
+              <div class="td table-right"><input type="password" name="pwd2" class="input" required id="pwd2" onblur="validate()" oninvalid="setCustomValidity('Please fill this blank');" oninput="setCustomValidity('');"></div>
             </div>
             <div class="tr">
               <div class="td table-left">* COMPANY/INSTITUTION</div>
-              <div class="td table-right"><input type="text" name="company" class="input" required></div>
+              <div class="td table-right"><input type="text" name="institution" class="input" required oninvalid="setCustomValidity('Please fill this blank');" oninput="setCustomValidity('');"></div>
             </div>
             <div class="tr">
                 <div class="td table-left">* COUNTRY</div>
-                <div class="td table-right"><input type="text" name="cuontry" class="input" required></div>
+                <div class="td table-right"><input type="text" name="cuontry" class="input" required oninvalid="setCustomValidity('Please fill this blank');" oninput="setCustomValidity('');"></div>
             </div>
             <div class="tr" style="display:none">
                 <div class="td table-left">link</div>
