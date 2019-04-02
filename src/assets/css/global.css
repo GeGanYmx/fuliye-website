@@ -358,6 +358,6 @@ min-width:1280px;
     height: 36px;
     font-family: Roboto-Regular;
     font-size: 18px;
-    color: #FFFFFF;
+    /* color: #FFFFFF; */
     text-align: left;
 }
