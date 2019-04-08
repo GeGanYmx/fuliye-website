@@ -32,6 +32,9 @@
 }
 
 /* 清除链接点击出现下划线样式 */
+a:link{
+    color: #B5B5B5;
+}
 a,a:visited{
     color: #B5B5B5;
 }
@@ -42,6 +45,12 @@ a:focus{
 a:hover{
     text-decoration: none;
     color:#FFFFFF;
+}
+a:active{
+    color:#FFFFFF;
+}
+.all-speak-kotlin a:hover{
+    color:#000000;
 }
 /* 导航高亮样式 */
 .highlight{
