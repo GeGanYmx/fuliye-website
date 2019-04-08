@@ -52,6 +52,10 @@ a:active{
 .all-speak-kotlin a:hover{
     color:#000000;
 }
+/* 按钮圆角规范 */
+button，input[type="submit"]{
+    border-radius: 6px;
+}
 /* 导航高亮样式 */
 .highlight{
     color:#FFFFFF;
@@ -148,7 +152,7 @@ header{
     width: 112px;
     height: 48px;
     border: 1px solid #3F4045;
-    border-radius: 100px;
+    border-radius: 6px;
     color: #FFF;
     font-size: 18px;
     margin-right: 10px;
@@ -234,16 +238,15 @@ footer {
 #footer_btn {
     width: 157px;
     height: 48px;
-    border-radius: 100px;
-    border-color:#D2D3D4;
-    /*字体颜色*/
+    border-radius: 6px;
+    border-color: #D2D3D4;
     font-family: Roboto-Light;
     font-size: 18px;
-    color:black;
-    text-align: center;
-    line-height: 32px;
+    color: #D2D3D4;
+    /* text-align: center; */
+    line-height: 0px;
     margin: 0 auto;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     font-weight: 700;
 }
 #underfooter{
@@ -257,6 +260,10 @@ min-width: 1280px;
     width: 1280px;
     min-width: 1280px;
     display: flex;
+}
+#footer_btn:hover{
+    color: #000000;
+    text-decoration: underline;
 }
 .footer_right,.footer_right{
     width: 640px;

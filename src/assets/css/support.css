@@ -83,6 +83,13 @@
     text-align: left;
     margin-top: 10px;
 }
+.darker{
+    color:#0A1017;
+}
+li img{
+    width:80px;
+    height:80px;
+}
 a{
     text-decoration: none;
 }
@@ -232,6 +239,11 @@ a{
     letter-spacing: 0;border: 0;padding: 0;
     /*去掉搜索框的默认蓝色发光边框*/
     outline:none;
+}
+.search-info:hover{
+    text-decoration: underline;
+    font-family: Roboto-Bold;
+    cursor: pointer;
 }
 input:focus
 {

@@ -683,7 +683,7 @@ line-height: 24px;
 font-size: 30px;
 color: #303136;
 letter-spacing: 0.11px;
-margin-top: 120px;
+margin-top: 109px;
 margin-left: 40px;
 margin-bottom: 20px;
 }
@@ -707,8 +707,8 @@ line-height: 24px;
 /*第五行*/
 	#home_img5{
         /* 动态图效果测试 */
-        background-image: url('../assets/2222_2.png');
-        /* background-image: url('../assets/5.png'); */
+        /* background-image: url('../assets/2222_2.png'); */
+        background-image: url('../assets/5.png');
         margin-right: 0;
    
 }
@@ -760,7 +760,7 @@ line-height: 24px;
 font-size: 30px;
 color: #303136;
 letter-spacing: 0.11px;
-margin-top: 120px;
+margin-top: 131px;
 margin-left: 40px;
 margin-bottom: 20px;
 }
@@ -805,7 +805,7 @@ line-height: 24px;
     height:auto;
     margin-left: 60px;
    
-    margin-top:120px ;  
+    margin-top:124px ;  
 }
 #home_img7textp{
     max-width: 540px;

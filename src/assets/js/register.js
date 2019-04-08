@@ -41,7 +41,8 @@ $(function() {
   let samePsw=validate();
     $('#form1').submit(function(e) {
       e.preventDefault();
-      if(!document.getElementById('checkbox-1').checked || !document.getElementById('checkbox-2').checked){
+      // if(!document.getElementById('checkbox-1').checked || !document.getElementById('checkbox-2').checked){
+      if(!document.getElementById('checkbox-2').checked){
         alert("Please confirm that the checkbox has been checked.");
         return false;
       }

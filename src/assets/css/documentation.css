@@ -2,8 +2,8 @@
     background-color: #FFFFFF;
     height: 685px;
     width: 100%;
-    margin-top: 70px;
-    margin-bottom: 150px;
+    margin-top: 0;
+    margin-bottom: 50px;
 }
 #content{
     margin: 0 auto;
@@ -97,4 +97,9 @@ font-weight: bold;
     line-height: 26px;
     margin-left: 40px;
     margin-bottom: 30px;
+}
+.downlink:hover{
+    text-decoration: underline;
+    font-family: Roboto-Medium ;
+    cursor: pointer;
 }
