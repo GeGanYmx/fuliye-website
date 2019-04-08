@@ -6,11 +6,12 @@
     border-radius: 6px;
 	height: 520px;
 	width: 1000px;
-	display: flex;
+    display: flex;
+    text-align: center;
 }
 .youxiang_logo{
     margin-top:160px;
-    margin-left:205px;
+   
     margin-bottom: 10px;
 }
 .sec_text_email{

@@ -225,7 +225,7 @@ a{
 /*搜索框样式*/
 #search{
     width:940px;height:60px;
-    float: left;
+    float: right;
     font-family: Roboto-Light;
     font-size: 16px;
     /*color: #878787;*/
