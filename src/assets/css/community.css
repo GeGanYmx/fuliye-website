@@ -225,14 +225,19 @@
 .all-speak-kotlin_link-button_hover {
     border-color: #0076C9;
     color: #0076C9
+
 }
 
 .all-speak-kotlin_link-button_hover .all-speak-kotlin_link-pointer {
     /* border-color: #0076C9 */
     border-bottom: 1px dashed #0076C9;
+
 }
 .all-speak-kotlin_link-button_hover .all-speak-kotlin_link-pointer:after {
-    background-color: #0076C9
+    background-color: #0076C9;
+}
+.all-speak-kotlin_link-button_hover span{
+    color: #323643;
 }
 
 .all-speak-kotlin_link-pointer {

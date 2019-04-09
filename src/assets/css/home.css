@@ -633,6 +633,7 @@ line-height: 24px;
 	#home_img3{
     background-image: url('../assets/3.png');
     margin-right: 0;
+    position: relative;
     
 }
 #third{
@@ -828,9 +829,7 @@ line-height: 24px;
     letter-spacing: 1.07px;
     text-align: left;
 }
-#{
-    margin: auto;
-}
+
 #home_img8texthead{
     max-width: 540px;
     height:auto;
@@ -979,4 +978,107 @@ line-height: 24px;
 }
 #home_img7:hover{
     background-image: url(../assets/4444.gif);
+}
+
+/* 动效 */
+.blue_img_cen1{
+    position: absolute;
+    left: 180px;
+    top: 80px;
+    cursor: pointer;
+}
+.blue_img_cen1:hover .show_hover1{
+    /* background-image: url(../assets/1.gif); */
+}
+.blue_img_cen2{
+    position: absolute;
+    right: 30px;
+    top: 40px;
+    cursor: pointer;
+}
+.blue_img_cen3{
+    position: absolute;
+    left: 46px;
+    top: 250px;
+    cursor: pointer;
+}
+.blue_img_cen4{
+    position: absolute;
+    left: 265px;
+    top: 260px;
+    cursor: pointer;
+}
+.blue_img_01{
+    width: 22px;
+    height: 22px;
+    
+
+}
+.show_hover1{
+    width: 86px;
+    height: 144px;
+    position: absolute;
+    top: -122px;
+    left: 0;
+
+    /* background-image: url(../assets/1.gif); */
+}
+.show_hover2{
+    width: 86px;
+    height: 144px;
+    position: absolute;
+    top: 0px;
+    left: 0;
+
+    /* background-image: url(../assets/1.gif); */
+}
+.show_hover3{
+    width: 86px;
+    height: 144px;
+    position: absolute;
+    top: -4px;
+    left: -1px;
+
+    /* background-image: url(../assets/LabView3.gif); */
+}
+.show_hover4{
+    width: 86px;
+    height: 144px;
+    position: absolute;
+    top: -2px;
+    left: -2px;
+
+    /* background-image: url(../assets/cRIO.gif); */
+}
+.hover_new{
+    /* display: none; */
+}
+
+  /*透明变化反复*/
+.ani-pulse{
+    -webkit-animation: pulse 1.5s 2s ease infinite;
+    animation: pulse 1.5s 1.8s ease infinite;
+}
+@keyframes pulse {
+	0% {
+		opacity: 0.6;		
+	}
+	50% {
+		opacity: 1;	
+	}	
+	100% {
+		opacity: 0.6;	
+	}			
+}
+
+@-webkit-keyframes pulse {
+	0% {
+		opacity: 0.6;		
+	}
+	50% {
+		opacity: 1;	
+	}	
+	100% {
+		opacity: 0.6;	
+	}			
 }
