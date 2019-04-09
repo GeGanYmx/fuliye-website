@@ -28,9 +28,9 @@ var support={
 }
 function imgInit() { 
     var imgs=document.getElementById("myTab").getElementsByTagName("img");
-    var lis=document.getElementById("myTab").getElementsByTagName("li");
-    for (const li of lis) {
-        spans=li.getElementsByTagName("span");
+    var as=document.getElementById("myTab").getElementsByTagName("a");
+    for (const a of as) {
+        spans=a.getElementsByTagName("span");
         spans[0].classList.remove("darker")
     }
     for (const img of imgs) {
@@ -45,12 +45,12 @@ $(document).ready(function () {
         $("#search").val(this.innerHTML); 
     });    
     var imgs=document.getElementById("myTab").getElementsByTagName("img");
-    var lis=document.getElementById("myTab").getElementsByTagName("li");
-    for (const li of lis) {
-        li.addEventListener("click",function () { 
+    var as=document.getElementById("myTab").getElementsByTagName("a");
+    for (const a of as) {
+        a.addEventListener("click",function () { 
             imgInit();
-            let imgs=li.getElementsByTagName("img"),
-            spans=li.getElementsByTagName("span");
+            let imgs=a.getElementsByTagName("img"),
+            spans=a.getElementsByTagName("span");
             imgs[0].setAttribute("src","./assets/"+imgs[0].getAttribute("id")+"active.png")
             spans[0].classList.add("darker")
          })
