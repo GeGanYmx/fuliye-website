@@ -13,16 +13,27 @@
   <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
   <link type="text/css" rel="stylesheet" href="./css/global.css" />
-  <link type="text/css" rel="styleSheet" href="./css/community.css" />
-  <link type="text/css" rel="styleSheet" href="./css/newaos.css" />
+
   <script src="./js/global.js"></script>
   <!--私有文件-->
   <% if (page.private_css) { %>
   <link type="text/css" rel="stylesheet" href="<%= page.private_css %>">
   <% } %>
+  <% if (page.private_css1) { %>
+    <link type="text/css" rel="stylesheet" href="<%= page.private_css1 %>">
+    <% } %>
+    <% if (page.private_css2) { %>
+      <link type="text/css" rel="stylesheet" href="<%= page.private_css2 %>">
+      <% } %>
   <% if (page.private_js) { %>
   <script src="<%= page.private_js %>"></script>
   <% } %>
+  <% if (page.private_js1) { %>
+    <script src="<%= page.private_js1 %>"></script>
+    <% } %>
+    <% if (page.private_js2) { %>
+      <script src="<%= page.private_js2 %>"></script>
+      <% } %>
 </head>
 
 <body>
