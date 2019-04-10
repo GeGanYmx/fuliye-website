@@ -986,14 +986,16 @@ line-height: 24px;
     left: 180px;
     top: 80px;
     cursor: pointer;
+   
 }
 .blue_img_cen1:hover .show_hover1{
     /* background-image: url(../assets/1.gif); */
+
 }
 .blue_img_cen2{
     position: absolute;
-    right: 30px;
-    top: 40px;
+    right: 60px;
+    top: 45px;
     cursor: pointer;
 }
 .blue_img_cen3{
@@ -1011,47 +1013,58 @@ line-height: 24px;
 .blue_img_01{
     width: 22px;
     height: 22px;
-    
+    position: absolute;
+    z-index: 999;
 
 }
 .show_hover1{
     width: 86px;
     height: 144px;
     position: absolute;
-    top: -122px;
-    left: 0;
+    top: -132px;
+    left: 3px;
 
-    /* background-image: url(../assets/1.gif); */
+   /* display: none; */
+   background-image: url(../assets/group01.png);
+
+ 
+
+
 }
+.active{
+    opacity: 1!important; 
+  }
 .show_hover2{
     width: 86px;
     height: 144px;
     position: absolute;
-    top: 0px;
-    left: 0;
+    top: -40px;
+    left: 12px;
 
-    /* background-image: url(../assets/1.gif); */
+    background-image: url(../assets/group02.png);
 }
 .show_hover3{
     width: 86px;
     height: 144px;
     position: absolute;
-    top: -4px;
-    left: -1px;
+    top: 2px;
+    left: 3px;
+    background-image: url(../assets/group03.png);
 
-    /* background-image: url(../assets/LabView3.gif); */
 }
 .show_hover4{
     width: 86px;
     height: 144px;
     position: absolute;
-    top: -2px;
-    left: -2px;
+    top: 2px;
+    left: -5px;
 
-    /* background-image: url(../assets/cRIO.gif); */
+    background-image: url(../assets/group04.png);
+
 }
 .hover_new{
-    /* display: none; */
+    opacity: 0;
+    z-index: 99;
 }
 
   /*透明变化反复*/
@@ -1073,12 +1086,81 @@ line-height: 24px;
 
 @-webkit-keyframes pulse {
 	0% {
-		opacity: 0.6;		
+		opacity: 0;		
+    }
+    20% {
+		opacity: 0.2;	
+    }
+    50% {
+		opacity: 0.5;	
 	}
-	50% {
-		opacity: 1;	
+	70% {
+		opacity: 0.7;	
 	}	
 	100% {
-		opacity: 0.6;	
+		opacity: 1;	
+	}				
+}
+
+.ani-pulse2{
+    -webkit-animation: pulse2 1.5s 2s ease ;
+    animation: pulse2 1.5s 1.8s ease ;
+}
+
+@keyframes pulse2 {
+	0% {
+		opacity: 0;		
+    }
+    20% {
+		opacity: 0.2;	
+    }
+    50% {
+		opacity: 0.5;	
+	}
+	70% {
+		opacity: 0.7;	
+	}	
+	100% {
+		opacity: 1;	
 	}			
 }
+
+@-webkit-keyframes pulse2 {
+	0% {
+		opacity: 0.2;		
+	}
+	50% {
+		opacity: 0.5;	
+	}	
+	100% {
+		opacity: 1;	
+	}			
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+    opacity: 0; /*初始状态 透明度为0*/
+    }
+    50% {
+    opacity: 0; /*中间状态 透明度为0*/
+    }
+    100% {
+    opacity: 1; /*结尾状态 透明度为1*/
+    }
+    }
+    @keyframes fadeIn {
+        0% {
+        opacity: 0; /*初始状态 透明度为0*/
+        }
+        50% {
+        opacity: 0; /*中间状态 透明度为0*/
+        }
+        100% {
+        opacity: 1; /*结尾状态 透明度为1*/
+        }
+        }
+        
+.fadeIns{-webkit-animation-name: fadeIn; /*动画名称*/
+-webkit-animation-duration: 3s; /*动画持续时间*/
+-webkit-animation-iteration-count: 1; /*动画次数*/
+-webkit-animation-delay: 0s; /*延迟时间*/}

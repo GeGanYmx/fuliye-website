@@ -88,27 +88,27 @@ home: highlight
         <div class="article_container_part">
           <div id="home_img3">
             <div class="blue_img_cen1 hover_1">
-              <img src="./assets/r01.png" alt="" class="blue_img_01 ani-pulse">  
-              <div class="show_hover1 hover_new">
-                <img src="" alt="">
+              <img src="./assets/r01.png" alt="" class="blue_img_01 ani-pulse ">  
+              <div class="show_hover1 hover_new ">
+           
               </div>
             </div>
             <div class="blue_img_cen2 hover_1">
-              <img src="./assets/r01.png" alt="" class="blue_img_01 ani-pulse">  
+              <img src="./assets/r01.png" alt="" class="blue_img_01 ani-pulse ">  
               <div class="show_hover2 hover_new">
-                <img src="" alt="">
+   
               </div>
             </div>
             <div class="blue_img_cen3 hover_1">
-              <img src="./assets/r01.png" alt="" class="blue_img_01 ani-pulse">  
+              <img src="./assets/r01.png" alt="" class="blue_img_01 ani-pulse ">  
               <div class="show_hover3 hover_new">
-                <img src="" alt="">
+         
               </div>
             </div>
             <div class="blue_img_cen4 hover_1">
-              <img src="./assets/r01.png" alt="" class="blue_img_01 ani-pulse">  
+              <img src="./assets/r01.png" alt="" class="blue_img_01 ani-pulse ">  
               <div class="show_hover4 hover_new">
-                <img src="" alt="">
+         
               </div>
             </div>
           </div>
@@ -533,16 +533,18 @@ home: highlight
 
     AOS.init();
     
-    $(".hover_1").each(function(i,item){
-      $(this).hover(function(){
-        var datas = (new Date()).getTime();
-        $(this).find($(".hover_new")).find($("img")).attr("src","./assets/"+(i+1)+".gif?"+datas)
-     },
-     function(){
-      $(this).find($(".hover_new")).find($("img")).attr("src","")
-     }
-     )
-    })
+
+    var imgLen=$(".blue_img_01")
+    for(var i=0 ;i<imgLen.length;i++){
+      imgLen[i].onmouseover=function(){
+        $(this).next($(".hover_new")).css("transition","opacity 2.3s linear")
+        $(this).next($(".hover_new")).addClass("active")
+      }
+      imgLen[i].onmouseout=function(){
+        $(this).next($(".hover_new")).css("transition","unset")
+        $(this).next($(".hover_new")).removeClass("active")
+      }
+    }
   
 
     // 呼吸灯
