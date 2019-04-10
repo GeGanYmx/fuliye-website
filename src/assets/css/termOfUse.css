@@ -1,0 +1,68 @@
+.contianer_main{
+    margin-left: auto;
+    margin-top: 170px;
+    margin-bottom: 100px;
+	background:#F5F7F8;
+    border-radius: 6px;
+	height: 710px;
+	width: 1000px;
+    display: flex;
+    text-align: center;
+    position: relative;
+    flex-direction: column;
+}
+.scrollContent{
+    overflow: auto;
+    margin-left: auto;
+    /* margin-top: 170px;
+    margin-bottom: 100px; */
+	background:#F5F7F8;
+    border-radius: 6px;
+	height: 540px;
+	width: 1000px;
+    text-align: center;
+    position: relative;
+}
+.textTop{
+    width:180px;
+    height:40px;
+    font-size:30px;
+    font-family:Roboto-Bold;
+    font-weight:bold;
+    color:rgba(50,54,67,1);
+    line-height:35px;
+    -webkit-background-clip:text;
+    /* -webkit-text-fill-color:transparent; */
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.textContent{
+    width:940px;
+    height:auto;
+    font-size:14px;
+    font-family:Roboto-Light;
+    font-weight:300;
+    color:rgba(10,16,23,1);
+    line-height:24px;
+    margin-top: 10px;
+    text-align: left
+}
+.textHead{
+    width:940px;
+    height:25px;
+    font-size:22px;
+    font-family:Roboto-Regular;
+    font-weight:400;
+    color:rgba(10,16,23,1);
+    line-height:25px;
+    text-align: left;
+    margin-top: 30px
+}
+.downloadLink p{
+    margin-top: 30px;
+    color: #0086D1;
+    text-align: left;
+}
+.downloadLink p:hover{
+text-decoration: underline;
+}

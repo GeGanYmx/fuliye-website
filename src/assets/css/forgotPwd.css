@@ -1,0 +1,64 @@
+.contianer_main{
+    margin-left: auto;
+    margin-top: 170px;
+    margin-bottom: 100px;
+	background:#F5F7F8;
+    border-radius: 6px;
+	height: 450px;
+	width: 1000px;
+    display: flex;
+    text-align: center;
+}
+
+.textHead{
+    width:311px;
+    height:40px;
+    font-size:30px;
+    font-family:Roboto-Bold;
+    font-weight:bold;
+    color:rgba(50,54,67,1);
+    line-height:35px;
+    -webkit-background-clip:text;
+    /* -webkit-text-fill-color:transparent; */
+    margin-top: 30px;
+}
+.textContent{
+    width:652px;
+    height:38px;
+    font-size:16px;
+    font-family:Roboto-Regular;
+    font-weight:400;
+    color:rgba(10,16,23,1);
+    line-height:19px;
+    margin-top: 41px;
+}
+.inputContent{
+    margin-top: 34px;
+}
+#email{
+    width:500px;
+    height:50px;
+    background:rgba(255,255,255,1);
+    border-radius:6px;
+    border:1px solid rgba(212,212,212,1);
+}
+.btnGroup{
+    margin-top: 87px;
+}
+.cancel,.reset{
+    width: 210px;
+    height: 50px;
+    /* width:62px;
+    height:24px; */
+    font-size:20px;
+    font-family:Roboto-Medium;
+    font-weight:500;
+    color:rgba(255,255,255,1);
+    line-height:24px;
+}
+.cancel{
+    background-color: #a8aeb2;
+}
+.reset{
+    background-color: #0086d1;
+}
