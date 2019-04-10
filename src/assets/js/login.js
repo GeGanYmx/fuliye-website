@@ -4,7 +4,9 @@
         $.ajax({
             type: "post",
             url: "http://140.207.48.210:8022/api/sys/webLogin",
-            data: data,
+            contentType:"application/json",
+            data: JSON.stringify($('form').serializeObject()),
+            
             dataType: "json",
             success: callback,
         });
@@ -20,17 +22,46 @@
 
     }
 
+    $.fn.serializeObject = function() {
+      var o = {};
+      var a = this.serializeArray();
+      $.each(a, function() {
+          if (o[this.name]) {
+              if (!o[this.name].push) {
+                  o[this.name] = [ o[this.name] ];
+              }
+              o[this.name].push(this.value || '');
+          } else {
+              o[this.name] = this.value || '';
+          }
+      });
+      return o;
+  };
+
     $(function() {
         $('#form2').submit(function(e) {
           e.preventDefault();
-          callLogin($("#form2").serialize(), function (response) {
+          callLogin($("#form2").serializeArray(), function (response) {
+            console.log($("#form2").serializeArray());
             console.log(response);
-            if(response.error_code===0){
-              alert(response.data.name);
-              location.href="home.html"; 
+            if(response.data.code==200){
+              console.log("UserNamae:"+response.data.name);
               localStorage.token=response.data.token;
+              localStorage.username=response.data.name;
+              location.href="home.html"; 
+            }else if(response.data.code==400){
+              alert("登录失败：密码错误！")
+              console.log("登录失败：密码错误！");
+            }else if(response.data.code==4000){
+              alert("登录失败：用户不存在！")
+              console.log("登录失败：用户不存在！");
+            }else if(response.data.code==5000){
+              alert("登录失败：账号未激活！！")
+              console.log("登录失败：账号未激活！！");
             }
-            alert("login调用成功")
+            console.log("login调用成功")
           })
         })
       })
+
+      

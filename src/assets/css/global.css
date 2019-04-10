@@ -15,6 +15,9 @@
     font-family: Roboto-Light;
     src: url('../font/Roboto_ttf/Roboto-Light.ttf');
 }
+.hidden{
+    display:none;
+}
 
 /*全局样式表*/
 /*body{text-align: center;}*/
@@ -29,6 +32,9 @@
 }
 
 /* 清除链接点击出现下划线样式 */
+a:link{
+    color: #B5B5B5;
+}
 a,a:visited{
     color: #B5B5B5;
 }
@@ -39,6 +45,16 @@ a:focus{
 a:hover{
     text-decoration: none;
     color:#FFFFFF;
+}
+a:active{
+    color:#FFFFFF;
+}
+.all-speak-kotlin a:hover{
+    color:#000000;
+}
+/* 按钮圆角规范 */
+button,input[type="submit"]{
+    border-radius: 6px;
 }
 /* 导航高亮样式 */
 .highlight{
@@ -54,7 +70,7 @@ a:hover{
     top: 0px;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 16;
+    z-index: 10000;
 }
 /* 导航栏下拉 */
 /* 先隐藏menu类下的li，当鼠标悬浮menu类时，显示 */
@@ -125,8 +141,10 @@ header{
 }
 /*按钮外部div*/
 .nav_btn_group {
-    width: 250px;
+    width: 290px;
     height: 50px;
+    /* padding-right: 0px; */
+    margin-right: 40px;
 }
 
 /*导航栏按钮样式*/
@@ -134,14 +152,38 @@ header{
     width: 112px;
     height: 48px;
     border: 1px solid #3F4045;
-    border-radius: 100px;
+    border-radius: 6px;
     color: #FFF;
     font-size: 18px;
     margin-right: 10px;
     padding: 10px;
     font-family: Roboto-Regular;
+    overflow: hidden;
+    /* background-image: url(../assets/home_button1.png); */
 }
-
+#unlog{
+    margin-right: -10px;
+    width: 224px;
+}
+#unlog a{
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    
+}
+#loged{
+    margin-right: -10px;
+    width: 224px;
+}
+#loged a{
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    
+}
+#username{
+    border: none;
+}
 /*导航链接*/
 .navi_nav_link {
     height: 32px;
@@ -196,16 +238,15 @@ footer {
 #footer_btn {
     width: 157px;
     height: 48px;
-    border-radius: 100px;
-    border-color:#D2D3D4;
-    /*字体颜色*/
+    border-radius: 6px;
+    border-color: #D2D3D4;
     font-family: Roboto-Light;
     font-size: 18px;
-    color:black;
-    text-align: center;
-    line-height: 32px;
+    color: #D2D3D4;
+    /* text-align: center; */
+    line-height: 0px;
     margin: 0 auto;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     font-weight: 700;
 }
 #underfooter{
@@ -220,17 +261,21 @@ min-width: 1280px;
     min-width: 1280px;
     display: flex;
 }
+#footer_btn:hover{
+    color: #000000;
+    text-decoration: underline;
+}
 .footer_right,.footer_right{
     width: 640px;
     display: flex;
     flex-direction: column;
     margin-right: 0;
 }
-.footer_left{
-    margin-left: 0;
+#footer_left{
+    margin-left: 40px;
 }
-.footer_right{
-    align-items: flex-end;
+#footer_right{
+    margin-right: 20px;
 }
 #list1,#list2,#list3{
     display: flex;
@@ -281,6 +326,7 @@ ul li {
     font-size: 14px;
     color:#B5B5B5;
     letter-spacing: 0;
+    margin-right: 10px;
 }
 .article_container{
     background-color:blue;
@@ -324,5 +370,10 @@ min-width:1280px;
     margin-top: -5px;
 }
 #login{
-    line-height: 52px;
+    width: 100px;
+    height: 36px;
+    font-family: Roboto-Regular;
+    font-size: 18px;
+    /* color: #FFFFFF; */
+    text-align: left;
 }

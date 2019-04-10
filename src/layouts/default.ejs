@@ -13,14 +13,27 @@
   <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
   <link type="text/css" rel="stylesheet" href="./css/global.css" />
+
   <script src="./js/global.js"></script>
   <!--私有文件-->
   <% if (page.private_css) { %>
   <link type="text/css" rel="stylesheet" href="<%= page.private_css %>">
   <% } %>
+  <% if (page.private_css1) { %>
+    <link type="text/css" rel="stylesheet" href="<%= page.private_css1 %>">
+    <% } %>
+    <% if (page.private_css2) { %>
+      <link type="text/css" rel="stylesheet" href="<%= page.private_css2 %>">
+      <% } %>
   <% if (page.private_js) { %>
   <script src="<%= page.private_js %>"></script>
   <% } %>
+  <% if (page.private_js1) { %>
+    <script src="<%= page.private_js1 %>"></script>
+    <% } %>
+    <% if (page.private_js2) { %>
+      <script src="<%= page.private_js2 %>"></script>
+      <% } %>
 </head>
 
 <body>
@@ -30,11 +43,11 @@
         <div  id="head_container">
           <div><a href="home.html" ><div class="home_logo"></div></a></div> 
             <nav class="nav_agroup">
-              <div><a class="navi_nav_link" href="home.html"><span class="<%=page.home %>">Solutions</span></a></div> 
+              <div><a class="navi_nav_link" href="home.html"><span class="">Solutions</span></a></div> 
               <div>
                  
                 <ul class="menu">
-                    <a class="navi_nav_link" href="javascript:viod(0)"> <span class="<%=page.support %>" id="slidehead"> Resource Centre</span></a>
+                    <a class="navi_nav_link" href="javascript:viod(0)"> <span class="" id="slidehead"> Resource Centre</span></a>
                   <ul class="slidedowncontent">
                     <li class="slidedown" id="doc"><a href="documentation.html">Documentation</a></li>
                     <!-- SDK预留，以后加页面 -->
@@ -43,14 +56,19 @@
                   </ul>
                 </ul> 
               </div> 
-              <div><a class="navi_nav_link" href="contact_us.html"><span class="<%=page.contact %>"> Contact Us</a></div> 
+              <div><a class="navi_nav_link" href="contact_us.html"><span class=""> Contact Us</a></div> 
             </nav>
             <div class="nav_btn_group">
               <!-- <button class="navi_btn" onclick="Global.login()"><span id="login">Log In</span></button>
               <button class="navi_btn" onclick="Global.register()"><span>Sign Up</span></button> -->
-              <a class="navi_btn" href="login.html"><span id="login">Log In</span></a>
-              <a class="navi_btn" href="register.html"><span>Sign Up</span></a>
-              <!-- <a class="navi_btn" href="javascript:void(0)" id="logout"><span>logout</span></a> -->
+              <div id="unlog" class="hidden">
+                  <a class="navi_btn" href="login.html" ><span id="login" class="">Log In</span></a>
+                  <a class="navi_btn" href="register.html" ><span id="signup" class="">Sign Up</span></a>
+              </div>
+              <div id="loged" class="hidden">
+                  <a class="navi_btn" href="javascript:void(0)" id="username"><span>User</span></a>
+                  <a class="navi_btn" href="home.html"  id="logout"><span >logout</span></a>
+              </div>
             </div>
         </div>
       </div>
@@ -66,12 +84,12 @@
   <footer>
       <div id="underfooter">
         <div id="footcontainer">
-            <div id="foot_left">
+            <div id="footer_left">
                 <div class="listgroup">
                   <div id="list1">
                     <ul>
                       <a href="home.html"><li>Solutions</li></a> 
-                      <a href="#abovearea"><li>EXOPS</li></a> 
+                      <a href="home.html#abovearea"><li>EXOPS</li></a> 
                     </ul>
                   </div>
                   <div id="list2">
@@ -88,7 +106,7 @@
                   </div>
                 </div>
                 <div id="footer_text2">
-                  <span>Copyright 2019 Shanghai Fourier Intelligence Co. Ltd. All rights reserved.</span>
+                  <span>Copyright &copy; 2019 Shanghai Fourier Intelligence Co. Ltd. All rights reserved.</span>
                 </div>
               </div>  
               <div id="footer_right">

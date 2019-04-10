@@ -2,30 +2,38 @@
     background-color: #FFFFFF;
     height: 685px;
     width: 100%;
-    margin-top: 70px;
-    margin-bottom: 150px;
+    margin-top: 0;
+    margin-bottom: 50px;
 }
 #content{
     margin: 0 auto;
     min-width: 1280px;
     width: 1280px;
     display: flex;
-    
+}
+.document-head{
+    width: 100%;
+    height: 230px;
+    background-image: url("../assets/support_banner.png")
 }
 .message{
     margin-top: 70px;
-  
-    background-color: #303136;
+    min-width: 1280px;
+    background-color:rgb(255, 255, 255);
 /* background-image: url(./assets/bg2.png); */
 width: 100%;
 text-align: center;
+display: flex;
+flex-direction: column;
 }
 .message span{
 
+margin: 20px auto;
 font-family: Roboto-Regular;
-    font-size: 30px;
-    letter-spacing: 0;
-    color: white;
+font-size: 30px;
+letter-spacing: 0;
+color: black;
+font-weight: bold;
 }
 .doclist{
     display: flex;
@@ -89,4 +97,9 @@ font-family: Roboto-Regular;
     line-height: 26px;
     margin-left: 40px;
     margin-bottom: 30px;
+}
+.downlink:hover{
+    text-decoration: underline;
+    font-family: Roboto-Medium ;
+    cursor: pointer;
 }

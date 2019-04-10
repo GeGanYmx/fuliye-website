@@ -1,0 +1,680 @@
+.all-speak-kotlin {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+.scroll-down-hint {
+    cursor: pointer;
+    position: fixed;
+    left: 50%;
+    transform: translateY(-50%);
+    bottom: 0;
+    height: 42px;
+    width: 42px;
+    border-radius: 21px;
+    background-color: rgba(0, 0, 0, .4)
+}
+
+.scroll-down-hint[data-aos].aos-animate {
+    display: none
+}
+
+.scroll-down-hint:hover {
+    background-color: rgba(0, 0, 0, .6)
+}
+
+.scroll-down-hint:after {
+    content: "";
+    position: absolute;
+    left: 16px;
+    top: 13px;
+    transform: rotate(-90deg);
+    height: 17px;
+    width: 10px;
+    z-index: 1;
+    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMTAuMXB4IiBoZWlnaHQ9IjE3LjRweCIgdmlld0JveD0iLTMwMC43IDM4OC42IDEwLjEgMTcuNCIgZmlsbD0id2hpdGUiPgo8cGF0aCBkPSJNLTI5MC42LDQwNC42bC0xLjQsMS40bC04LThsLTAuNy0wLjdsMC43LTAuN2w4LThsMS40LDEuNGwtNy4zLDcuM0wtMjkwLjYsNDA0LjZ6IiBmaWxsPSJ3aGl0ZSIgLz4KPC9zdmc+Cg==);
+    background-repeat: no-repeat
+}
+
+.all-speak-kotlin_links {
+    position: relative;
+    -ms-flex-positive: 1;
+    flex-grow: 1
+}
+
+.all-speak-kotlin_links._left {
+    /* margin-right: 50px */
+}
+
+.all-speak-kotlin_links._left .all-speak-kotlin_link {
+    right: 0;
+    -ms-flex-align: end;
+    -ms-grid-row-align: flex-end;
+    align-items: flex-end
+}
+
+.all-speak-kotlin_links._left .all-speak-kotlin_link-pointer,
+.all-speak-kotlin_links._left .all-speak-kotlin_link-pointer:after {
+    left:100%;
+
+}
+
+.all-speak-kotlin_links._right {
+    /* margin-left: 50px */
+}
+
+.all-speak-kotlin_links._right .all-speak-kotlin_link {
+    left: 0;
+    -ms-flex-align: start;
+    -ms-grid-row-align: flex-start;
+    align-items: flex-start
+}
+
+.all-speak-kotlin_links._right .all-speak-kotlin_link-pointer,
+.all-speak-kotlin_links._right .all-speak-kotlin_link-pointer:after {
+    right: 100%
+}
+
+.all-speak-kotlin_img {
+    width: 895px;
+    position: relative;
+    /* flex-grow: 3; */
+
+}
+
+.all-speak-kotlin_img .img_top {
+    position: absolute;
+    top: 60px;
+    left: 149px;
+    z-index: 100;
+}
+
+.all-speak-kotlin_img .img_cen {
+    /* position: absolute;
+    top:180px;
+    left:435px; */
+}
+
+.all-speak-kotlin_img .img_cen .img_left {
+    position: absolute;
+    top: 258px;
+    left: 151px;
+   
+}
+.all-speak-kotlin_img .img_cen .img_left .img_04{
+    position: absolute;
+    top: 75px;
+    left:0px;
+   
+}
+.all-speak-kotlin_img .img_cen .img_left .img_05{
+    position: absolute;
+    top: 90px;
+    left:45px;
+   
+}
+.all-speak-kotlin_img .img_cen .img_left .img_06{
+    position: absolute;
+    top:40px;
+    left:126px;
+   
+}
+.all-speak-kotlin_img .img_cen .img_left .img_07{
+    position: absolute;
+    top:4px;
+    right:32px;
+   
+}
+.first_z{
+    z-index: 9999!important;
+}
+
+.all-speak-kotlin_img .img_bot .img_08{
+    position: absolute;
+    top: 62px;
+    left: 44px;
+   
+}
+.all-speak-kotlin_img .img_bot .img_09{
+    position: absolute;
+    top:22px;
+    left:177px;
+   
+}
+.all-speak-kotlin_img .img_bot .img_10{
+    position: absolute;
+    top:10px;
+    right:144px;
+   
+}
+.all-speak-kotlin_img .img_bot .img_11{
+    position: absolute;
+    top:129px;
+    left:132px;
+   
+}
+.all-speak-kotlin_img .img_bot .img_12{
+    position: absolute;
+    top:90px;
+    right:173px;
+   
+}
+.all-speak-kotlin_img .img_bot .img_13{
+    position: absolute;
+    top:-28px;
+    right:-37px;
+   
+}
+.all-speak-kotlin_img .img_top .img_01{
+    position: absolute;
+    top: 177px;
+
+    left:18px; 
+}
+.item_list1{
+    cursor: pointer;
+    /* z-index: 999; */
+}
+.all-speak-kotlin_img .img_top .img_02{
+    position: absolute;
+    top: 162px;
+   
+    right:86px; 
+}
+.all-speak-kotlin_img .img_top .img_03{
+    position: absolute;
+    top: 187px;
+    right:25px; 
+}
+.all-speak-kotlin_img .img_cen .img_right {
+    position: absolute;
+    top: 180px;
+    left: 438px;
+    /* z-index: 99; */
+}
+
+.all-speak-kotlin_img .img_bot {
+    position: absolute;
+    top: 355px;
+    left: 151px;
+    /* z-index: 100; */
+}
+
+.all-speak-kotlin_link {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: absolute
+}
+
+.all-speak-kotlin_link-button {
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+    border: 1px dashed #B2B5B7;
+    padding: 2px 8px;
+    border-radius: 3px;
+    color: #999999;
+    text-align: center;
+}
+
+.all-speak-kotlin_link-button_hover {
+    border-color: #0076C9;
+    color: #0076C9
+
+}
+
+.all-speak-kotlin_link-button_hover .all-speak-kotlin_link-pointer {
+    /* border-color: #0076C9 */
+    border-bottom: 1px dashed #0076C9;
+
+}
+.all-speak-kotlin_link-button_hover .all-speak-kotlin_link-pointer:after {
+    background-color: #0076C9;
+}
+.all-speak-kotlin_link-button_hover span{
+    color: #323643;
+}
+
+.all-speak-kotlin_link-pointer {
+    position: absolute;
+    top: 50%;
+    border-bottom: 1px dashed #6d6d6d;
+    z-index: 101;
+}
+
+.all-speak-kotlin_link-pointer:after{
+    content: "";
+    position: absolute;
+    top: -2px;
+    /* left:10px; */
+    /* border-radius: 50%; */
+    width: 6px;
+    height: 6px;
+    background-color: #616161
+}
+
+/* .all-speak-kotlin_link-pointer:after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    background-color: #616161
+} */
+/* .all-speak-kotlin_link-button_hover .all-speak-kotlin_link-pointer:before {
+    background-color: #0076C9
+}
+
+.all-speak-kotlin_link-pointer {
+    position: absolute;
+    top: 50%;
+    border-bottom: 1px dashed #6d6d6d;
+    z-index: 101;
+}
+
+.all-speak-kotlin_link-pointer:before{
+    content: "";
+    position: absolute;
+    top: -2px;
+
+    width: 6px;
+    height: 6px;
+    background-color: #616161
+}
+
+.all-speak-kotlin_link-pointer:after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    background-color: #616161
+} */
+.all-speak-kotlin_link-pointer:after:after {
+    width: 200px
+}
+
+.all-speak-kotlin_link-comment {
+    padding-top: 4px;
+    color: #cfcfcf;
+    font-size: 12px
+}
+
+.all-speak-kotlin_link {
+    opacity: 0
+}
+
+.all-speak-kotlin_link._linkedin {
+    top: 401px
+}
+
+.all-speak-kotlin_link._linkedin .all-speak-kotlin_link-pointer {
+    width: 289px
+}
+
+.all-speak-kotlin_link._five {
+
+    top: 441px
+}
+
+.all-speak-kotlin_link._five .all-speak-kotlin_link-pointer {
+    width: 149px
+}
+
+.all-speak-kotlin_link._six {
+
+    top: 511px
+}
+
+.all-speak-kotlin_link._six .all-speak-kotlin_link-pointer {
+    width: 190px
+}
+
+.all-speak-kotlin_link._slack {
+    top: 366px
+}
+
+.all-speak-kotlin_link._slack .all-speak-kotlin_link-pointer {
+    width: 146px
+}
+
+.all-speak-kotlin_link._reddit {
+    top: 326px
+}
+
+.all-speak-kotlin_link._reddit .all-speak-kotlin_link-pointer {
+    width: 138px
+}
+
+.all-speak-kotlin_link._kotlin-nights {
+    top: 182px
+}
+
+.all-speak-kotlin_link._kotlin-nights .all-speak-kotlin_link-pointer {
+    width: 57px
+}
+
+.all-speak-kotlin_link._talking_kotlin {
+    top: 236px
+}
+
+.all-speak-kotlin_link._talking_kotlin .all-speak-kotlin_link-pointer {
+    width: 117px
+}
+
+.all-speak-kotlin_link._freenode {
+    top: 50px
+}
+
+.all-speak-kotlin_link._freenode .all-speak-kotlin_link-pointer {
+    width: 45px
+}
+
+.all-speak-kotlin_link._kotlin-talks {
+    top: 207px
+}
+
+.all-speak-kotlin_link._kotlin-talks .all-speak-kotlin_link-pointer {
+    width:222px
+}
+
+.all-speak-kotlin_link._kotlin-forum {
+    top: 245px
+}
+
+.all-speak-kotlin_link._kotlin-forum .all-speak-kotlin_link-pointer {
+    width:138px
+}
+
+.all-speak-kotlin_link._stackoverflow {
+    top: 279px
+}
+
+.all-speak-kotlin_link._stackoverflow .all-speak-kotlin_link-pointer {
+    width:310px
+}
+
+.all-speak-kotlin_link._twitter {
+    top: 325px;
+    -ms-flex-align: start;
+    -ms-grid-row-align: flex-start;
+    align-items: flex-start;
+    -ms-flex-direction: row;
+    flex-direction: row
+}
+
+.all-speak-kotlin_link._twitter .all-speak-kotlin_link-comment {
+    padding-left: 20px;
+    padding-top: 0;
+    margin-top: -7px
+}
+
+.all-speak-kotlin_link._twitter .all-speak-kotlin_link-comment ul {
+    margin: 0;
+    line-height: 11px
+}
+
+.all-speak-kotlin_link._twitter .all-speak-kotlin_link-comment a {
+    color: #656565;
+    text-decoration: none;
+    line-height: 14px
+}
+
+.all-speak-kotlin_link._twitter .all-speak-kotlin_link-comment a:hover {
+    color: #f47810;
+    text-decoration: underline
+}
+
+.all-speak-kotlin_link._twitter .all-speak-kotlin_link-comment li:before {
+    content: none
+}
+
+.all-speak-kotlin_link._twitter .all-speak-kotlin_link-pointer {
+    width: 379px
+}
+
+.all-speak-kotlin_link._google {
+    top: 355px
+}
+
+.all-speak-kotlin_link._google .all-speak-kotlin_link-pointer {
+    width: 215px
+}
+
+.all-speak-kotlin_link._youtrack {
+    top: 374px
+}
+
+.all-speak-kotlin_link._youtrack .all-speak-kotlin_link-pointer {
+    width: 276px
+}
+
+
+.all-speak-kotlin_link._Twelve {
+
+    top: 423px
+}
+
+.all-speak-kotlin_link._Twelve .all-speak-kotlin_link-pointer {
+    width: 183px
+}
+
+.all-speak-kotlin_link._Thirteen {
+
+    top: 480px
+}
+
+.all-speak-kotlin_link._Thirteen .all-speak-kotlin_link-pointer {
+    width: 267px
+}
+
+.svg-link {
+    cursor: pointer
+}
+
+#talking_kotlin {
+    transform: translateY(-94px);
+    opacity: 0;
+}
+
+
+[data-svg-id=talking_kotlin] {
+    transform: translateY(-70px);
+    opacity: 0;
+}
+
+ #reddit {
+    transform: translateY(-140px);
+    opacity: 0;
+}
+
+[data-svg-id=reddit] {
+    transform: translateY(-120px);
+    opacity: 0;
+} 
+
+#slack {
+    transform: translateY(-155px);
+    opacity: 0;
+} 
+#slacks {
+    transform: translateY(-165px);
+    opacity: 0;
+} 
+ [data-svg-id=slack] {
+    transform: translateY(-160px);
+    opacity: 0;
+} 
+
+#linkedin {
+    transform: translateY(-280px);
+    opacity: 0;
+}
+
+[data-svg-id=linkedin] {
+    transform: translateY(-250px);
+    /* opacity: 0; */
+}
+/* #linkedin */
+[data-svg-id=five] {
+    transform: translateY(-300px);
+    opacity: 0;
+}
+[data-svg-id=six] {
+    transform: translateY(-310px);
+    opacity: 0;
+}
+#kotlin_talks,
+#Layer_3,
+[data-svg-id=kotlin_talks] {
+    transform: translateY(-106px);
+    opacity: 0
+} 
+#kotlin_talks2,
+[data-svg-id=kotlin_talks2] {
+    transform: translateY(-116px);
+    opacity: 0
+} 
+/* [data-svg-id=kotlin_talk2] {
+    transform: translateY(-116px);
+    opacity: 0
+}  */
+#Layer_6 {
+    transform: translateY(-90px);
+    opacity: 0;
+}
+
+#Layer_7 {
+    transform: translateY(-410px);
+    opacity: 0;
+}
+
+#Layer_8 {
+    transform: translateY(-280px);
+    opacity: 0;
+}
+
+#kotlin_forum {
+    transform: translateY(-185px);
+    opacity: 0
+}
+
+
+[data-svg-id=kotlin_forum] {
+    transform: translateY(-160px)
+}
+
+#stackoverflow {
+    transform: translateY(-193px);
+    opacity: 0
+}
+
+[data-svg-id=stackoverflow] {
+    transform: translateY(-190px)
+}
+
+#twitter {
+    opacity: 0
+}
+
+#twitter,
+[data-svg-id=twitter] {
+    transform: translateY(-260px)
+} 
+#twitter1 {
+    opacity: 0;
+    transform: translateY(-240px)
+}
+#twitter2 {
+    opacity: 0;
+    transform: translateY(-270px)
+}
+#twitter1,
+  [data-svg-id=twitter1] {
+    transform: translateY(-240px)
+}
+#google {
+    opacity: 0;
+    transform: translateY(-240px)
+}
+#youtrack {
+    opacity: 0;
+    transform: translateY(-286px)
+}
+
+#google,
+  [data-svg-id=google] {
+    transform: translateY(-240px)
+}
+
+#youtrack,
+[data-svg-id=youtrack] {
+    transform: translateY(-286px)
+} 
+[data-svg-id=Twelve] {
+    transform: translateY(-200px)
+} 
+[data-svg-id=Thirteen] {
+    transform: translateY(-216px)
+} 
+[data-aos] {
+    transition-duration: .5s;
+    transition-property: transform, opacity
+} 
+
+.aos-animate {
+    transform: translateY(0) !important;
+    opacity: 1 !important
+} 
+.aos-animate1 {
+    transform: translateY(-70px);
+    /* opacity: 1 !important */
+}
+/* 
+[data-aos].aos-animate.all-speak-kotlin_link {
+    opacity: 1
+}
+
+[data-aos].all-speak-kotlin {
+    offset: 300px
+} */
+body,
+html {
+    margin: 0 auto;
+    padding: 0 auto;
+    
+}
+
+.containers {
+    width: 1200px;
+    margin: 0 auto;
+
+}
+
+.containers h1 {
+    color: #323643;
+    font-size: 30px;
+    margin: 40px 0 0 0;
+
+}
+
+.center_animation {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    /* background: #980000; */
+    height: 600px;
+
+}
+.bk{
+    /* width: 200px;
+    height: 2000px;
+    background: #980000; */
+}
