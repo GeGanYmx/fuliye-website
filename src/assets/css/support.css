@@ -153,7 +153,17 @@ a{
     width:840px;
     margin-left: 10px;
 }
-
+/* 固定Q位置 */
+.questionQ{
+    float: left;
+    font-family: Roboto-Light;
+    font-size: 22px;
+    color: #0086D1;
+    letter-spacing: 0;
+    text-align: left;
+    height: 30px;
+    width:30px;
+}
 /*固定字母A的位置*/
 .answer-A-parent{
     float: left;

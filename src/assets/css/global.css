@@ -240,15 +240,15 @@ footer {
     width: 157px;
     height: 48px;
     border-radius: 6px;
-    border-color: #D2D3D4;
-    font-family: Roboto-Light;
+    /* border-color: #D2D3D4; */
+    font-family: Roboto-Regular;
     font-size: 18px;
-    color: #D2D3D4;
+    color: #000000;
     /* text-align: center; */
-    line-height: 0px;
+    line-height: 0;
     margin: 0 auto;
     /* text-decoration: underline; */
-    font-weight: 700;
+    /* font-weight: 700; */
 }
 #underfooter{
 background-image: url('../assets/bg5.png');
