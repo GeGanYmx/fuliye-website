@@ -18,7 +18,7 @@
     font-weight:bold;
     color:rgba(50,54,67,1);
     line-height:35px;
-    -webkit-background-clip:text;
+    /* -webkit-background-clip:text; */
     /* -webkit-text-fill-color:transparent; */
     margin-top: 30px;
 }

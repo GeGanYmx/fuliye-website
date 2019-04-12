@@ -1,30 +1,5 @@
 `use strict`;
-// var register={
-//     register:function(){
-//         //alert('点击注册');
-//      console.log("点击提交表单");
-//       var pwd=document.getElementById("pwd");
-//       var md5_pwd=document.getElementById("md5_pwd");
-//        md5_pwd.value=str_md5(pwd.value);
-//      /* md5_pwd=toMD5(pwd.value);*/
-//       return true;
-//     }
-// }
-
-
-
-
-//假接口，模拟接收服务器callback
 function callRegister(data, callback) {
-  // console.log(data)
-  // callback({
-  //   error_code: 0,
-  //   data: {
-  //    code: "注册成功！",
-  //   id: "15805611ef0f44b1b32cf48012d03adf"
-  //   }
-  // })
-
   $.ajax({
     type: "post",
     url: "http://140.207.48.210:8022/api/sys/registerByEmail",
@@ -43,24 +18,29 @@ $(function() {
       e.preventDefault();
       // if(!document.getElementById('checkbox-1').checked || !document.getElementById('checkbox-2').checked){
       if(!document.getElementById('checkbox-2').checked){
-        alert("Please confirm that the checkbox has been checked.");
+        swal("Info","Please confirm that the checkbox has been checked.","info")
         return false;
       }
       if($("#pwd2").val() && ($("#pwd").val()!==$("#pwd2").val())){
-        alert("Please confirm password.");
+        swal("Info","Please confirm password.","info")
         return false;
       }
-      callRegister($("#form1").serialize(), function (response) {
-        console.log(response);
-        if(response.data.code==200){
-          console.log('注册成功 code: '+response.data.code)
-          location.href="sentemail.html"; 
-        }else if(response.data.code==4000){
+      $("#link").val(href);
+      callRegister($("#form1").serialize(), function (res) {
+        console.log(res);
+        if(res.data.code==200){
+        swal("Done!","Congratulations！","success")
+        .then(function(value){
+          location.href="sentemail.html";
+          location.id= res.data.id;
+        })
+          console.log('注册成功 code: '+res.data.code)
+        }else if(res.data.code==4000){
           console.log('注册失败,邮箱已被注册！')
-          alert('注册失败,邮箱已被注册！')
+          swal("Failed!","Mailbox has been registered!","error")
         }else{
           console.log('注册失败');
-          alert('注册失败');
+          swal("Failed!","Other reasons!","error")
         }
       })
     })
