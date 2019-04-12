@@ -37,7 +37,7 @@ $(function(){
       }else{
           console.log("等待激活");
       }
-  let id=location.id;
+  let id=localStorage.id;
   callActivation(id, function (res) {
     console.log(res);
     if( res.message == 200){
@@ -45,7 +45,14 @@ $(function(){
       .then(jump());
       console.log("激活成功!")
     }else {
-      swal("Falied!","Activation failed!!","error");
+      swal({
+        title:"Falied!",
+        text:"Activation failed! Please contact us!",
+        icon:"error"
+      })
+      .then(function(value){
+        location.href="contact_us.html"
+      })
       console.log("激活失败！")
     }
   })

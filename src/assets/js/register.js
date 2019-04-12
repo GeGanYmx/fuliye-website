@@ -32,7 +32,7 @@ $(function() {
         swal("Done!","Congratulations！","success")
         .then(function(value){
           location.href="sentemail.html";
-          location.id= res.data.id;
+          localStorage.id= res.data.id;
         })
           console.log('注册成功 code: '+res.data.code)
         }else if(res.data.code==4000){
