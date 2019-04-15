@@ -7,9 +7,9 @@ function GetQueryString(name)   //获取数据函数
 // 激活界面函数,检查页面参数
 function callReset(data, callback) { 
   $.ajax({
-    type: "post",
+    type: "get",
     url: url+"api/sys/resetPasswordForWeb",
-    data: JSON.stringify(data) ,
+    data: data,
     dataType: "json",
     success: callback
   });
@@ -19,7 +19,7 @@ $(function(){
   
   $("form").submit(function (e) { 
       e.preventDefault();
-      $("id").val(id);
+      $("#id").val(id);
       callReset($("form").serialize(), function (res) {
         console.log(res);
         if( res.message == 200){

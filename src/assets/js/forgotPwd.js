@@ -1,8 +1,17 @@
+// function callForgot(data,callback){
+//     $.ajax({
+//         type: "POST",
+//         url: url+"api/sys/forget",
+//         data: JSON.stringify(data),
+//         dataType: "json",
+//         success: callback
+//       });
+// }
 function callForgot(data,callback){
     $.ajax({
-        type: "POST",
+        type: "get",
         url: url+"api/sys/forget",
-        data: JSON.stringify(data),
+        data: data,
         dataType: "json",
         success: callback
       });
@@ -29,7 +38,9 @@ $(document).ready(function () {
         e.preventDefault();
         $("#link").val(href);
         console.log($("#form").serializeObject())
-        callForgot($("#form").serializeObject(), function (res) {
+        // callForgot($("#form").serializeObject(), function (res) {
+        callForgot($("#form").serialize(), function (res) {
+
             console.log(res)
             if(res.data.code==200){
                 swal("Done！","Congratulation！","success")
