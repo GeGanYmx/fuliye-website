@@ -47,3 +47,30 @@ $(function(){
     })
     }
 )
+
+
+
+
+// var url="http://47.102.112.8:8088/";
+var url="http://10.40.254.134:8080/fuliye-api/";
+
+
+
+
+//formdata转成对象格式
+$.fn.serializeObject = function()   
+{   
+   var o = {};   
+   var a = this.serializeArray();   
+   $.each(a, function() {   
+       if (o[this.name]) {   
+           if (!o[this.name].push) {   
+               o[this.name] = [o[this.name]];   
+           }   
+           o[this.name].push(this.value || '');   
+       } else {   
+           o[this.name] = this.value || '';   
+       }   
+   });   
+   return o;   
+};  

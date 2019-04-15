@@ -1,9 +1,9 @@
     function callLogin(data, callback) { 
         $.ajax({
             type: "post",
-            url: "http://140.207.48.210:8022/api/sys/webLogin",
+            url: url+"api/sys/webLogin",
             contentType:"application/json",
-            data: JSON.stringify($('form').serializeObject()),
+            data: JSON.stringify(data),
             dataType: "json",
             success: callback,
         });
@@ -27,8 +27,8 @@
     $(function() {
         $('#form2').submit(function(e) {
           e.preventDefault();
-          callLogin($("#form2").serializeArray(), function (res) {
-            console.log($("#form2").serializeArray());
+          callLogin($("#form2").serializeObject(), function (res) {
+            console.log($("#form2").serializeObject());
             console.log(res);
             if(res.data.code==200){
               console.log("UserNamae:"+res.data.name);

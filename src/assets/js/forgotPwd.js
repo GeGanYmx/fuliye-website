@@ -1,7 +1,7 @@
 function callForgot(data,callback){
     $.ajax({
         type: "POST",
-        url: "http://140.207.48.210:8022/api/sys/forget",
+        url: url+"api/sys/forget",
         data: JSON.stringify(data),
         dataType: "json",
         success: callback
@@ -34,15 +34,22 @@ $(document).ready(function () {
             if(res.data.code==200){
                 swal("Done！","Congratulation！","success")
                 .then(function(value){
-                    locationid=res.data.id;
+                    localStorage.id=res.data.id;
                     location.href="forgotInfo.html"
                 })
             }else if(res.data.code==400){
                 swal("Failed!","Other reasons.","error")
+                .then(function(){
+                    location.href="forgotPwd.html"
+                })
             }else{
                 swal("Failed!","Your mailbox is not registered yet！","error")
+                .then(function(){
+                    location.href="forgotPwd.html"
+                })
             }
         })
     });
 });
+
 

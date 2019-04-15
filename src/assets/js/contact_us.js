@@ -2,7 +2,7 @@
     function callContact(data, callback) { 
         $.ajax({
             type: "post",
-            url: "http://140.207.48.210:8022/api/sys/contactUs",
+            url: url+"api/sys/contactUs",
             contentType:"application/json",
             data: JSON.stringify(data),
             dataType: "json",

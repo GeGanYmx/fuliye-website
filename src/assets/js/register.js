@@ -2,7 +2,7 @@
 function callRegister(data, callback) {
   $.ajax({
     type: "post",
-    url: "http://140.207.48.210:8022/api/sys/registerByEmail",
+    url: url+"api/sys/registerByEmail",
     data: data,
     dataType: "json",
     success: callback
@@ -26,15 +26,15 @@ $(function() {
         return false;
       }
       $("#link").val(href);
-      callRegister($("#form1").serialize(), function (res) {
+      
+      callRegister($("#form1").serializeObject(), function (res) {
         console.log(res);
         if(res.data.code==200){
         swal("Done!","Congratulations！","success")
         .then(function(value){
+          localStorage.uid= res.data.id;//注册接口返回的是ID 激活界面要改名为uid
           location.href="sentemail.html";
-          localStorage.id= res.data.id;
         })
-          console.log('注册成功 code: '+res.data.code)
         }else if(res.data.code==4000){
           console.log('注册失败,邮箱已被注册！')
           swal("Failed!","Mailbox has been registered!","error")

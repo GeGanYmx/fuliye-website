@@ -18,8 +18,10 @@ function GetQueryString(name)   //获取数据函数
 function callActivation(data, callback) { 
   $.ajax({
     type: "post",
-    url: "http://140.207.48.210:8022/api/sys/emailUrl",
+    url: url+"api/sys/emailUrl",
+    // data: JSON.stringify(data),
     data: data,
+
     dataType: "json",
     success: callback
   });
@@ -37,8 +39,8 @@ $(function(){
       }else{
           console.log("等待激活");
       }
-  let id=localStorage.id;
-  callActivation(id, function (res) {
+  let uid={"uid":localStorage.uid};
+  callActivation(uid, function (res) {
     console.log(res);
     if( res.message == 200){
       swal("Done!","Activation success!","success")

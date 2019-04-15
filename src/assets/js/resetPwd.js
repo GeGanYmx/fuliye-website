@@ -8,14 +8,14 @@ function GetQueryString(name)   //获取数据函数
 function callReset(data, callback) { 
   $.ajax({
     type: "post",
-    url: "http://140.207.48.210:8022/api/sys/resetPasswordForWeb",
+    url: url+"api/sys/resetPasswordForWeb",
     data: JSON.stringify(data) ,
     dataType: "json",
     success: callback
   });
 }
 $(function(){
-  let id=location.id;
+  let id=localStorage.id;
   
   $("form").submit(function (e) { 
       e.preventDefault();
