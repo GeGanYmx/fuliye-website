@@ -1,0 +1,30 @@
+---
+title: forgotPwd
+private_css: css/forgotPwd.css 
+private_js: js/forgotPwd.js
+forgotPwd: highlight
+---
+
+<div class="contianer_main">
+    <form action="" id="form">
+        <div>
+            <div class="textHead">
+                <p>Forgot your password?</p>
+            </div>
+            <div class="textContent">
+                <p>Please enter your registered email address below and we’ll email you instructions to reset it. </p>
+            </div>
+            <div class="inputContent">
+                <input type="email" id="email" name="email" placeholder="    Your email here" required oninvalid="setCustomValidity('Please fill this blank');" oninput="setCustomValidity('');" title="Your email here">
+            </div>
+            <div class="inputContent hidden">
+                    <input type="email" id="link" name="link" >
+                </div>
+            <div class="btnGroup">
+                <button class="btn btn-default cancel" type="reset">Cancel</button>
+                <button class="btn btn-primary reset" type="submit">RESET PASSWORD</button>
+            </div>
+        </div>
+    </form>
+
+</div>

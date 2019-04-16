@@ -128,10 +128,11 @@ header{
 }
 /*logo样式*/
 .home_logo {
-    height: 43px;
-    width: 140px;
+    height: 44px;
+    width: 141px;
     background: url(../assets/logo1.svg);
     margin-left: -36px;
+    background-repeat: no-repeat;
 }
 .nav_agroup{
     display: flex;
@@ -221,7 +222,7 @@ footer {
 .footer_logo {
     width: 100%;
     height: 30%;
-    background-image: url(../assets/home_logo5.png);
+    background-image: url(../assets/logo2.svg);
     background-repeat: no-repeat;
 }
 #footer_text1 {
@@ -239,15 +240,15 @@ footer {
     width: 157px;
     height: 48px;
     border-radius: 6px;
-    border-color: #D2D3D4;
-    font-family: Roboto-Light;
+    /* border-color: #D2D3D4; */
+    font-family: Roboto-Regular;
     font-size: 18px;
-    color: #D2D3D4;
+    color: #000000;
     /* text-align: center; */
-    line-height: 0px;
+    line-height: 0;
     margin: 0 auto;
     /* text-decoration: underline; */
-    font-weight: 700;
+    /* font-weight: 700; */
 }
 #underfooter{
 background-image: url('../assets/bg5.png');

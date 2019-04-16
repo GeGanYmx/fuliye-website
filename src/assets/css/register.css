@@ -96,10 +96,6 @@ input[type="checkbox"] + label {
     border: none;
     margin: 2px 2px 5px 0;
 }
-.blue{
-    color:#1486D1 ;
-    text-decoration: underline;
-}
 
 #textgroup{
     text-align: left;
@@ -118,6 +114,14 @@ padding-top: 20px;
 #check2{
     margin-bottom: 10px;
     width: 410px;
+}
+#check2 a{
+    color: lightblue;
+    text-decoration: none;
+}
+#check2 a:hover{
+    color: #0086D1;
+    text-decoration: underline;
 }
 #btngroup{
 margin: 40px auto;

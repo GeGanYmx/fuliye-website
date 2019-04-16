@@ -1,0 +1,29 @@
+---
+title: Reset Password
+private_css: css/resetPwd.css 
+private_js: js/resetPwd.js
+resetPwd: highlight
+---
+
+<div class="contianer_main">
+    <form action="" id="form" autocomplete="off">
+        <div>
+            <div class="textHead">
+                <p>Reset Password</p>
+            </div>
+            <div class="inputContent">
+                <input type="password" name="newPassword" placeholder="New password here" required oninvalid="setCustomValidity('Please fill this blank');" oninput="setCustomValidity('');" title="Your email here">
+            </div>
+            <div class="inputContent">
+                <input type="password" placeholder="Confirm Password" required oninvalid="setCustomValidity('Please fill this blank');" oninput="setCustomValidity('');" title="Your email here">
+            </div>
+            <div class="inputContent hidden">
+                    <input type="password" id="id" name="id" >
+                </div>
+            <div class="btnGroup">
+                <button class="btn btn-primary submit" type="submit">Submit</button>
+            </div>
+        </div>
+    </form>
+
+</div>

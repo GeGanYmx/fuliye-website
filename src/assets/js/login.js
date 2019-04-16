@@ -1,25 +1,12 @@
-// console.log("调用成功 from login");
-
     function callLogin(data, callback) { 
         $.ajax({
             type: "post",
-            url: "http://140.207.48.210:8022/api/sys/webLogin",
+            url: url+"api/sys/webLogin",
             contentType:"application/json",
-            data: JSON.stringify($('form').serializeObject()),
-            
+            data: JSON.stringify(data),
             dataType: "json",
             success: callback,
         });
-
-    // console.log(data);
-    // callback({
-    //     error_code: 0,
-    //     data: {
-    //       token: "hfkjshHJKHH-fkkkfjf.fjks4322JHHLl",
-    //       name:"张三"
-    //     }
-    //  })
-
     }
 
     $.fn.serializeObject = function() {
@@ -37,29 +24,30 @@
       });
       return o;
   };
-
     $(function() {
         $('#form2').submit(function(e) {
           e.preventDefault();
-          callLogin($("#form2").serializeArray(), function (response) {
-            console.log($("#form2").serializeArray());
-            console.log(response);
-            if(response.data.code==200){
-              console.log("UserNamae:"+response.data.name);
-              localStorage.token=response.data.token;
-              localStorage.username=response.data.name;
-              location.href="home.html"; 
-            }else if(response.data.code==400){
-              alert("登录失败：密码错误！")
+          callLogin($("#form2").serializeObject(), function (res) {
+            console.log($("#form2").serializeObject());
+            console.log(res);
+            if(res.data.code==200){
+              console.log("UserNamae:"+res.data.name);
+              localStorage.token=res.data.token;
+              localStorage.username=res.data.name;
+              swal("Done!","Congratulations!","success")
+              .then(function(value){
+                location.href="home.html"; 
+              });
+            }else if(res.data.code==400){
+              swal("Failed!","Password not match!","error")
               console.log("登录失败：密码错误！");
-            }else if(response.data.code==4000){
-              alert("登录失败：用户不存在！")
+            }else if(res.data.code==4000){
+              swal("Failed!","Account does not exist！","error")
               console.log("登录失败：用户不存在！");
-            }else if(response.data.code==5000){
-              alert("登录失败：账号未激活！！")
+            }else if(res.data.code==5000){
+              swal("Failed!","Account inactivated！","error")
               console.log("登录失败：账号未激活！！");
             }
-            console.log("login调用成功")
           })
         })
       })

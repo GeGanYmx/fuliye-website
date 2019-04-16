@@ -127,7 +127,6 @@ text-align: left;
 .btn-content{
     color: #FFFFFF; 
     font-size: 20px;
-    
     letter-spacing: 0;
     font-family:Roboto-Regular;
     width: 120px;
@@ -136,7 +135,7 @@ text-align: left;
     border:none;
     border-radius:6px;
 }
-.btn-content input{
+/* .btn-content input{
     color: #FFFFFF;
 text-align: center;
 }
@@ -149,7 +148,7 @@ text-align: center;
 }
 .btn-content:active,.btn-content:focus{
     color:white
-}
+} */
 
 
 .right{
@@ -236,12 +235,13 @@ line-height: 26px;
 
 .contact-flag-cn  {
 border: none;
-width:32px;
-height:31px;
+width:30px;
+height:30px;
 display:inline-block;
 vertical-align:-40%;
-background:url("../assets/content_gq1.png");
-margin-right: 12px;
+background:url("../assets/china.png");
+margin-right: 14px;
+margin-left: -2px;
 }
 
 .contact-flag-phone
@@ -269,8 +269,7 @@ margin-right: 12px;
     background: url(../assets/www.png);
     vertical-align: middle;
     margin-left: 6px;
-    margin-right: 20px;
-
+    margin-right: 22px;
 }
 
 .contact-flag-websit:hover{
@@ -280,9 +279,9 @@ margin-right: 12px;
 
 .contact-flag-in
 {
-    width:34px;
-    height:33px;
-    background:url("../assets/content_gq2.png");
+    width:30px;
+    height:30px;
+    background:url("../assets/flag.png");
     display:inline-block;
     vertical-align:-60%;
     margin-top:10px;  
@@ -290,9 +289,9 @@ margin-right: 12px;
 }
 .contact-flag-us
 {
-    width:32px;
-    height:32px;
-background:url("../assets/content_gq4.png");
+    width:30px;
+    height:30px;
+background:url("../assets/australia.png");
 display:inline-block;
 vertical-align:bottom;
 margin-top:20px;

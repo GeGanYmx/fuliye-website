@@ -1,0 +1,28 @@
+.contianer_main{
+    margin-left: auto;
+    margin-top: 170px;
+    margin-bottom: 100px;
+	background:#F5F7F8;
+    border-radius: 6px;
+	height: 450px;
+	width: 1000px;
+    display: flex;
+    text-align: center;
+}
+
+.forgotImg{
+    width:86px;
+    height:86px;
+    margin-top: 137px;
+    background-image: url("../assets/lock.png");
+}
+.textContent{
+    width:654px;
+    height:50px;
+    font-size:22px;
+    font-family:Roboto-Regular;
+    font-weight:400;
+    color:rgba(10,16,23,1);
+    line-height:25px;
+    margin-top: 35px;
+}
