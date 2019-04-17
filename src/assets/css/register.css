@@ -135,7 +135,7 @@ text-align: center;
     vertical-align:middle;
     text-align: center;
 }
-#creat{
+#create{
     font-family: Roboto-Medium;
     font-size: 20px;
     color: #FFFFFF;
@@ -147,4 +147,10 @@ text-align: center;
     font-size: 20px;
     color: #FFFFFF;
     letter-spacing: 0;
+}
+.success{
+    background-color: #daedd2
+}
+.danger{
+    background-color: #f0d9d9
 }

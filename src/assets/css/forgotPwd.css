@@ -32,6 +32,9 @@
     line-height:19px;
     margin-top: 41px;
 }
+input{
+    padding-left: 10px;
+}
 .inputContent{
     margin-top: 34px;
 }
