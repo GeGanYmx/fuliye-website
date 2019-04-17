@@ -327,3 +327,10 @@ input[type="checkbox"] + label {
     border: none;
     margin: 2px 2px 5px 0;
 }
+
+.success{
+    background-color: #daedd2
+}
+.danger{
+    background-color: #f0d9d9
+}

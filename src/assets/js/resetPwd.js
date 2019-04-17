@@ -35,7 +35,14 @@ function isPasswd(s) {
   }
   return 1;
   }
- 
+ //失焦检查所有状态
+function checkSubmitButton() {
+  if (checkAll(statusObj)) {
+      $("#submit").removeAttr("disabled");
+  } else {
+      $("#submit").attr("disabled", "disabled");
+  }
+}
  
 
 
@@ -68,7 +75,7 @@ $(function(){
         $("#pwd").addClass("success");
         $("#pwd2").removeAttr("disabled");
       statusObj.pwd=1;
-
+      checkSubmitButton()
       } else {
       statusObj.pwd=0;
 
@@ -105,11 +112,12 @@ $(function(){
 
       $("#pwd2").removeClass("success");
       $("#pwd2").addClass("danger");
-      swal("Info", "Password do not martch!", "info")
+      swal("Info", "Password do not match!", "info")
     } else if ($("#pwd2").val() && ($("#pwd").val() == $("#pwd2").val())) {
       $("#pwd2").removeClass("danger");
       $("#pwd2").addClass("success");
       statusObj.pwd2=1;
+      checkSubmitButton()
 
     } else {
       statusObj.pwd2=0;
