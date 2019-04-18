@@ -1,3 +1,4 @@
+
 `use strict`;
 var Global={
     register:function(){
@@ -9,8 +10,13 @@ var Global={
 }
 
 function callLogout(data, callback) { 
-    delete localStorage.token;
-    location.href="home.html"
+    $.ajax({
+        type: "post",
+        url: url+"api/sys/webLogout",
+        data: data,
+        dataType: "json",
+        success: callback
+    });
 }
 
 // function callLogout(data, callback) {
@@ -43,15 +49,34 @@ $(
 $(function(){
     $('#logout').click(function (e) { 
         e.preventDefault();
-        callLogout();
+        let token={"token":localStorage.token}
+        callLogout(token,function(res){
+            console.log(res)
+            if(res.code==200){
+                swal({
+                    title:"Done!",
+                    text:"You have logged out！",
+                    icon:"success",
+                    button:false,
+                    timer:1500,
+                })
+                .then(function(){
+                    delete localStorage.token
+                    location.href="home.html"
+                })
+                
+            }
+        });
     })
     }
 )
 
 
 
-// 
+// 实际地址
 var url="http://47.102.112.8:8088/";
+
+//本地测试URL
 // var url="http://10.40.254.134:8080/fuliye-api/";
 
 

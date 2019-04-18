@@ -121,7 +121,6 @@ $(document).ready(function () {
       if (res.data.code == 200) {
         swal("Done！", "Congratulation！", "success")
           .then(function (value) {
-            localStorage.id = res.data.id;
             location.href = "forgotInfo.html"
           })
       } else if (res.data.code == 400) {

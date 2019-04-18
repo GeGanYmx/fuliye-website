@@ -51,8 +51,8 @@ function checkSubmitButton() {
 $(function(){
   
    //赋值
-   let id=localStorage.id;  
-   $("#id").val(id);
+   localStorage.token=GetQueryString("name")
+   $("#token").val(localStorage.token);
 
   // 禁用密码确认框 提交按钮
   $("#pwd2").attr("disabled", "disabled");

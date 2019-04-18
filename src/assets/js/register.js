@@ -341,7 +341,7 @@ $(function () {
       if (res.data.code == 200) {
         swal("Done!", "Congratulations！", "success")
           .then(function (value) {
-            localStorage.uid = res.data.id;//注册接口返回的是ID 激活界面要改名为uid
+            // localStorage.token = res.data.token;//改用token
             location.href = "sentemail.html";
           })
       } else if (res.data.code == 4000) {
