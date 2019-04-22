@@ -200,4 +200,13 @@ line-height: 24px;
     background-image: url(../assets/content_button3.png);
     border: none;
 }
+input{
+    background-color: #FFFFFF
 
+}
+.success{
+    background-color: #daedd2
+}
+.danger{
+    background-color: #f0d9d9
+}

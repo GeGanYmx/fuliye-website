@@ -12,16 +12,16 @@ resetPwd: highlight
                 <p>Reset Password</p>
             </div>
             <div class="inputContent">
-                <input type="password" name="newPassword" placeholder="New password here" required oninvalid="setCustomValidity('Please fill this blank');" oninput="setCustomValidity('');" title="Your email here">
+                <input type="password" name="newPassword" id="pwd" placeholder="New password here" required oninvalid="setCustomValidity('Please fill this blank');" oninput="setCustomValidity('');" title="Your email here">
             </div>
             <div class="inputContent">
-                <input type="password" placeholder="Confirm Password" required oninvalid="setCustomValidity('Please fill this blank');" oninput="setCustomValidity('');" title="Your email here">
+                <input type="password" placeholder="Confirm Password" id="pwd2" required oninvalid="setCustomValidity('Please fill this blank');" oninput="setCustomValidity('');" title="Your email here">
             </div>
             <div class="inputContent hidden">
-                    <input type="password" id="id" name="id" >
+                    <input type="password" id="token" name="token" >
                 </div>
-            <div class="btnGroup">
-                <button class="btn btn-primary submit" type="submit">Submit</button>
+            <div class="btnGroup" id="btnGroup">
+                <button class="btn btn-primary submit" type="submit" id="submit">Submit</button>
             </div>
         </div>
     </form>

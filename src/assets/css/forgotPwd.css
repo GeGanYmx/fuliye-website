@@ -32,13 +32,16 @@
     line-height:19px;
     margin-top: 41px;
 }
+input{
+    padding-left: 10px;
+}
 .inputContent{
     margin-top: 34px;
 }
 #email{
     width:500px;
     height:50px;
-    background:rgba(255,255,255,1);
+    /* background:rgba(255,255,255,1); */
     border-radius:6px;
     border:1px solid rgba(212,212,212,1);
 }
@@ -61,4 +64,14 @@
 }
 .reset{
     background-color: #0086d1;
+}
+.normal{
+    background-color: #FFFFFF
+
+}
+.success{
+    background-color: #daedd2
+}
+.danger{
+    background-color: #f0d9d9
 }

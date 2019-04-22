@@ -6,7 +6,7 @@ forgotPwd: highlight
 ---
 
 <div class="contianer_main">
-    <form action="" id="form">
+    <form action="" id="form" autocomplete="off">
         <div>
             <div class="textHead">
                 <p>Forgot your password?</p>
@@ -15,14 +15,14 @@ forgotPwd: highlight
                 <p>Please enter your registered email address below and we’ll email you instructions to reset it. </p>
             </div>
             <div class="inputContent">
-                <input type="email" id="email" name="email" placeholder="    Your email here" required oninvalid="setCustomValidity('Please fill this blank');" oninput="setCustomValidity('');" title="Your email here">
+                <input type="email" id="email" name="email" class="normal" placeholder="    Your email here" required oninvalid="setCustomValidity('Please fill this blank');" oninput="setCustomValidity('');" title="Your email here">
             </div>
             <div class="inputContent hidden">
                     <input type="email" id="link" name="link" >
                 </div>
-            <div class="btnGroup">
+            <div class="btnGroup" id="btnGroup">
                 <button class="btn btn-default cancel" type="reset">Cancel</button>
-                <button class="btn btn-primary reset" type="submit">RESET PASSWORD</button>
+                <button class="btn btn-primary reset" type="submit" id="submit">RESET PASSWORD</button>
             </div>
         </div>
     </form>

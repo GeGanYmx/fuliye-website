@@ -21,7 +21,6 @@ function callActivation(data, callback) {
     url: url+"api/sys/emailUrl",
     // data: JSON.stringify(data),
     data: data,
-
     dataType: "json",
     success: callback
   });
@@ -30,8 +29,7 @@ function callActivation(data, callback) {
 
 
 $(function(){
-  let token=localStorage.token||undefined;
-      if(token){
+      if(localStorage.token){
         swal("Info","You are already logged in！","info")
         .then(function(value){
           location.href="home.html"
@@ -39,8 +37,9 @@ $(function(){
       }else{
           console.log("等待激活");
       }
-  let uid={"uid":localStorage.uid};
-  callActivation(uid, function (res) {
+      localStorage.token=GetQueryString("name");
+  let token={"token":localStorage.token}
+  callActivation(token, function (res) {
     console.log(res);
     if( res.message == 200){
       swal("Done!","Activation success!","success")

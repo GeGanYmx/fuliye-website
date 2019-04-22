@@ -14,12 +14,131 @@ function callReset(data, callback) {
     success: callback
   });
 }
+
+//校验密码：只能输入6-20个字母、数字、下划线  
+function isPasswd(s) {
+  var patrn = /^(\w){6,20}$/;
+  if (!patrn.exec(s)) return false; return true
+}
+
+//检测必填项是否都已填写
+  //初始化所有状态
+  var statusObj={
+    pwd:0,
+    pwd2:0,
+  }
+  function checkAll(statusObj){
+    for (const status in statusObj) {
+      if(statusObj[status] == 0){
+        return 0;
+      }
+  }
+  return 1;
+  }
+ //失焦检查所有状态
+function checkSubmitButton() {
+  if (checkAll(statusObj)) {
+      $("#submit").removeAttr("disabled");
+  } else {
+      $("#submit").attr("disabled", "disabled");
+  }
+}
+ 
+
+
+
+
 $(function(){
-  let id=localStorage.id;
   
+   //赋值
+   localStorage.token=GetQueryString("name")
+   $("#token").val(localStorage.token);
+
+  // 禁用密码确认框 提交按钮
+  $("#pwd2").attr("disabled", "disabled");
+  $("#submit").attr("disabled", "disabled");
+
+  //密码框改变时 清空确认密码区域
+  $("#pwd").change(function (e) {
+    e.preventDefault();
+    $("#pwd2").val("");
+    $("#pwd2").removeClass("success");
+    $("#pwd2").removeClass("danger");
+  });
+
+  //检测密码强度
+  $("#pwd").blur(function (e) {
+    e.preventDefault();
+    if ($("#pwd").val().length) {//输入了密码
+      if (isPasswd($("#pwd").val())) {//通过检测
+        $("#pwd").removeClass("danger");
+        $("#pwd").addClass("success");
+        $("#pwd2").removeAttr("disabled");
+      statusObj.pwd=1;
+      checkSubmitButton()
+      } else {
+      statusObj.pwd=0;
+
+        $("#pwd").removeClass("success");
+        $("#pwd").addClass("danger");
+        swal({
+          title: "Tips",
+          text: "Please enter a password that \n only contains 6-20 letters or numbers.",
+          icon: "warning",
+          buttons: {
+            confirm: {
+              text: "OK",
+              value: "OK",
+              visible: true,
+              className: "",
+              closeModal: true
+            }
+          },
+        })
+      };
+    } else {
+      statusObj.pwd=0;
+
+      $("#pwd").removeClass("success");
+      $("#pwd").removeClass("danger");
+    }
+  })
+
+  //两次密码不符检测
+  $("#pwd2").blur(function (e) {
+    e.preventDefault();
+    if ($("#pwd2").val() && ($("#pwd").val() !== $("#pwd2").val())) {
+      statusObj.pwd2=0;
+
+      $("#pwd2").removeClass("success");
+      $("#pwd2").addClass("danger");
+      swal("Info", "Password do not match!", "info")
+    } else if ($("#pwd2").val() && ($("#pwd").val() == $("#pwd2").val())) {
+      $("#pwd2").removeClass("danger");
+      $("#pwd2").addClass("success");
+      statusObj.pwd2=1;
+      checkSubmitButton()
+
+    } else {
+      statusObj.pwd2=0;
+
+      $("#pwd2").removeClass("success");
+      $("#pwd2").removeClass("danger");
+    }
+  });
+
+  //全填写后解除禁止
+$("#btnGroup").hover(function () {
+  if(checkAll(statusObj)){
+      $("#submit").removeAttr("disabled");
+    }else{
+      $("#submit").attr("disabled","disabled");
+    }
+  }
+);
+
   $("form").submit(function (e) { 
       e.preventDefault();
-      $("#id").val(id);
       callReset($("form").serialize(), function (res) {
         console.log(res);
         if( res.message == 200){
