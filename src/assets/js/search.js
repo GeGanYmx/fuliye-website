@@ -131,14 +131,15 @@ $(document).ready(function () {
                localStorage.setItem('input_history',JSON.stringify(array));
 
            }
-           var dataList=''
-           var array=JSON.parse(localStorage.getItem('input_history'));
-           console.log('dataList-------------------',dataList)
-           for(var i=0;i<array.length;i++){
-               dataList+=`<option value=${array[i]}>`
-            }
-           $('#autos').html(dataList);
+         
     }
+    var dataList=''
+    var array=JSON.parse(localStorage.getItem('input_history'));
+    console.log('dataList-------------------',dataList)
+    for(var i=0;i<array.length;i++){
+        dataList+=`<option value=${array[i]}>`
+     }
+    $('#autos').html(dataList);
     
 
     }else{
@@ -152,6 +153,10 @@ $(document).ready(function () {
     $('#sear-div').click(function(){
         
         var keyword =$('#search').val().trim().toLowerCase();
+        console.log('keyword-------------',keyword);
+        if(!keyword){
+            keyword='';
+        }
         resAry = allFAQData.filter(function(v){
             return (v.q.toLowerCase().indexOf(keyword) >= 0) || (v.a.toLowerCase().indexOf(keyword) >= 0) 
         })
@@ -235,6 +240,8 @@ $(document).ready(function () {
     }
 
     
+
+
 });
 
 
