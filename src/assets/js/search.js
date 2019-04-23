@@ -70,11 +70,23 @@ function imgInit() {
 
 $(document).ready(function () {
 
-    alert('测试');
+   (function ($) {
+    $.getUrlParam = function (name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return unescape(r[2]); return null;
+    }
+   })(jQuery);
 
-    var resAry=allFAQData;
-    console.log('--------------------',resAry);
+    //获取url参数
+    console.log('传入的参数值：',$.getUrlParam('key'));
+    var key=$.getUrlParam('key').toLowerCase();
+
     //初始化数据
+    var resAry = allFAQData.filter(function(v){
+        return (v.q.toLowerCase().indexOf(key) >= 0) || (v.a.toLowerCase().indexOf(key) >= 0) 
+    })
+    console.log('--------------------',resAry);
     var html='';
     for(var i=0;i<resAry.length;i++){
         html+=`<div class="question-answer-active2">
@@ -95,20 +107,50 @@ $(document).ready(function () {
         </div> `
     }
     $('#data').html(html);
-    //初始化dataList
-    var dataList=''
-    var array=JSON.parse(localStorage.getItem('input_history'));
-    console.log('dataList-------------------',dataList)
-    if(array){
-    for(var i=0;i<array.length;i++){
-        dataList+=`<option value=${array[i]}>`
-    }
-    $('#autos').html(dataList);
-    }
 
+    //初始化dataList
+    if(typeof(Storage)!=='undefined'){
+        console.log('能进行localStroge');
+        if(key.trim().length!==0){
+             //没有则在本地创建用户输入历史
+          var userInput=key.trim().toLowerCase();
+          console.log('input data-----------',userInput);
+         if(!localStorage.getItem('input_history')){
+            console.log('没有进行本地用户输入历史缓存');
+            // localStorage.userInput=userInput;
+             var array=[userInput];
+             localStorage.setItem('input_history',JSON.stringify(array));
+
+           }else{
+               var arrayString=localStorage.getItem('input_history');
+               var array=JSON.parse(arrayString);
+               if(array.indexOf(userInput)==-1)
+                 array.unshift(userInput);
+               console.log('----------------------array',array);
+               console.log('已经存在！',localStorage.getItem('input_history'))
+               localStorage.setItem('input_history',JSON.stringify(array));
+
+           }
+           var dataList=''
+           var array=JSON.parse(localStorage.getItem('input_history'));
+           console.log('dataList-------------------',dataList)
+           for(var i=0;i<array.length;i++){
+               dataList+=`<option value=${array[i]}>`
+            }
+           $('#autos').html(dataList);
+    }
+    
+
+    }else{
+        console.error('不存在localStroge');
+    }
+  
+
+    
+
+  
     $('#sear-div').click(function(){
-        alert('测试');
-        console.log('测试--------');
+        
         var keyword =$('#search').val().trim().toLowerCase();
         resAry = allFAQData.filter(function(v){
             return (v.q.toLowerCase().indexOf(keyword) >= 0) || (v.a.toLowerCase().indexOf(keyword) >= 0) 
@@ -140,7 +182,7 @@ $(document).ready(function () {
             console.log('能进行localStroge');
             if($('#search').val().trim().length!==0){
                  //没有则在本地创建用户输入历史
-              let userInput=$('#search').val().trim();
+              let userInput=$('#search').val().trim().toLowerCase();
               console.log('input data-----------',userInput);
              if(!localStorage.getItem('input_history')){
                 console.log('没有进行本地用户输入历史缓存');
@@ -149,7 +191,6 @@ $(document).ready(function () {
                  localStorage.setItem('input_history',JSON.stringify(array));
 
                }else{
-                   let userInput=$('#search').val().trim().toLowerCase();
                    var arrayString=localStorage.getItem('input_history');
                    var array=JSON.parse(arrayString);
                    if(array.indexOf(userInput)==-1)

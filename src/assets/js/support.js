@@ -1,7 +1,4 @@
 var support={
-    search:function(){
-       console.log('测试');
-    },
     toggleAnswer:function(e){
         $(function(){
             var answer=$(e).parent().parent().find('div.article-answer');
@@ -55,4 +52,12 @@ $(document).ready(function () {
             spans[0].classList.add("darker")
          })
     }
+
+    //提交表单
+    $('#search-btn').click(function(){
+    //    if(!$('#search').val()){
+    //        $('#search').val(null)
+    //    }
+        $('#searchFrom').submit();
+    });
 });
