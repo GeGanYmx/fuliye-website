@@ -1,0 +1,284 @@
+.support_pic {
+    width: 100%;
+    min-width: 1280px;
+    background-image: url(../assets/support_banner.png);
+    background-position: center;
+    height: 230px;
+    margin-top: 70px;
+}
+
+/*主体区底层*/
+.article_display {
+    background-color: red;
+    background-color:#FFF;
+    height: 2534px;
+}
+
+.article_container {
+    background-color: pink;
+    height: 942px;
+}
+.article-container1{
+    width:100%;
+    height:942px;
+    /*background-color:yellow;*/
+    background-color: #FFF;
+    overflow: hidden;
+}
+/*container：1260px;*/
+.article-container2{
+    width:1000px;
+    height:782px;
+    margin: 0 auto;
+    /* background-color:red */
+    background-color:#FFF;
+}
+.article-title{
+    width: 100%;
+    height: 60px;
+    background-color: #FFF;
+    font-family: Roboto-Bold;
+    color: #303136;
+    text-align: left;
+    margin-bottom: 0px;
+    font-size: 30px;
+    letter-spacing: 0.11px;
+    margin-top: 70px;
+}
+/*三个图标*/
+.article-img-group{
+    width:100%;
+    height: 62px;
+    /*background-color:green;*/
+    margin-bottom: 100px;
+}
+#img1{
+    margin-left:27px;
+    margin-right:355px;
+}
+#img2{
+    margin-left: 27px;
+    margin-right:355px;
+}
+/*.article-span{
+    display:block;
+    font-family: Roboto-Light;
+    font-size: 22px;
+    color: #0086D1;
+    letter-spacing: 0;
+    text-align: left;
+}*/
+#img3{
+    margin-left: 34px;
+}
+
+.icon-span{
+    display: inline-block;
+    align-content: center;
+    margin-left: 35px;
+    font-family: Roboto-Light;
+    font-size: 22px;
+    color: #999999;
+    letter-spacing: 0;
+    text-align: left;
+    margin-top: 10px;
+}
+.darker{
+    color:#0A1017;
+}
+li img{
+    width:80px;
+    height:80px;
+}
+a{
+    text-decoration: none;
+}
+
+.article-question{
+    /*background: rgba(255,255,255,0.20);*/
+    /*border: 1px solid #EAEAEA;*/
+    border-radius: 6px;
+    padding: 28px 20px 27px 40px;
+}
+.article-question-active{
+    background: #FFFFFF;
+    box-shadow: 0 4px 29px 0 rgba(0,0,0,0.10);
+    border-radius: 6px;
+}
+.article-question>span{
+    font-family: Roboto-Light;
+    font-size: 22px;
+    /*color: #0086D1;*/
+    display: inline-block;
+    color:#606470;
+    letter-spacing: 0;
+    text-align: left;
+    height: 30px;
+    width:728px;
+}
+
+.article-answer{
+    /*隐藏*/
+    display:none;
+    height: 55px;
+    background-color: #FFF;
+    color: #606470;
+    margin-bottom: 39px;
+}
+.article-answer2{
+    /*隐藏*/
+    /*display:none;*/
+    height: 55px;
+    background-color: #FFF;
+    color: #606470;
+    margin-bottom: 39px;
+}
+.article-answer-A{
+    display: inline-block;
+    font-family: Helvetica;
+    font-size: 22px;
+    color: #606470;
+    letter-spacing: 0;
+    text-align: left;
+    margin-left: 40px;
+}
+.article-answer-smaltext{
+    display: inline-block;
+    font-family: Roboto-Light;
+    font-size: 14px;
+    color: #606470;
+    letter-spacing: 0;
+    text-align: left;
+    line-height: 26px;
+    width:840px;
+    margin-left: 10px;
+}
+/* 固定Q位置 */
+.questionQ{
+    float: left;
+    font-family: Roboto-Light;
+    font-size: 22px;
+    color: #0086D1;
+    letter-spacing: 0;
+    text-align: left;
+    height: 30px;
+    width:30px;
+}
+/*固定字母A的位置*/
+.answer-A-parent{
+    float: left;
+    margin-top: -4px;
+}
+
+.question-answer{
+    width:1000px;
+    /*height:30px;*/
+    height: auto;
+    background-color:#FFF;
+    margin-bottom: 30px;
+    background-color: rgba(255,255,255,0.20);
+    border: 1px solid #EAEAEA;
+    border-radius: 6px;
+
+}
+/*回答框弹出*/
+.question-answer-active{
+    width:1000px;
+    /*height:30px;*/
+    height: auto;
+    margin-bottom: 30px;
+    background-color:#FFF;
+    /*opacity: 0.1;*/
+    /*border: 1px solid #EAEAEA;*/
+   
+    border-radius: 6px;
+    box-shadow: 0 4px 29px 0 rgba(0,0,0,0.10); 
+    overflow: hidden;
+}
+/*选项卡中的*/
+.question-answer-active2{
+    width:1000px;
+    /*height:30px;*/
+    height: auto;
+    margin-bottom: 30px;
+    background-color:#FFF;
+    border-bottom-color: #EAEAEA;
+    border-bottom-width:1px;
+    border-bottom-style: solid;
+    padding-bottom: 10px;
+    /*opacity: 0.1;*/
+    /*border: 1px solid #EAEAEA;*/
+    border-radius: 6px;
+    /*box-shadow: 0 4px 29px 0 rgba(0,0,0,0.10); */
+    overflow: hidden;
+}
+
+/*向下箭头*/
+.down-arrow{
+    margin-bottom: 4px;
+    margin-left: 150px;
+    cursor: pointer;
+}
+
+.article_display,.article_container,.article-container1,.article-container2{
+    height: auto;
+}
+
+/*选项卡插件*/
+.nav-tabs>li>a{
+    width:87px;
+    padding:10px 0;
+    margin-left: 85px;
+}
+/*覆盖样式bootstrap选项卡被激活时的状态*/
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus,.nav-tabs>li.active>a:hover{
+    border-bottom-color: #606470;
+    border-bottom-width:2px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-top-width: 0px;
+}
+
+/*搜索框样式*/
+#search{
+    width:940px;height:60px;
+    float: right;
+    font-family: Roboto-Light;
+    font-size: 16px;
+    /*color: #878787;*/
+    letter-spacing: 0;border: 0;padding: 0;
+    /*去掉搜索框的默认蓝色发光边框*/
+    outline:none;
+}
+.search-info:hover{
+    text-decoration: underline;
+    font-family: Roboto-Bold;
+    cursor: pointer;
+}
+input:focus
+{
+  color:black;
+}
+
+/*input::placeholder{
+    color:red;
+    padding:10px;
+}*/
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {   
+    /* WebKit browsers */   
+    padding:8px;
+   }   
+   input:-moz-placeholder, textarea:-moz-placeholder {   
+   /* Mozilla Firefox 4 to 18 */   
+    padding:8px;
+   }   
+   input::-moz-placeholder, textarea::-moz-placeholder {   
+    /* Mozilla Firefox 19+ */   
+    padding:8px;  
+   }   
+   input:-ms-input-placeholder, textarea:-ms-input-placeholder {   
+    /* Internet Explorer 10+ */   
+    padding:8px;
+   }
+   
