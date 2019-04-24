@@ -64,9 +64,9 @@ $(document).ready(function () {
 
     //提交表单
     $('#search-btn').click(function(){
-    //    if(!$('#search').val()){
-    //        $('#search').val(null)
-    //    }
+       if(!$('#search').val()){
+          return;
+       }
         $('#searchFrom').submit();
     });
 });
