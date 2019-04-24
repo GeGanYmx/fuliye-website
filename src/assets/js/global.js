@@ -74,10 +74,10 @@ $(function(){
 
 
 // 实际地址
-var url="http://47.102.112.8:8088/";
+// var url="http://47.102.112.8:8088/";
 
 //本地测试URL
-// var url="http://10.40.254.134:8080/fuliye-api/";
+var url="http://10.40.254.134:8080/fuliye-api/";
 
 
 
