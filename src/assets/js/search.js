@@ -5,7 +5,7 @@ var allFAQData = [
 },
 {
     q: "What is the development environment of EXOPS SDK?",
-    a: "SDK supports Visual Studio, PyCharm,  LabView, MATLAB developing environment."
+    a: "SDK supports Visual Studio, PyCharm, LabView, MATLAB developing environment."
 },
 {
     q: "On the pre-customized SDK packages, how can SDK provide reference to quantify and make modification on current gait pattern to user desired gait pattern with user’s customization gait pattern?",
@@ -16,16 +16,32 @@ var allFAQData = [
     a:"The adjustment of gait trajectory, motor torque, motor speed and acceleration."
 },
 {
-    q:"Can users directly control the Actuators of Fourier X2 without SDK? ",
+    q:"Can users directly control the Actuators of Fourier X2 without SDK?",
     a:"Yes, users can control the actuators through the motor driver via CANopen."
 },
 {
     q:"Can user directly acquire sensor data from Fourier X2?",
-    a:"  Yes, we offer two different choices: <br/>You can acquire sensor date from our MMU via SDK;<br/>You can purchase standard data acquisition hardware, such as PXI from National Instruments."
+    a:"Yes, we offer two different choices: You can acquire sensor date from our MMU via SDK;You can purchase standard data acquisition hardware, such as PXI from National Instruments."
 },
 {
     q:"How EXOPS users can control the Fourier X2?",
-    a:" We offer three different choices: <br/>You can use the CAN Card; <br/>You can use the CompactRIO from National Instruments; <br/>You can use the X2 build-in MMU. <br/>"
+    a:"We offer three different choices: You can use the CAN Card; You can use the CompactRIO from National Instruments;You can use the X2 build-in MMU. "
+},
+{
+    q:"What are the minimal hardware requirements and operating systems for host computer use?",
+    a:"The computer should at least be 1GHz CPU and 1GB RAM. As for the operating systems, currently we support Windows XP, Windows 7 and Windows 8."
+},
+{
+    q:"If users are required to build their own computer controller board, how can the board communicate with our pre-existing controller board? How’s the protocol can be carried out?",
+    a:"If user intend to build their own controller board, Fourier able to provide SDK, specific LAN-Ethernet connection information and protocol can be found in related document."
+},
+{
+    q:"What is the battery type used in Fourier X2?",
+    a:"Fourier are using lithium battery in X2. The voltage is 48 V DC, the capacity is 6.4 AH and the power source is 220 V."
+},
+{
+    q:"In case of adding in sensor add-on to X2, how can they configure the power line and in what way can the cabling be carried out?",
+    a:"X2’s battery able to supply DC 48V of power, if third party sensor’s power specification is 48V, user able to fit the sensor into the device. If the power supply needed for sensor is beyond 48V, user has to customize or configure own power supply line."
 }
 ];
 
