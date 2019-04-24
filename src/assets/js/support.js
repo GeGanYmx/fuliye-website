@@ -46,10 +46,10 @@ $(document).ready(function () {
         $('#autos').html(dataList);
     }
 
-    $(".search-info").click(function (e) {
-        e.preventDefault();
-        $("#search").val(this.innerHTML);
-    });
+    // $(".search-info").click(function (e) {
+    //     e.preventDefault();
+    //     $("#search").val(this.innerHTML);
+    // });
     var imgs = document.getElementById("myTab").getElementsByTagName("img");
     var as = document.getElementById("myTab").getElementsByTagName("a");
     for (const a of as) {

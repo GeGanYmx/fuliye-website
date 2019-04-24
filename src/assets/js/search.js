@@ -96,7 +96,14 @@ $(document).ready(function () {
 
     //获取url参数
     console.log('传入的参数值：', $.getUrlParam('key'));
-    var key = $.getUrlParam('key').toLowerCase();
+    
+    var urlPar=$.getUrlParam('key');
+    //记忆传入的特殊参数
+    if(urlPar=='SDK'||urlPar=='data'||urlPar=='computer'||urlPar=='sensor'){
+        $('#search').val(urlPar);
+    }
+
+    var key = urlPar.toLowerCase();
 
     //初始化数据
     var resAry = allFAQData.filter(function (v) {
@@ -279,10 +286,73 @@ $(document).ready(function () {
     });
 
 
-    $(".search-info").click(function (e) {
-        e.preventDefault();
-        $("#search").val(this.innerHTML);
+    //直接点击sdk等链接查询
+    $('.search-info').click(function(event){
+        console.log('event--------------------',event);
+        //更新item
+        var key=event.currentTarget.innerText;
+
+        resAry = allFAQData.filter(function (v) {
+            return (v.q.toLowerCase().indexOf(key) >= 0) || (v.a.toLowerCase().indexOf(key) >= 0)
+        })
+        html = ''
+        for (var i = 0; i < resAry.length; i++) {
+            html += '<div class="question-answer-active2">' +
+                '<div class="article-question">' +
+                '<div class="questionQ">Q: </div>' +
+                '<span style="color:#0086D1;">' +
+                resAry[i].q +
+                '</span>' +
+                '</div>' +
+                '<div class="article-answer2">' +
+                '<div class="answer-A-parent"><span class="article-answer-A">A:</span></div>' +
+                '<span class="article-answer-smaltext">' +
+                resAry[i].a +
+                '</span>' +
+                '</div>' +
+                '</div>'
+        }
+        $('#data').html(html);
+        //更新dataList
+        
+        if (typeof (Storage) !== 'undefined') {
+            console.log('能进行localStroge');
+            if ($('#search').val().trim().length !== 0) {
+                //没有则在本地创建用户输入历史
+                let userInput = $('#search').val().trim().toLowerCase();
+                if (!localStorage.getItem('input_history')) {
+                    var array = [userInput];
+                    localStorage.setItem('input_history', JSON.stringify(array));
+
+                } else {
+                    var arrayString = localStorage.getItem('input_history');
+                    var array = JSON.parse(arrayString);
+                    if (array.indexOf(userInput) == -1)
+                        array.unshift(userInput);
+                    localStorage.setItem('input_history', JSON.stringify(array));
+
+                }
+                var dataList = ''
+                var array = JSON.parse(localStorage.getItem('input_history'));
+                for (var i = 0; i < array.length; i++) {
+                    dataList += '<option value=' + array[i] + '>'
+                }
+                $('#autos').html(dataList);
+            }
+
+
+        } else {
+            console.error('不存在localStroge');
+        }
+        //输入框中填入值
+        $('#search').val(key);
     });
+
+
+    // $(".search-info").click(function (e) {
+    //     e.preventDefault();
+    //     $("#search").val(this.innerHTML);
+    // });
     var imgs = document.getElementById("myTab").getElementsByTagName("img");
     var as = document.getElementById("myTab").getElementsByTagName("a");
     for (const a of as) {
