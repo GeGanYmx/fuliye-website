@@ -128,7 +128,7 @@ a{
 .article-answer2{
     /*隐藏*/
     /*display:none;*/
-    height: 55px;
+    height: auto;
     background-color: #FFF;
     color: #606470;
     margin-bottom: 39px;

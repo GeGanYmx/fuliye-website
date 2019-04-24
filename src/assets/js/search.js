@@ -112,10 +112,7 @@ $(document).ready(function () {
         if(key.trim().length!==0){
              //没有则在本地创建用户输入历史
           var userInput=key.trim().toLowerCase();
-          console.log('input data-----------',userInput);
          if(!localStorage.getItem('input_history')){
-            console.log('没有进行本地用户输入历史缓存');
-            // localStorage.userInput=userInput;
              var array=[userInput];
              localStorage.setItem('input_history',JSON.stringify(array));
 
@@ -124,16 +121,11 @@ $(document).ready(function () {
                var array=JSON.parse(arrayString);
                if(array.indexOf(userInput)==-1)
                  array.unshift(userInput);
-               console.log('----------------------array',array);
-               console.log('已经存在！',localStorage.getItem('input_history'))
                localStorage.setItem('input_history',JSON.stringify(array));
-
-           }
-         
+           }        
     }
     var dataList=''
     var array=JSON.parse(localStorage.getItem('input_history'));
-    console.log('dataList-------------------',dataList)
     for(var i=0;i<array.length;i++){
         dataList+='<option value='+array[i]+'>'
      }
@@ -143,23 +135,16 @@ $(document).ready(function () {
     }else{
         console.error('不存在localStroge');
     }
-  
-
-    
 
   
     $('#sear-div').click(function(){
-        
         var keyword =$('#search').val().trim().toLowerCase();
-        console.log('keyword-------------',keyword);
         if(!keyword){
             keyword='';
         }
         resAry = allFAQData.filter(function(v){
             return (v.q.toLowerCase().indexOf(keyword) >= 0) || (v.a.toLowerCase().indexOf(keyword) >= 0) 
         })
-
-        console.log('搜索到的匹配数据res',resAry);
         html=''
         for(var i=0;i<resAry.length;i++) {
             html +='<div class="question-answer-active2">'+
@@ -184,10 +169,7 @@ $(document).ready(function () {
             if($('#search').val().trim().length!==0){
                  //没有则在本地创建用户输入历史
               let userInput=$('#search').val().trim().toLowerCase();
-              console.log('input data-----------',userInput);
              if(!localStorage.getItem('input_history')){
-                console.log('没有进行本地用户输入历史缓存');
-                // localStorage.userInput=userInput;
                  var array=[userInput];
                  localStorage.setItem('input_history',JSON.stringify(array));
 
@@ -196,14 +178,11 @@ $(document).ready(function () {
                    var array=JSON.parse(arrayString);
                    if(array.indexOf(userInput)==-1)
                      array.unshift(userInput);
-                   console.log('----------------------array',array);
-                   console.log('已经存在！',localStorage.getItem('input_history'))
                    localStorage.setItem('input_history',JSON.stringify(array));
 
                }
                var dataList=''
                var array=JSON.parse(localStorage.getItem('input_history'));
-               console.log('dataList-------------------',dataList)
                for(var i=0;i<array.length;i++){
                    dataList+='<option value='+array[i]+'>'
                 }

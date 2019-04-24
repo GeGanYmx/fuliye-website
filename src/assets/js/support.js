@@ -36,7 +36,14 @@ function imgInit() {
  }
 
 $(document).ready(function () {
-
+        //初始化dataList
+        var dataList=''
+        var array=JSON.parse(localStorage.getItem('input_history'));
+        for(var i=0;i<array.length;i++){
+            dataList+='<option value='+array[i]+'>'
+         }
+        $('#autos').html(dataList);
+        
     $(".search-info").click(function (e) { 
         e.preventDefault();
         $("#search").val(this.innerHTML); 
