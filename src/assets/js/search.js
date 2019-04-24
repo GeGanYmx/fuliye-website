@@ -89,22 +89,20 @@ $(document).ready(function () {
     console.log('--------------------',resAry);
     var html='';
     for(var i=0;i<resAry.length;i++){
-        html+=`<div class="question-answer-active2">
-        <div class="article-question">
-            <div class="questionQ">Q: </div>
-            <span style="color:#0086D1;">
-              ${resAry[i].q}
-            </span>
-        
-        </div>
-        
-        <div class="article-answer2">
-            <div class="answer-A-parent"><span class="article-answer-A">A:</span></div>
-            <span class="article-answer-smaltext">
-              ${resAry[i].a}
-            </span>
-         </div>
-        </div> `
+        html+='<div class="question-answer-active2">'+
+        '<div class="article-question">'+
+            '<div class="questionQ">Q: </div>'+
+            '<span style="color:#0086D1;">'+
+              resAry[i].q+
+            '</span>'+  
+        '</div>'+
+        '<div class="article-answer2">'+
+           '<div class="answer-A-parent"><span class="article-answer-A">A:</span></div>'+
+            '<span class="article-answer-smaltext">'+
+              resAry[i].a+
+            '</span>'+
+         '</div>'+
+        '</div>'
     }
     $('#data').html(html);
 
@@ -137,7 +135,7 @@ $(document).ready(function () {
     var array=JSON.parse(localStorage.getItem('input_history'));
     console.log('dataList-------------------',dataList)
     for(var i=0;i<array.length;i++){
-        dataList+=`<option value=${array[i]}>`
+        dataList+='<option value='+array[i]+'>'
      }
     $('#autos').html(dataList);
     
@@ -164,22 +162,20 @@ $(document).ready(function () {
         console.log('搜索到的匹配数据res',resAry);
         html=''
         for(var i=0;i<resAry.length;i++) {
-            html += `<div class="question-answer-active2">
-            <div class="article-question">
-                <div class="questionQ">Q: </div>
-                <span style="color:#0086D1;">
-                  ${resAry[i].q}
-                </span>
-            
-            </div>
-            
-            <div class="article-answer2">
-                <div class="answer-A-parent"><span class="article-answer-A">A:</span></div>
-                <span class="article-answer-smaltext">
-                  ${resAry[i].a}
-                </span>
-             </div>
-            </div> `
+            html +='<div class="question-answer-active2">'+
+            '<div class="article-question">'+
+                '<div class="questionQ">Q: </div>'+
+                '<span style="color:#0086D1;">'+
+                  resAry[i].q+
+                '</span>'+  
+            '</div>'+
+            '<div class="article-answer2">'+
+               '<div class="answer-A-parent"><span class="article-answer-A">A:</span></div>'+
+                '<span class="article-answer-smaltext">'+
+                  resAry[i].a+
+                '</span>'+
+             '</div>'+
+            '</div>'
         }
         $('#data').html(html);
          
@@ -209,7 +205,7 @@ $(document).ready(function () {
                var array=JSON.parse(localStorage.getItem('input_history'));
                console.log('dataList-------------------',dataList)
                for(var i=0;i<array.length;i++){
-                   dataList+=`<option value=${array[i]}>`
+                   dataList+='<option value='+array[i]+'>'
                 }
                $('#autos').html(dataList);
         }
