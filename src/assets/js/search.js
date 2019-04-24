@@ -86,6 +86,7 @@ function imgInit() {
 
 $(document).ready(function () {
 
+    //定义获取url参数
     (function ($) {
         $.getUrlParam = function (name) {
             var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
@@ -94,70 +95,79 @@ $(document).ready(function () {
         }
     })(jQuery);
 
+        //定义数据绑定方法
+        (function ($) {
+            $.getData = function (index) {
+    
+                resAry = allFAQData.filter(function (v) {
+                    return (v.q.toLowerCase().indexOf(index) >= 0) || (v.a.toLowerCase().indexOf(index) >= 0)
+                })
+                html = ''
+                for (var i = 0; i < resAry.length; i++) {
+                    html += '<div class="question-answer-active2">' +
+                        '<div class="article-question">' +
+                        '<div class="questionQ">Q: </div>' +
+                        '<span style="color:#0086D1;">' +
+                        resAry[i].q +
+                        '</span>' +
+                        '</div>' +
+                        '<div class="article-answer2">' +
+                        '<div class="answer-A-parent"><span class="article-answer-A">A:</span></div>' +
+                        '<span class="article-answer-smaltext">' +
+                        resAry[i].a +
+                        '</span>' +
+                        '</div>' +
+                        '</div>'
+                }
+                $('#data').html(html);
+                //更新dataList
+    
+                if (typeof (Storage) !== 'undefined') {
+                    console.log('能进行localStroge');
+                    if (index !== 0) {
+                        //没有则在本地创建用户输入历史
+                        let userInput = index.trim().toLowerCase();
+                        if (!localStorage.getItem('input_history')) {
+                            var array = [userInput];
+                            localStorage.setItem('input_history', JSON.stringify(array));
+    
+                        } else {
+                            var arrayString = localStorage.getItem('input_history');
+                            var array = JSON.parse(arrayString);
+                            if (array.indexOf(userInput) == -1)
+                                array.unshift(userInput);
+                            localStorage.setItem('input_history', JSON.stringify(array));
+    
+                        }
+                        var dataList = ''
+                        var array = JSON.parse(localStorage.getItem('input_history'));
+                        for (var i = 0; i < array.length; i++) {
+                            dataList += '<option value=' + array[i] + '>'
+                        }
+                        $('#autos').html(dataList);
+                    }
+    
+    
+                } else {
+                    console.error('不存在localStroge');
+                }
+            }
+        })(jQuery)    
+
+
     //获取url参数
     console.log('传入的参数值：', $.getUrlParam('key'));
-    
-    var urlPar=$.getUrlParam('key');
+
+    var urlPar = $.getUrlParam('key');
     //记忆传入的特殊参数
-    if(urlPar=='SDK'||urlPar=='data'||urlPar=='computer'||urlPar=='sensor'){
+    if (urlPar == 'SDK' || urlPar == 'data' || urlPar == 'computer' || urlPar == 'sensor') {
         $('#search').val(urlPar);
     }
 
     var key = urlPar.toLowerCase();
 
     //初始化数据
-    var resAry = allFAQData.filter(function (v) {
-        return (v.q.toLowerCase().indexOf(key) >= 0) || (v.a.toLowerCase().indexOf(key) >= 0)
-    })
-    console.log('--------------------', resAry);
-    var html = '';
-    for (var i = 0; i < resAry.length; i++) {
-        html += '<div class="question-answer-active2">' +
-            '<div class="article-question">' +
-            '<div class="questionQ">Q: </div>' +
-            '<span style="color:#0086D1;">' +
-            resAry[i].q +
-            '</span>' +
-            '</div>' +
-            '<div class="article-answer2">' +
-            '<div class="answer-A-parent"><span class="article-answer-A">A:</span></div>' +
-            '<span class="article-answer-smaltext">' +
-            resAry[i].a +
-            '</span>' +
-            '</div>' +
-            '</div>'
-    }
-    $('#data').html(html);
-
-    //初始化dataList
-    if (typeof (Storage) !== 'undefined') {
-        console.log('能进行localStroge');
-        if (key.trim().length !== 0) {
-            //没有则在本地创建用户输入历史
-            var userInput = key.trim().toLowerCase();
-            if (!localStorage.getItem('input_history')) {
-                var array = [userInput];
-                localStorage.setItem('input_history', JSON.stringify(array));
-
-            } else {
-                var arrayString = localStorage.getItem('input_history');
-                var array = JSON.parse(arrayString);
-                if (array.indexOf(userInput) == -1)
-                    array.unshift(userInput);
-                localStorage.setItem('input_history', JSON.stringify(array));
-            }
-        }
-        var dataList = ''
-        var array = JSON.parse(localStorage.getItem('input_history'));
-        for (var i = 0; i < array.length; i++) {
-            dataList += '<option value=' + array[i] + '>'
-        }
-        $('#autos').html(dataList);
-
-
-    } else {
-        console.error('不存在localStroge');
-    }
+    $.getData(key);
 
     //按下点击按钮时
     $('#sear-div').click(function () {
@@ -165,60 +175,7 @@ $(document).ready(function () {
         if (!keyword) {
             keyword = '';
         }
-        resAry = allFAQData.filter(function (v) {
-            return (v.q.toLowerCase().indexOf(keyword) >= 0) || (v.a.toLowerCase().indexOf(keyword) >= 0)
-        })
-        html = ''
-        for (var i = 0; i < resAry.length; i++) {
-            html += '<div class="question-answer-active2">' +
-                '<div class="article-question">' +
-                '<div class="questionQ">Q: </div>' +
-                '<span style="color:#0086D1;">' +
-                resAry[i].q +
-                '</span>' +
-                '</div>' +
-                '<div class="article-answer2">' +
-                '<div class="answer-A-parent"><span class="article-answer-A">A:</span></div>' +
-                '<span class="article-answer-smaltext">' +
-                resAry[i].a +
-                '</span>' +
-                '</div>' +
-                '</div>'
-        }
-        $('#data').html(html);
-
-        if (typeof (Storage) !== 'undefined') {
-            console.log('能进行localStroge');
-            if ($('#search').val().trim().length !== 0) {
-                //没有则在本地创建用户输入历史
-                let userInput = $('#search').val().trim().toLowerCase();
-                if (!localStorage.getItem('input_history')) {
-                    var array = [userInput];
-                    localStorage.setItem('input_history', JSON.stringify(array));
-
-                } else {
-                    var arrayString = localStorage.getItem('input_history');
-                    var array = JSON.parse(arrayString);
-                    if (array.indexOf(userInput) == -1)
-                        array.unshift(userInput);
-                    localStorage.setItem('input_history', JSON.stringify(array));
-
-                }
-                var dataList = ''
-                var array = JSON.parse(localStorage.getItem('input_history'));
-                for (var i = 0; i < array.length; i++) {
-                    dataList += '<option value=' + array[i] + '>'
-                }
-                $('#autos').html(dataList);
-            }
-
-
-        } else {
-            console.error('不存在localStroge');
-        }
-
-
-
+        $.getData(keyword);
     });
 
     //输入框按下回车时
@@ -228,57 +185,7 @@ $(document).ready(function () {
             if (!keyword) {
                 keyword = '';
             }
-            resAry = allFAQData.filter(function (v) {
-                return (v.q.toLowerCase().indexOf(keyword) >= 0) || (v.a.toLowerCase().indexOf(keyword) >= 0)
-            })
-            html = ''
-            for (var i = 0; i < resAry.length; i++) {
-                html += '<div class="question-answer-active2">' +
-                    '<div class="article-question">' +
-                    '<div class="questionQ">Q: </div>' +
-                    '<span style="color:#0086D1;">' +
-                    resAry[i].q +
-                    '</span>' +
-                    '</div>' +
-                    '<div class="article-answer2">' +
-                    '<div class="answer-A-parent"><span class="article-answer-A">A:</span></div>' +
-                    '<span class="article-answer-smaltext">' +
-                    resAry[i].a +
-                    '</span>' +
-                    '</div>' +
-                    '</div>'
-            }
-            $('#data').html(html);
-
-            if (typeof (Storage) !== 'undefined') {
-                console.log('能进行localStroge');
-                if ($('#search').val().trim().length !== 0) {
-                    //没有则在本地创建用户输入历史
-                    let userInput = $('#search').val().trim().toLowerCase();
-                    if (!localStorage.getItem('input_history')) {
-                        var array = [userInput];
-                        localStorage.setItem('input_history', JSON.stringify(array));
-
-                    } else {
-                        var arrayString = localStorage.getItem('input_history');
-                        var array = JSON.parse(arrayString);
-                        if (array.indexOf(userInput) == -1)
-                            array.unshift(userInput);
-                        localStorage.setItem('input_history', JSON.stringify(array));
-
-                    }
-                    var dataList = ''
-                    var array = JSON.parse(localStorage.getItem('input_history'));
-                    for (var i = 0; i < array.length; i++) {
-                        dataList += '<option value=' + array[i] + '>'
-                    }
-                    $('#autos').html(dataList);
-                }
-
-
-            } else {
-                console.error('不存在localStroge');
-            }
+            $.getData(keyword);
         }
 
 
@@ -287,63 +194,13 @@ $(document).ready(function () {
 
 
     //直接点击sdk等链接查询
-    $('.search-info').click(function(event){
-        console.log('event--------------------',event);
+    $('.search-info').click(function (event) {
+        console.log('event--------------------', event);
         //更新item
-        var key=event.currentTarget.innerText;
+        var key = event.currentTarget.innerText.toLowerCase();
 
-        resAry = allFAQData.filter(function (v) {
-            return (v.q.toLowerCase().indexOf(key) >= 0) || (v.a.toLowerCase().indexOf(key) >= 0)
-        })
-        html = ''
-        for (var i = 0; i < resAry.length; i++) {
-            html += '<div class="question-answer-active2">' +
-                '<div class="article-question">' +
-                '<div class="questionQ">Q: </div>' +
-                '<span style="color:#0086D1;">' +
-                resAry[i].q +
-                '</span>' +
-                '</div>' +
-                '<div class="article-answer2">' +
-                '<div class="answer-A-parent"><span class="article-answer-A">A:</span></div>' +
-                '<span class="article-answer-smaltext">' +
-                resAry[i].a +
-                '</span>' +
-                '</div>' +
-                '</div>'
-        }
-        $('#data').html(html);
-        //更新dataList
-        
-        if (typeof (Storage) !== 'undefined') {
-            console.log('能进行localStroge');
-            if ($('#search').val().trim().length !== 0) {
-                //没有则在本地创建用户输入历史
-                let userInput = $('#search').val().trim().toLowerCase();
-                if (!localStorage.getItem('input_history')) {
-                    var array = [userInput];
-                    localStorage.setItem('input_history', JSON.stringify(array));
+        $.getData(key);
 
-                } else {
-                    var arrayString = localStorage.getItem('input_history');
-                    var array = JSON.parse(arrayString);
-                    if (array.indexOf(userInput) == -1)
-                        array.unshift(userInput);
-                    localStorage.setItem('input_history', JSON.stringify(array));
-
-                }
-                var dataList = ''
-                var array = JSON.parse(localStorage.getItem('input_history'));
-                for (var i = 0; i < array.length; i++) {
-                    dataList += '<option value=' + array[i] + '>'
-                }
-                $('#autos').html(dataList);
-            }
-
-
-        } else {
-            console.error('不存在localStroge');
-        }
         //输入框中填入值
         $('#search').val(key);
     });
@@ -366,9 +223,5 @@ $(document).ready(function () {
     }
 
 
-
-
-});
-
-
+})
 
