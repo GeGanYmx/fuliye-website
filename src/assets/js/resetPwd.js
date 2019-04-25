@@ -147,7 +147,17 @@ $("#btnGroup").hover(function () {
           .then(function(value){
             location.href="login.html"
           })
-        }else {
+        }else if(res.message == 4000){
+          swal({
+            title:"Falied!",
+            text:"TIME OUT! Please try again!",
+            icon:"error"
+          })
+          .then(function(value){
+            location.href="resetPwd.html"
+          })
+          console.log("激活失败！")
+        } else {
           console.log("重置失败！")
           swal("Failed","Other reasons.","error")
         }

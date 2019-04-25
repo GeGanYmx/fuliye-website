@@ -140,6 +140,24 @@ $(function () {
     }
   })
 
+
+  //重置按钮清除所有内容
+$("#Cancel").click(function (e) { 
+  e.preventDefault();
+  //清空内容
+$("#email").val("");
+$("#email").removeClass("success");
+$("#email").removeClass("danger");
+$("#pwd").val("");
+$("#pwd").removeClass("success");
+$("#pwd").removeClass("danger");
+
+
+  // 禁用密码确认框 提交按钮
+  $("#Login").attr("disabled", "disabled");
+
+});
+
   //全填写后解除禁止
   $("#btnGroup").hover(function () {
     if (checkAll(statusObj)) {

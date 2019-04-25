@@ -45,6 +45,16 @@ $(function(){
       swal("Done!","Activation success!","success")
       .then(jump());
       console.log("激活成功!")
+    }else if(res.message == 4000){
+      swal({
+        title:"Falied!",
+        text:"TIME OUT! Please contact us!",
+        icon:"error"
+      })
+      .then(function(value){
+        location.href="contact_us.html"
+      })
+      console.log("激活失败！")
     }else {
       swal({
         title:"Falied!",
