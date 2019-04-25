@@ -1,6 +1,6 @@
 function callForgot(data, callback) {
   $.ajax({
-    type: "get",
+    type: "POST",
     url: url + "api/sys/forget",
     data: data,
     dataType: "json",
@@ -115,7 +115,7 @@ $(document).ready(function () {
     $("#link").val(href);
     console.log($("#form").serializeObject())
     // callForgot($("#form").serializeObject(), function (res) {
-    callForgot($("#form").serialize(), function (res) {
+    callForgot($("#form").serializeObject(), function (res) {
 
       console.log(res)
       if (res.data.code == 200) {

@@ -139,9 +139,12 @@ $("#btnGroup").hover(function () {
 
   $("form").submit(function (e) { 
       e.preventDefault();
+
       callReset($("form").serialize(), function (res) {
         console.log(res);
         if( res.message == 200){
+          delete localStorage.token
+          delete localStorage.username
           console.log("重置成功!")
           swal("Done!","Congratulation！","success")
           .then(function(value){
@@ -154,12 +157,23 @@ $("#btnGroup").hover(function () {
             icon:"error"
           })
           .then(function(value){
-            location.href="resetPwd.html"
+            delete localStorage.token
+            delete localStorage.username
+            location.href="forgotPwd.html"
           })
           console.log("激活失败！")
         } else {
           console.log("重置失败！")
-          swal("Failed","Other reasons.","error")
+          swal({
+            title:"Falied!",
+            text:"Other reasons. Please try again!",
+            icon:"error"
+          })
+          .then(function(value){
+            delete localStorage.token
+            delete localStorage.username
+            location.href="forgotPwd.html"
+          })
         }
       })
   });
